@@ -3,101 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Breathune — Ochrana súkromia a podpora / Privacy &amp; Support</title>
-<meta name="description" content="Breathune — zásady ochrany súkromia a podpora pre iOS a Android. Privacy policy and support for iOS and Android.">
-<style>
-  :root{
-    --aqua:#33b8cc; --teal:#1a8599; --deep:#0d3a4a; --ink:#0f2028; --muted:#5b7480;
-    --bg:#f2f8f9; --card:#ffffff; --line:#dbe8ec; --warn:#b7791f;
-    --maxw:760px;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --ink:#e8f1f4; --muted:#9db3bc; --bg:#0b1a22; --card:#122730; --line:#1e3a46; --warn:#e0a83a; }
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  }
-  html[data-lang="sk"] .en{display:none !important}
-  html[data-lang="en"] .sk{display:none !important}
-
-  header{
-    background:linear-gradient(135deg,#32afc1 0%,#136375 55%,#102c44 100%);
-    color:#fff; padding:36px 20px 30px;
-  }
-  .wrap{max-width:var(--maxw); margin:0 auto}
-  .brand{display:flex; align-items:center; gap:14px}
-  .brand svg{flex:0 0 auto}
-  .brand h1{margin:0; font-size:30px; letter-spacing:.3px}
-  header p{margin:10px 0 0; opacity:.9; font-size:16px}
-
-  .langbar{display:flex; gap:8px; margin-top:20px}
-  .langbar button{
-    font:inherit; font-size:14px; font-weight:600; cursor:pointer;
-    padding:7px 15px; border-radius:999px; color:#fff;
-    background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3);
-  }
-  .langbar button[aria-pressed="true"]{background:#fff; color:var(--deep); border-color:#fff}
-
-  nav{position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex; gap:22px; padding:12px 20px; overflow-x:auto}
-  nav a{color:var(--teal); text-decoration:none; font-weight:600; font-size:15px; white-space:nowrap}
-  nav a:hover{text-decoration:underline}
-
-  main{padding:8px 20px 60px}
-  section{margin:36px 0 0}
-  h2{font-size:24px; margin:0 0 6px; letter-spacing:.2px}
-  h3{font-size:18px; margin:26px 0 6px}
-  h2+p,h3+p{margin-top:6px}
-  p,li{color:var(--ink)}
-  a{color:var(--teal)}
-  ul{padding-left:22px}
-  li{margin:5px 0}
-
-  .lede{font-size:18px; color:var(--muted)}
-  .card{
-    background:var(--card); border:1px solid var(--line); border-radius:14px;
-    padding:18px 20px; margin:16px 0;
-  }
-  .card h3{margin-top:0}
-  .key{
-    background:linear-gradient(135deg, rgba(51,184,204,.13), rgba(26,133,153,.10));
-    border:1px solid rgba(51,184,204,.4);
-  }
-  .plat{
-    display:inline-block; font-size:12px; font-weight:700; letter-spacing:.4px;
-    padding:3px 9px; border-radius:6px; margin-right:8px; vertical-align:2px;
-    background:var(--teal); color:#fff;
-  }
-  .plat.ios{background:#3c5a75}
-  .plat.and{background:#2e7d63}
-
-  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; display:block; overflow-x:auto}
-  th,td{text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-  th{font-size:13px; text-transform:uppercase; letter-spacing:.5px; color:var(--muted)}
-  code{
-    font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    background:rgba(127,127,127,.14); padding:2px 6px; border-radius:5px;
-  }
-  .note{border-left:3px solid var(--warn); padding-left:14px; color:var(--muted)}
-  details{border:1px solid var(--line); border-radius:12px; background:var(--card); padding:0 18px; margin:10px 0}
-  details[open]{padding-bottom:6px}
-  summary{cursor:pointer; font-weight:600; padding:14px 0; list-style:none}
-  summary::-webkit-details-marker{display:none}
-  summary::before{content:"+"; color:var(--teal); font-weight:700; margin-right:10px}
-  details[open] summary::before{content:"–"}
-  .mail{font-weight:600}
-  footer{border-top:1px solid var(--line); padding:26px 20px 50px; color:var(--muted); font-size:14px}
-</style>
+<title>Breathune</title>
+<meta name="description" content="Breathune — pokojný sprievodca dýchaním pre iPhone, Apple Watch a Android. A calm breathing companion for iPhone, Apple Watch and Android.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header class="tall">
   <div class="wrap">
     <div class="brand">
-      <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true">
+      <svg width="64" height="64" viewBox="0 0 52 52" aria-hidden="true">
         <circle cx="26" cy="26" r="24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.4"/>
         <circle cx="26" cy="26" r="16" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.6"/>
         <circle cx="26" cy="26" r="9"  fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2"/>
@@ -105,8 +20,8 @@
       </svg>
       <div>
         <h1>Breathune</h1>
-        <p class="sk">Ochrana súkromia a podpora</p>
-        <p class="en">Privacy &amp; Support</p>
+        <p class="sk">Vedené dýchanie — Šikutova metóda</p>
+        <p class="en">Guided breathing — the Šikuta method</p>
       </div>
     </div>
     <div class="langbar" role="group" aria-label="Language">
@@ -116,313 +31,68 @@
   </div>
 </header>
 
-<nav>
-  <div class="wrap">
-    <a href="#privacy"><span class="sk">Ochrana súkromia</span><span class="en">Privacy</span></a>
-    <a href="#permissions"><span class="sk">Oprávnenia</span><span class="en">Permissions</span></a>
-    <a href="#data"><span class="sk">Tvoje údaje</span><span class="en">Your data</span></a>
-    <a href="#support"><span class="sk">Podpora</span><span class="en">Support</span></a>
-    <a href="#contact"><span class="sk">Kontakt</span><span class="en">Contact</span></a>
-  </div>
-</nav>
-
 <main class="wrap">
 
-<!-- ══════════════════ OCHRANA SÚKROMIA ══════════════════ -->
-<section id="privacy">
-  <h2><span class="sk">Zásady ochrany súkromia</span><span class="en">Privacy policy</span></h2>
-  <p class="lede sk">Platí pre Breathune a Breathune Lite na iPhone, Apple Watch a Android.</p>
-  <p class="lede en">Applies to Breathune and Breathune Lite on iPhone, Apple Watch and Android.</p>
+  <section>
+    <p class="lede sk">Breathune je pokojný sprievodca dýchaním pre iPhone, Apple Watch a Android. Bez účtu, bez cloudu, bez reklám — všetko ostáva v tvojom zariadení.</p>
+    <p class="lede en">Breathune is a calm breathing companion for iPhone, Apple Watch and Android. No account, no cloud, no ads — everything stays on your device.</p>
 
-  <div class="card key">
-    <h3><span class="sk">Krátka verzia</span><span class="en">The short version</span></h3>
-    <p class="sk"><strong>Breathune o tebe nezbiera nič.</strong> Nemá účet, neprihlasuješ sa, neobsahuje analytiku, reklamy ani knižnice tretích strán. Aplikácia neodosiela žiadne údaje — v jej kóde nie je jediné sieťové volanie. Všetko, čo si v nej nameriaš, ostáva v tvojom zariadení.</p>
-    <p class="en"><strong>Breathune collects nothing about you.</strong> There is no account, no sign-in, no analytics, no ads and no third-party libraries. The app transmits no data whatsoever — its code contains not a single network call. Everything you record stays on your device.</p>
-  </div>
+    <div class="tiles">
+      <a class="tile" href="privacy-policy/">
+        <h3><span class="sk">Ochrana súkromia</span><span class="en">Privacy policy</span></h3>
+        <p class="sk">Čo appka zbiera (nič), ako funguje mikrofón pri nočnom sledovaní a ako zmažeš svoje údaje.</p>
+        <p class="en">What the app collects (nothing), how the microphone works during overnight tracking, and how to erase your data.</p>
+        <span class="arrow sk">Čítať →</span><span class="arrow en">Read →</span>
+      </a>
+      <a class="tile" href="support/">
+        <h3><span class="sk">Podpora</span><span class="en">Support</span></h3>
+        <p class="sk">Časté otázky, riešenie problémov s nočným režimom a priamy kontakt na autora.</p>
+        <p class="en">Frequently asked questions, night-mode troubleshooting and a direct line to the author.</p>
+        <span class="arrow sk">Otvoriť →</span><span class="arrow en">Open →</span>
+      </a>
+    </div>
+  </section>
 
-  <h3><span class="sk">Prevádzkovateľ</span><span class="en">Who runs this</span></h3>
-  <p class="sk">Ján Šikuta, autor aplikácie. Kontakt: <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
-  <p class="en">Ján Šikuta, the app’s author. Contact: <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
-
-  <h3><span class="sk">Čo Breathune nerobí</span><span class="en">What Breathune does not do</span></h3>
-  <ul class="sk">
-    <li>Nevytvára účet ani profil a nevyžaduje prihlásenie.</li>
-    <li>Nepoužíva analytiku, meranie návštevnosti ani sledovanie správania.</li>
-    <li>Neobsahuje reklamy ani reklamné identifikátory.</li>
-    <li>Neodosiela dáta na server — vlastný ani cudzí. Funguje úplne offline.</li>
-    <li>Nezdieľa nič s tretími stranami, lebo nemá čo zdieľať.</li>
-    <li>Nepristupuje ku kontaktom, fotkám, polohe ani histórii prehliadania.</li>
-  </ul>
-  <ul class="en">
-    <li>It creates no account or profile and requires no sign-in.</li>
-    <li>It uses no analytics, no usage measurement and no behavioural tracking.</li>
-    <li>It contains no ads and no advertising identifiers.</li>
-    <li>It sends no data to any server, ours or anyone else’s. It works fully offline.</li>
-    <li>It shares nothing with third parties, because there is nothing to share.</li>
-    <li>It does not access your contacts, photos, location or browsing history.</li>
-  </ul>
-</section>
-
-<!-- ══════════════════ MIKROFÓN ══════════════════ -->
-<section id="microphone">
-  <h2><span class="sk">Mikrofón a nočné sledovanie</span><span class="en">Microphone and overnight tracking</span></h2>
-
-  <p class="sk">Plná verzia obsahuje <strong>Night Guard</strong> — nočné rozpoznávanie chrápania. Je to jediná funkcia, ktorá používa mikrofón, a týka sa len plnej verzie. <strong>Breathune Lite mikrofón vôbec nepýta.</strong></p>
-  <p class="en">The full version includes <strong>Night Guard</strong> — overnight snoring detection. It is the only feature that uses the microphone, and only in the full version. <strong>Breathune Lite does not request the microphone at all.</strong></p>
-
-  <div class="card">
-    <h3><span class="sk">Ako to funguje</span><span class="en">How it works</span></h3>
+  <section>
+    <h2><span class="sk">Čo Breathune vie</span><span class="en">What Breathune does</span></h2>
     <ul class="sk">
-      <li>Mikrofón sa zapne <strong>len vtedy, keď nočný režim sám spustíš</strong> tlačidlom, a beží, kým ho nezastavíš.</li>
-      <li>Počas behu je trvalo viditeľná notifikácia s tlačidlom na zastavenie, aby nikdy nebolo pochýb, že sledovanie beží.</li>
-      <li>Zvuk sa spracúva <strong>výhradne v pamäti zariadenia</strong>. Nikdy sa neukladá na disk, nikdy sa neodosiela, nikdy sa nezdieľa.</li>
-      <li>V zariadení ostávajú len metaúdaje udalostí: <strong>čas začiatku epizódy, jej dĺžka a nameraná hlasitosť</strong>. Nič, z čoho by sa dal zvuk obnoviť.</li>
-      <li>Ráno appka ukáže, koľko hodín mikrofón naozaj bežal — aby si nemusel veriť, ale videl.</li>
+      <li><strong>Dychové programy</strong> — Šikutova metóda, Relaxácia 4-7-8, Koncentrácia, Koherentné 5-5 a Sila dychu.</li>
+      <li><strong>Živé motívy</strong> — kvet, ktorý sa rozvíja s nádychom, orosené a mrznúce sklo, letný podvečer.</li>
+      <li><strong>Zvuk a chvenie</strong> — dych sa počíta na presnú dĺžku fázy; v tichom režime ťa vedie samotná haptika.</li>
+      <li><strong>Night Guard</strong> — nočné rozpoznávanie chrápania, ktoré beží výhradne v telefóne.</li>
+      <li><strong>Súkromie</strong> — žiadny účet, žiadna analytika, žiadne odosielanie dát. Funguje offline.</li>
     </ul>
     <ul class="en">
-      <li>The microphone turns on <strong>only when you start night mode yourself</strong>, and runs until you stop it.</li>
-      <li>While it runs, an ongoing notification with a Stop action is always visible, so there is never any doubt that tracking is active.</li>
-      <li>Audio is processed <strong>entirely in the device’s memory</strong>. It is never written to disk, never transmitted, never shared.</li>
-      <li>Only event metadata stays on the device: <strong>the start time, duration and measured loudness of each episode</strong>. Nothing from which audio could be reconstructed.</li>
-      <li>In the morning the app shows how many hours the microphone actually ran — so you don’t have to take it on faith.</li>
+      <li><strong>Breathing programs</strong> — the Šikuta Method, Relaxation 4-7-8, Focus, Coherent 5-5 and Power Breath.</li>
+      <li><strong>Living themes</strong> — a flower that opens as you inhale, misting and freezing glass, a summer evening.</li>
+      <li><strong>Sound and haptics</strong> — the breath is synthesized to the exact length of each phase; in silent mode vibration alone guides you.</li>
+      <li><strong>Night Guard</strong> — overnight snoring detection that runs entirely on your phone.</li>
+      <li><strong>Privacy</strong> — no account, no analytics, no data leaving the device. Works offline.</li>
     </ul>
-  </div>
 
-  <p class="sk"><span class="plat ios">iOS</span> Analýzu robí systémový rámec <em>SoundAnalysis</em> priamo v telefóne. Aplikácia deklaruje režim zvuku na pozadí, aby analýza pokračovala, keď telefón leží zamknutý na nočnom stolíku.</p>
-  <p class="en"><span class="plat ios">iOS</span> Analysis is done by Apple’s on-device <em>SoundAnalysis</em> framework. The app declares the background audio mode so analysis continues while the phone rests locked on a nightstand.</p>
+    <p class="note sk">Breathune slúži na relaxáciu, všímavé dýchanie a wellness prevenciu chrápania. Nie je zdravotníckou pomôckou, nestanovuje diagnózu ani nelieči.</p>
+    <p class="note en">Breathune is for relaxation, mindful breathing and wellness snoring prevention. It is not a medical device, and it does not diagnose or treat anything.</p>
+  </section>
 
-  <p class="sk"><span class="plat and">Android</span> Analýzu robí vlastný akustický algoritmus priamo v telefóne — sleduje hlasitostné špičky nad šumom izby, prevahu nízkych frekvencií a pravidelnosť dychového rytmu. Beží ako služba v popredí typu <code>microphone</code>, čo je na Androide jediný povolený spôsob, ako môže appka počúvať celú noc.</p>
-  <p class="en"><span class="plat and">Android</span> Analysis is done by our own acoustic algorithm on the device — it tracks loudness peaks above the room’s noise floor, low-frequency dominance and the regularity of the breathing rhythm. It runs as a foreground service of type <code>microphone</code>, which is the only way an Android app is permitted to listen through the night.</p>
-
-  <p class="note sk">Night Guard je wellness pomôcka, nie diagnostický nástroj. Nestanovuje diagnózu a nelieči. Ak v noci prestávaš dýchať alebo sa budíš s lapaním po dychu, poraď sa s lekárom.</p>
-  <p class="note en">Night Guard is a wellness aid, not a diagnostic tool. It does not diagnose and does not treat anything. If you stop breathing at night or wake up gasping for air, please consult a doctor.</p>
-</section>
-
-<!-- ══════════════════ ZDRAVIE ══════════════════ -->
-<section id="health">
-  <h2><span class="sk">Zdravotné údaje</span><span class="en">Health data</span></h2>
-
-  <p class="sk"><span class="plat ios">iOS</span> Ak to povolíš, Breathune zapíše dokončené cvičenie do <strong>Apple Health</strong> ako minúty všímavosti. Na Apple Watch počas cvičenia číta tvoj tep, aby ti na konci ukázala priemer. Voliteľne vie zapísať odsledovanú noc ako čas „V posteli“. Iné zdravotné údaje nečíta.</p>
-  <p class="en"><span class="plat ios">iOS</span> If you allow it, Breathune writes a completed session to <strong>Apple Health</strong> as mindful minutes. On Apple Watch it reads your heart rate during a session so it can show you the average at the end. Optionally it can write a tracked night as “In Bed” time. It reads no other health data.</p>
-
-  <p class="sk"><span class="plat and">Android</span> Ak to povolíš, Breathune zapíše dokončené cvičenie do <strong>Health Connect</strong> ako reláciu všímavosti. Z Health Connect <strong>nič nečíta</strong>. Povolenie odoberieš kedykoľvek v aplikácii Health Connect v časti Povolenia.</p>
-  <p class="en"><span class="plat and">Android</span> If you allow it, Breathune writes a completed session to <strong>Health Connect</strong> as a mindfulness session. It <strong>reads nothing</strong> from Health Connect. You can revoke the permission at any time in the Health Connect app under Permissions.</p>
-
-  <p class="sk">Zdravotné údaje ostávajú v tvojom zariadení a v systémovom úložisku zdravia. Breathune ich neposiela nikam inam.</p>
-  <p class="en">Health data stays on your device and in the system health store. Breathune sends it nowhere else.</p>
-</section>
-
-<!-- ══════════════════ OPRÁVNENIA ══════════════════ -->
-<section id="permissions">
-  <h2><span class="sk">Prehľad oprávnení</span><span class="en">Permissions at a glance</span></h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th><span class="sk">Oprávnenie</span><span class="en">Permission</span></th>
-        <th><span class="sk">Na čo</span><span class="en">What for</span></th>
-        <th><span class="sk">Kde</span><span class="en">Where</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="sk">Mikrofón</span><span class="en">Microphone</span></td>
-        <td><span class="sk">Night Guard — rozpoznávanie chrápania. Pýta sa až pri prvom spustení nočného režimu.</span><span class="en">Night Guard — snoring detection. Requested only when you first start night mode.</span></td>
-        <td><span class="sk">len plná verzia</span><span class="en">full version only</span></td>
-      </tr>
-      <tr>
-        <td><span class="sk">Notifikácie</span><span class="en">Notifications</span></td>
-        <td><span class="sk">Trvalá notifikácia počas nočného režimu a ranný súhrn.</span><span class="en">The ongoing notification during night mode and the morning summary.</span></td>
-        <td><span class="sk">len plná verzia</span><span class="en">full version only</span></td>
-      </tr>
-      <tr>
-        <td><span class="sk">Vibrácie</span><span class="en">Vibration</span></td>
-        <td><span class="sk">Haptické vedenie dychu, najmä v tichom režime.</span><span class="en">Haptic breath guidance, especially in silent mode.</span></td>
-        <td><span class="sk">obe verzie</span><span class="en">both versions</span></td>
-      </tr>
-      <tr>
-        <td><span class="sk">Zdravie</span><span class="en">Health</span></td>
-        <td><span class="sk">Zápis minút všímavosti. Voliteľné — bez povolenia appka funguje normálne.</span><span class="en">Writing mindful minutes. Optional — the app works normally without it.</span></td>
-        <td><span class="sk">obe verzie</span><span class="en">both versions</span></td>
-      </tr>
-      <tr>
-        <td><span class="sk">Beh na pozadí</span><span class="en">Background execution</span></td>
-        <td><span class="sk">Aby nočné sledovanie pokračovalo pri zamknutej obrazovke.</span><span class="en">So overnight tracking continues while the screen is locked.</span></td>
-        <td><span class="sk">len plná verzia</span><span class="en">full version only</span></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <p class="sk"><strong>Breathune Lite na Androide pýta jediné oprávnenie: vibrácie.</strong></p>
-  <p class="en"><strong>On Android, Breathune Lite requests a single permission: vibration.</strong></p>
-</section>
-
-<!-- ══════════════════ ÚDAJE ══════════════════ -->
-<section id="data">
-  <h2><span class="sk">Čo ostáva v zariadení a ako to zmažeš</span><span class="en">What stays on your device, and how to erase it</span></h2>
-
-  <p class="sk">Všetko je uložené v súkromnom úložisku aplikácie, ku ktorému iné aplikácie nemajú prístup:</p>
-  <p class="en">Everything is kept in the app’s private storage, which other apps cannot read:</p>
-  <ul class="sk">
-    <li>história dokončených cvičení a séria dní,</li>
-    <li>vlastné dychové programy,</li>
-    <li>záznamy odsledovaných nocí (časy a dĺžky epizód, hlasitosť),</li>
-    <li>tvoje nastavenia — motív, zvuk, jazyk, citlivosť.</li>
-  </ul>
-  <ul class="en">
-    <li>your history of completed sessions and day streak,</li>
-    <li>your custom breathing programs,</li>
-    <li>records of tracked nights (episode times, durations, loudness),</li>
-    <li>your settings — theme, sound, language, sensitivity.</li>
-  </ul>
-
-  <div class="card">
-    <h3><span class="sk">Zmazanie</span><span class="en">Deleting</span></h3>
-    <ul class="sk">
-      <li>Históriu cvičení zmažeš priamo v aplikácii v časti <strong>História</strong>.</li>
-      <li>Nočné záznamy zmažeš v <strong>Nočnej histórii → Vymazať všetky noci</strong>.</li>
-      <li><strong>Odinštalovaním aplikácie sa zmaže úplne všetko.</strong> Keďže nič nie je v cloude, nemusíš nás o zmazanie žiadať — nemáme o tebe nič, čo by sme mohli zmazať.</li>
-      <li>Údaje zapísané do Apple Health alebo Health Connect spravuješ v tých aplikáciách.</li>
-    </ul>
-    <ul class="en">
-      <li>Session history: delete it in the app under <strong>History</strong>.</li>
-      <li>Night records: delete them under <strong>Night history → Delete all nights</strong>.</li>
-      <li><strong>Uninstalling the app erases everything.</strong> Since nothing is in the cloud, you never need to ask us to delete anything — we hold nothing about you.</li>
-      <li>Anything written to Apple Health or Health Connect is managed in those apps.</li>
-    </ul>
-  </div>
-
-  <h3><span class="sk">Deti</span><span class="en">Children</span></h3>
-  <p class="sk">Breathune nie je určený deťom a nezameriava sa na ne. Vedome nezhromažďujeme údaje od nikoho — teda ani od detí.</p>
-  <p class="en">Breathune is not directed to children. We knowingly collect data from no one — children included.</p>
-
-  <h3><span class="sk">Platby</span><span class="en">Payments</span></h3>
-  <p class="sk">Plná verzia je jednorazová platba, bez predplatného a bez nákupov v aplikácii. Platbu spracúva App Store alebo Google Play — Breathune nevidí a neukladá žiadne platobné údaje.</p>
-  <p class="en">The full version is a one-time purchase — no subscriptions and no in-app purchases. Payment is handled by the App Store or Google Play; Breathune never sees or stores any payment details.</p>
-
-  <h3><span class="sk">Zmeny týchto zásad</span><span class="en">Changes to this policy</span></h3>
-  <p class="sk">Akúkoľvek zmenu zverejníme na tejto stránke spolu s novým dátumom platnosti. Ak by sa niekedy zmenil samotný princíp — teda že sa nič nezbiera — povieme to zreteľne priamo v aplikácii.</p>
-  <p class="en">Any change will be published on this page with a new effective date. If the underlying principle — that nothing is collected — ever changed, we would say so plainly inside the app.</p>
-</section>
-
-<!-- ══════════════════ PODPORA ══════════════════ -->
-<section id="support">
-  <h2><span class="sk">Podpora</span><span class="en">Support</span></h2>
-  <p class="lede sk">Píš na <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a>. Odpovedám osobne, zvyčajne do pár dní.</p>
-  <p class="lede en">Write to <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a>. I answer personally, usually within a few days.</p>
-
-  <p class="sk">Aby sme to vyriešili na prvý raz, napíš prosím: <strong>zariadenie a verziu systému</strong> (napr. Samsung Galaxy S20+, Android 13), <strong>verziu aplikácie</strong> (nájdeš ju dole v Možnostiach) a <strong>čo si robil, keď to nastalo</strong>.</p>
-  <p class="en">To sort it out in one round, please include: <strong>your device and OS version</strong> (e.g. Samsung Galaxy S20+, Android 13), <strong>the app version</strong> (at the bottom of Options) and <strong>what you were doing when it happened</strong>.</p>
-
-  <h3><span class="sk">Časté otázky</span><span class="en">Frequently asked</span></h3>
-
-  <details>
-    <summary><span class="sk">Night Guard v noci nič nezachytil</span><span class="en">Night Guard didn’t detect anything overnight</span></summary>
-    <p class="sk">Skús po poradí: <strong>1.</strong> Zvýš citlivosť rozpoznávania na <em>Vysoká</em> v nastaveniach noci. <strong>2.</strong> Polož telefón na nočný stolík spodným okrajom k posteli, nie pod vankúš ani do zásuvky. <strong>3.</strong> Nechaj ho na nabíjačke. <strong>4.</strong> Ráno sa pozri na údaj <em>Mikrofón bežal</em> — ak je výrazne pod 100 %, systém službu prerušoval a treba jej povoliť beh na pozadí (viď ďalšia otázka).</p>
-    <p class="en">Try in order: <strong>1.</strong> Raise detection sensitivity to <em>High</em> in the night settings. <strong>2.</strong> Put the phone on the nightstand with its bottom edge toward the bed — not under a pillow or in a drawer. <strong>3.</strong> Keep it on the charger. <strong>4.</strong> In the morning check <em>Microphone active</em> — if it is well below 100 %, the system was interrupting the service and you need to allow background running (see the next question).</p>
-  </details>
-
-  <details>
-    <summary><span class="sk">Nočný režim sa v noci sám vypol <span class="plat and">Android</span></span><span class="en">Night mode stopped by itself overnight <span class="plat and">Android</span></span></summary>
-    <p class="sk">Samsung, Xiaomi, Huawei a OnePlus agresívne ukončujú aplikácie na pozadí. Povoľ Breathune výnimku:</p>
-    <ul class="sk">
-      <li><strong>Samsung:</strong> Nastavenia → Batéria → Limity používania na pozadí → Aplikácie, ktoré sa nikdy neuspia → pridaj Breathune. Zároveň Nastavenia → Aplikácie → Breathune → Batéria → <em>Neobmedzené</em>.</li>
-      <li><strong>Xiaomi:</strong> Nastavenia → Aplikácie → Breathune → Šetrič batérie → <em>Bez obmedzení</em>; a v Nedávnych appkách podrž Breathune a zamkni ju.</li>
-      <li><strong>Ostatné:</strong> Nastavenia → Aplikácie → Breathune → Batéria → <em>Neobmedzené</em>.</li>
-      <li>Aplikáciu <strong>nezmazávaj z prehľadu nedávnych</strong> — tým ju ukončíš.</li>
-    </ul>
-    <p class="en">Samsung, Xiaomi, Huawei and OnePlus kill background apps aggressively. Give Breathune an exception:</p>
-    <ul class="en">
-      <li><strong>Samsung:</strong> Settings → Battery → Background usage limits → Never sleeping apps → add Breathune. Also Settings → Apps → Breathune → Battery → <em>Unrestricted</em>.</li>
-      <li><strong>Xiaomi:</strong> Settings → Apps → Breathune → Battery saver → <em>No restrictions</em>; and lock Breathune in the Recents view.</li>
-      <li><strong>Others:</strong> Settings → Apps → Breathune → Battery → <em>Unrestricted</em>.</li>
-      <li><strong>Don’t swipe the app away</strong> from Recents — that ends the session.</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary><span class="sk">Nepočujem zvuk dychu</span><span class="en">I can’t hear the breath sound</span></summary>
-    <p class="sk">Skontroluj, či nemáš v Možnostiach zapnutý <em>Tichý režim (len haptika)</em> — vtedy dych vedie zámerne iba chvenie. Ďalej over hlasitosť médií (nie zvonenia) a či telefón nie je pripojený k inému Bluetooth zariadeniu.</p>
-    <p class="en">Check whether <em>Silent mode (haptics only)</em> is on in Options — in that mode the breath is deliberately guided by vibration alone. Then check the media volume (not the ringer) and whether the phone is connected to another Bluetooth device.</p>
-  </details>
-
-  <details>
-    <summary><span class="sk">Necítim vibrácie</span><span class="en">I can’t feel the vibration</span></summary>
-    <p class="sk">Over, že máš v Možnostiach zapnuté <em>Chvenie pri zmene fázy</em> a že telefón nie je v režime Nerušiť s vypnutou haptikou. Niektoré telefóny majú samostatné nastavenie intenzity vibrácií v systémových nastaveniach zvuku.</p>
-    <p class="en">Make sure <em>Vibration on phase changes</em> is on in Options and that the phone isn’t in Do Not Disturb with haptics off. Some phones have a separate vibration-intensity setting under system sound settings.</p>
-  </details>
-
-  <details>
-    <summary><span class="sk">Cvičenia sa nezapisujú do Health Connect <span class="plat and">Android</span></span><span class="en">Sessions aren’t appearing in Health Connect <span class="plat and">Android</span></span></summary>
-    <p class="sk">Otvor aplikáciu <strong>Health Connect</strong> → Povolenia aplikácií → Breathune a povoľ zápis relácií všímavosti. Na starších telefónoch treba Health Connect najprv nainštalovať z Obchodu Play. Bez tohto povolenia appka funguje normálne, len sa nič nezapisuje.</p>
-    <p class="en">Open the <strong>Health Connect</strong> app → App permissions → Breathune and allow writing mindfulness sessions. On older phones you may need to install Health Connect from the Play Store first. Without the permission the app works normally, it just writes nothing.</p>
-  </details>
-
-  <details>
-    <summary><span class="sk">Aký je rozdiel medzi Lite a plnou verziou?</span><span class="en">What’s the difference between Lite and the full version?</span></summary>
-    <p class="sk">Lite má Šikutovu metódu a Relaxáciu 4-7-8, dva motívy a históriu za posledných sedem dní. Plná verzia pridáva Koncentráciu, Koherentné 5-5 a Silu dychu, všetkých šesť motívov s dúhovým záverom, vlastné programy, neobmedzenú históriu a Night Guard. Sú to dve samostatné aplikácie — plnú verziu si inštaluješ zvlášť, Lite môžeš pokojne nechať alebo odinštalovať.</p>
-    <p class="en">Lite has the Šikuta Method and Relaxation 4-7-8, two themes and seven days of history. The full version adds Focus, Coherent 5-5 and Power Breath, all six themes with the rainbow finale, custom programs, unlimited history and Night Guard. They are two separate apps — you install the full version separately and can keep or remove Lite as you like.</p>
-  </details>
-
-  <details>
-    <summary><span class="sk">Ako zmením jazyk?</span><span class="en">How do I change the language?</span></summary>
-    <p class="sk">Možnosti → Vzhľad → <em>Jazyk</em>. Predvolene sa riadi jazykom systému; na výber je slovenčina a angličtina.</p>
-    <p class="en">Options → Appearance → <em>Language</em>. By default it follows your system language; Slovak and English are available.</p>
-  </details>
-
-  <details>
-    <summary><span class="sk">Pri zadržaní dychu cítim tŕpnutie alebo šum v ušiach</span><span class="en">I feel tingling or hear a soft ringing during a breath hold</span></summary>
-    <p class="sk">Pri dlhšom zadržaní dychu je to bežné a neškodné — appka na to počas cvičenia sama upozorňuje. Ak sa cítiš nepríjemne, kedykoľvek ťuknutím preskoč fázu alebo cvičenie ukonči. <strong>Silu dychu nikdy necvič vo vode ani počas šoférovania.</strong></p>
-    <p class="en">During a longer hold this is common and harmless — the app says so during the session. If it feels unpleasant, tap to skip the phase or end the session at any time. <strong>Never practise Power Breath in water or while driving.</strong></p>
-  </details>
-
-  <details>
-    <summary><span class="sk">Vrátenie peňazí</span><span class="en">Refunds</span></summary>
-    <p class="sk">Platby spracúva App Store alebo Google Play, takže vrátenie rieš priamo cez ne — u Apple na <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, u Googlu v <a href="https://play.google.com/store/account/orderhistory">histórii objednávok</a>. Ak niečo nefunguje, napíš mi najprv — možno to viem opraviť.</p>
-    <p class="en">Payments are handled by the App Store or Google Play, so refunds go through them — Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, Google in your <a href="https://play.google.com/store/account/orderhistory">order history</a>. If something is broken, write to me first — I may be able to fix it.</p>
-  </details>
-</section>
-
-<!-- ══════════════════ KONTAKT ══════════════════ -->
-<section id="contact">
-  <h2><span class="sk">Kontakt</span><span class="en">Contact</span></h2>
-  <div class="card key">
-    <p class="sk" style="margin:0">Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a><br>
-    Autor aplikácie Breathune. Na otázky k súkromiu aj k technickým problémom odpovedám osobne.</p>
-    <p class="en" style="margin:0">Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a><br>
-    Author of Breathune. I answer privacy questions and technical problems personally.</p>
-  </div>
-</section>
+  <section>
+    <h2><span class="sk">Kontakt</span><span class="en">Contact</span></h2>
+    <div class="card key">
+      <p class="sk" style="margin:0">Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a><br>
+      Autor aplikácie. Odpovedám osobne.</p>
+      <p class="en" style="margin:0">Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a><br>
+      Author of the app. I answer personally.</p>
+    </div>
+  </section>
 
 </main>
 
 <footer>
   <div class="wrap">
-    <p class="sk">Platné od <strong>28. augusta 2026</strong>. Breathune · Ján Šikuta.</p>
-    <p class="en">Effective <strong>28 August 2026</strong>. Breathune · Ján Šikuta.</p>
+    <p class="sk">Breathune · Ján Šikuta · <a href="privacy-policy/">Ochrana súkromia</a> · <a href="support/">Podpora</a></p>
+    <p class="en">Breathune · Ján Šikuta · <a href="privacy-policy/">Privacy</a> · <a href="support/">Support</a></p>
   </div>
 </footer>
 
-<script>
-(function () {
-  var root = document.documentElement;
-  function setLang(code) {
-    root.setAttribute('data-lang', code);
-    root.setAttribute('lang', code);
-    document.querySelectorAll('.langbar button').forEach(function (b) {
-      b.setAttribute('aria-pressed', String(b.dataset.set === code));
-    });
-    try { localStorage.setItem('breathune-lang', code); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem('breathune-lang'); } catch (e) {}
-  // Bez uloženej voľby sa riadime jazykom prehliadača; slovenčina je predvolená.
-  setLang(saved || ((navigator.language || 'sk').toLowerCase().indexOf('sk') === 0 ? 'sk' : 'en'));
-  document.querySelectorAll('.langbar button').forEach(function (b) {
-    b.addEventListener('click', function () { setLang(b.dataset.set); });
-  });
-})();
-</script>
-
+<script src="lang.js"></script>
 </body>
 </html>
