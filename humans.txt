@@ -1,0 +1,11 @@
+/* TEAM */
+Author: Ján Šikuta — physician, Slovakia
+Contact: jansikuta@me.com
+Site: https://breathune.eu/
+
+/* SITE */
+Last update: 2026-09-20
+Language: Slovak, English
+Hosting: GitHub Pages
+Standards: HTML5, CSS3, JSON-LD (schema.org)
+Principle: no account, no ads, no cloud — everything stays on your device
