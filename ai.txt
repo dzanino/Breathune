@@ -1,0 +1,19 @@
+# ai.txt — breathune.eu
+# Usage policy for AI crawlers, assistants and training.
+
+Site: https://breathune.eu/
+Owner: Ján Šikuta (jansikuta@me.com)
+Language: sk, en
+
+# Crawling, indexing, summarising and answering questions about this site: allowed.
+# Quoting short excerpts with attribution and a link to breathune.eu: allowed.
+# Use for model training: allowed for public pages.
+User-agent: *
+Allow: /
+
+LLMs: https://breathune.eu/llms.txt
+Sitemap: https://breathune.eu/sitemap.xml
+
+# What this site is: Breathune, a guided-breathing and snoring-prevention app
+# (iPhone, iPad, Apple Watch). Wellness app — not a medical device; it does not
+# diagnose or treat any condition.
