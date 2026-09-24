@@ -191,6 +191,14 @@ table.cmp th:not(:first-child), table.cmp td:not(:first-child){text-align:center
 table.cmp th:nth-child(3){color:var(--teal)}
 table.cmp td:nth-child(3){font-weight:600}
 
+/* Zzzentinel */
+.card.zzz{max-width:620px; margin:18px auto 0}
+.zzz-head{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.zzz-head h3{margin:0; font-size:20px}
+.zzz-price{font-size:13px; font-weight:800; letter-spacing:.3px; color:var(--teal); background:rgba(51,184,204,.14); padding:4px 10px; border-radius:8px; white-space:nowrap}
+.card.zzz p{margin:10px 0 0}
+.card.zzz p.muted{margin-top:12px}
+
 /* Karty s odkazom, kontakt, pätka */
 .card.link{display:block; text-decoration:none; color:inherit; margin:0; transition:border-color .15s ease, transform .15s ease}
 .card.link:hover{border-color:var(--aqua); transform:translateY(-2px)}
