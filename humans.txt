@@ -4,7 +4,7 @@ Contact: jansikuta@me.com
 Site: https://breathune.eu/
 
 /* SITE */
-Last update: 2026-09-20
+Last update: 2026-09-24
 Language: Slovak, English
 Hosting: GitHub Pages
 Standards: HTML5, CSS3, JSON-LD (schema.org)
