@@ -4,24 +4,234 @@
 
   <url>
     <loc>https://breathune.eu/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://breathune.eu/box-breathing/</loc>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <loc>https://breathune.eu/cs/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/de/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/it/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/support/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/support/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/support/"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://breathune.eu/en/box-breathing/</loc>
-    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <loc>https://breathune.eu/cs/support/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/support/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/de/support/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/support/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/fr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/support/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/it/support/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/support/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/pl/support/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/support/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/support/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/privacy-policy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/cs/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/privacy-policy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/de/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/privacy-policy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/fr/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/privacy-policy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/it/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/privacy-policy/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/pl/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/privacy-policy/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -30,6 +240,11 @@
     <loc>https://breathune.eu/4-7-8-breathing/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/4-7-8-breathing/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/4-7-8-breathing/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/4-7-8-breathing/"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -39,7 +254,180 @@
     <loc>https://breathune.eu/en/4-7-8-breathing/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/4-7-8-breathing/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/4-7-8-breathing/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/4-7-8-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/cs/4-7-8-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/4-7-8-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/de/4-7-8-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/4-7-8-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/fr/4-7-8-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/4-7-8-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/it/4-7-8-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/4-7-8-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/pl/4-7-8-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/4-7-8-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/4-7-8-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/box-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/en/box-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/cs/box-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/de/box-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/fr/box-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/it/box-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/pl/box-breathing/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/box-breathing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/box-breathing/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -48,6 +436,11 @@
     <loc>https://breathune.eu/breathing-for-sleep/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/breathing-for-sleep/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/breathing-for-sleep/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/breathing-for-sleep/"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -57,21 +450,84 @@
     <loc>https://breathune.eu/en/breathing-for-sleep/</loc>
     <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/breathing-for-sleep/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/breathing-for-sleep/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/breathing-for-sleep/"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://breathune.eu/support/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://breathune.eu/cs/breathing-for-sleep/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/breathing-for-sleep/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://breathune.eu/privacy-policy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://breathune.eu/de/breathing-for-sleep/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/breathing-for-sleep/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/fr/breathing-for-sleep/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/breathing-for-sleep/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/it/breathing-for-sleep/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/breathing-for-sleep/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/pl/breathing-for-sleep/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://breathune.eu/de/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://breathune.eu/it/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/breathing-for-sleep/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/breathing-for-sleep/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

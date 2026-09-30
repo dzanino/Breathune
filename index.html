@@ -10,6 +10,15 @@
 <meta property="og:image" content="https://breathune.eu/assets/icon.png">
 <meta property="og:url" content="https://breathune.eu/">
 <link rel="canonical" href="https://breathune.eu/">
+<!--HREFLANG:start-->
+<link rel="alternate" hreflang="sk" href="https://breathune.eu/">
+<link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/">
+<link rel="alternate" hreflang="de" href="https://breathune.eu/de/">
+<link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/">
+<link rel="alternate" hreflang="it" href="https://breathune.eu/it/">
+<link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/">
+<link rel="alternate" hreflang="x-default" href="https://breathune.eu/">
+<!--HREFLANG:end-->
 <meta name="theme-color" content="#136375">
 <script type="application/ld+json">
 {
@@ -58,10 +67,17 @@
 
 <header class="tall hero">
   <div class="wrap">
-    <div class="langbar" role="group" aria-label="Language">
-      <button type="button" data-set="sk" aria-pressed="true">Slovenčina</button>
-      <button type="button" data-set="en" aria-pressed="false">English</button>
-    </div>
+    <!--LANGBAR:start-->
+<div class="langbar" role="group" aria-label="Language">
+  <button type="button" data-set="sk" aria-pressed="true" title="Slovenčina">SK</button>
+  <button type="button" data-set="en" aria-pressed="false" title="English">EN</button>
+  <a href="/cs/" hreflang="cs" lang="cs" data-lang-link="cs" title="Čeština">CS</a>
+  <a href="/de/" hreflang="de" lang="de" data-lang-link="de" title="Deutsch">DE</a>
+  <a href="/fr/" hreflang="fr" lang="fr" data-lang-link="fr" title="Français">FR</a>
+  <a href="/it/" hreflang="it" lang="it" data-lang-link="it" title="Italiano">IT</a>
+  <a href="/pl/" hreflang="pl" lang="pl" data-lang-link="pl" title="Polski">PL</a>
+</div>
+<!--LANGBAR:end-->
 
     <div class="hero-grid">
       <img class="appicon" src="assets/icon.png" width="132" height="132" alt="Breathune">
@@ -339,8 +355,8 @@
         </div>
         <p class="sk">Nočný strážca, ktorý počúva, rozpoznáva a zaznamenáva, čo sa počas spánku ozve — chrápanie, reč zo sna, kašeľ, aj zvuky, ktoré appka poctivo prizná, že nepozná. Ráno dostaneš prehľadnú časovú os namiesto hádania. Voliteľný režim Guard Extra Plus navyše ustráži telefón pred zvedavými rukami. Bežné aj vlastné nahrané zvuky spracúva priamo v telefóne — nič sa nenahráva na server.</p>
         <p class="en">A night watch that listens, recognizes and logs what it hears while you sleep — snoring, sleep talking, coughing, and sounds it honestly admits it cannot name. In the morning you get a clear timeline instead of guesswork. An optional Guard Extra Plus mode also watches over the phone itself against curious hands. Everything runs on-device — nothing is uploaded to a server.</p>
-        <p class="muted sk">Samostatná platená appka od rovnakého autora — nie je súčasťou Breathune ani prepojená s jej dátami. iPhone a Apple Watch.</p>
-        <p class="muted en">A separate paid app from the same author — not part of Breathune and not connected to its data. iPhone and Apple Watch.</p>
+        <p class="muted sk">Samostatná platená appka od rovnakého autora. Keď máš obe, noci nahrané v Zzzentineli uvidíš aj v štatistikách Breathune — appky si priamo v telefóne vymieňajú len krátke súhrny nocí, nikdy zvuk. iPhone a Apple Watch.</p>
+        <p class="muted en">A separate paid app from the same author. If you have both, nights recorded in Zzzentinel also show up in Breathune's statistics — the apps exchange only short night summaries on your phone, never audio. iPhone and Apple Watch.</p>
         <p class="center" style="margin-top:14px">
           <a class="btn" href="https://dzanino.github.io/Zzzentinel/" target="_blank" rel="noopener"><span class="sk">Pozrieť Zzzentinel</span><span class="en">See Zzzentinel</span> ↗</a>
         </p>
