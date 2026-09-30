@@ -31,8 +31,8 @@
       </svg>
       <div>
         <h1>Ochrona prywatności</h1>
-        <p>Ten przekład udostępniamy dla wygody; wiążąca jest wersja słowacka i angielska na stronie <a href="/privacy-policy/" style="color:inherit;text-decoration:underline">/privacy-policy/</a>.</p>
-        <p>Breathune i Lite Breathune — telefon, tablet i zegarek (iPhone, Apple Watch, Android, Wear OS)</p>
+        <p>Ten przekład udostępniamy dla wygody. Wiążąca jest wersja słowacka i angielska na stronie <a href="/privacy-policy/" style="color:inherit;text-decoration:underline">/privacy-policy/</a>.</p>
+        <p>Breathune i Lite Breathune na telefonie, tablecie i zegarku (iPhone, Apple Watch, Android, Wear OS)</p>
       </div>
     </div>
     <!--LANGBAR:start-->
@@ -65,7 +65,7 @@
 <section id="summary">
   <div class="card key">
     <h3>Krótka wersja</h3>
-    <p><strong>Breathune nie zbiera o tobie niczego.</strong> Nie ma konta, nie logujesz się, nie zawiera analityki, reklam ani bibliotek firm trzecich. Aplikacja nie wysyła żadnych danych — w jej kodzie nie ma ani jednego połączenia sieciowego. Wszystko, co w niej zmierzysz, zostaje w twoim urządzeniu.</p>
+    <p><strong>Breathune nie zbiera o tobie niczego.</strong> Nie ma konta, nie logujesz się, nie zawiera analityki, reklam ani śledzących bibliotek firm trzecich. Aplikacja nie wysyła żadnych danych, w jej kodzie nie ma ani jednego połączenia sieciowego. Wszystko, co w niej zmierzysz, zostaje w twoim urządzeniu.</p>
   </div>
 
   <h3>Administrator</h3>
@@ -76,7 +76,7 @@
     <li>Nie tworzy konta ani profilu i nie wymaga logowania.</li>
     <li>Nie używa analityki, pomiaru ruchu ani śledzenia zachowań.</li>
     <li>Nie zawiera reklam ani identyfikatorów reklamowych.</li>
-    <li>Nie wysyła danych na żaden serwer — ani własny, ani cudzy. Działa całkowicie offline.</li>
+    <li>Nie wysyła danych na żaden serwer, ani własny, ani cudzy. Działa całkowicie offline.</li>
     <li>Niczego nie udostępnia firmom trzecim, bo nie ma czego udostępniać.</li>
     <li>Nie ma dostępu do kontaktów, zdjęć, lokalizacji ani historii przeglądania.</li>
   </ul>
@@ -85,7 +85,7 @@
 <section id="microphone">
   <h2>Mikrofon i nocne monitorowanie</h2>
 
-  <p>Pełna wersja zawiera <strong>Night Guard</strong> — nocne rozpoznawanie chrapania. To jedyna funkcja, która korzysta z mikrofonu. <strong>Lite Breathune w ogóle nie prosi o dostęp do mikrofonu.</strong></p>
+  <p>Pełna wersja zawiera <strong>Night Guard</strong>, czyli nocne rozpoznawanie chrapania. To jedyna funkcja, która korzysta z mikrofonu. <strong>Lite Breathune w ogóle nie prosi o dostęp do mikrofonu.</strong></p>
 
   <div class="card">
     <h3>Jak to działa</h3>
@@ -93,14 +93,14 @@
       <li>Mikrofon włącza się <strong>tylko wtedy, gdy sam uruchomisz tryb nocny</strong> przyciskiem, i działa, dopóki go nie zatrzymasz.</li>
       <li>Przez cały czas działania widoczne jest stałe powiadomienie z przyciskiem zatrzymania, żeby nigdy nie było wątpliwości, że monitorowanie trwa.</li>
       <li>Dźwięk jest przetwarzany <strong>wyłącznie w pamięci urządzenia</strong>. Nigdy nie jest zapisywany na dysku, nigdy wysyłany, nigdy udostępniany.</li>
-      <li>W urządzeniu zostają tylko metadane zdarzeń: <strong>czas rozpoczęcia epizodu, jego długość i zmierzona głośność</strong>. Nic, z czego dałoby się odtworzyć dźwięk.</li>
-      <li>Rano aplikacja pokazuje, ile godzin mikrofon naprawdę działał — żebyś nie musiał wierzyć na słowo, tylko widział.</li>
+      <li>W urządzeniu zostają tylko metadane zdarzeń: <strong>czas rozpoczęcia epizodu, jego długość i zmierzona głośność</strong>, a na potrzeby analizy nocy także rodzaj dźwięku (na przykład mowa albo kaszel). Nic, z czego dałoby się odtworzyć dźwięk.</li>
+      <li>Rano aplikacja pokazuje, ile godzin mikrofon naprawdę działał, więc nie musisz wierzyć nam na słowo.</li>
     </ul>
   </div>
 
-  <p><span class="plat ios">iOS</span> Analizę wykonuje systemowy framework <em>SoundAnalysis</em> bezpośrednio w telefonie. Aplikacja deklaruje tryb dźwięku w tle, żeby analiza trwała dalej, gdy zablokowany telefon leży na szafce nocnej.</p>
+  <p><span class="plat ios">iOS</span> Chrapanie wykrywają dwie niezależne drogi i obie działają w telefonie: nasz własny detektor akustyczny, który śledzi szczyty głośności ponad szumem pokoju, przewagę niskich częstotliwości i regularność rytmu oddechu, oraz wbudowany klasyfikator dźwięków Apple <em>SoundAnalysis</em>, który odróżnia chrapanie od mowy, kaszlu czy muzyki. Aplikacja deklaruje tryb dźwięku w tle, żeby analiza trwała dalej, gdy zablokowany telefon leży na szafce nocnej.</p>
 
-  <p><span class="plat and">Android</span> Analizę wykonuje nasz własny algorytm akustyczny bezpośrednio w telefonie — śledzi szczyty głośności ponad szumem pokoju, przewagę niskich częstotliwości i regularność rytmu oddechu. Działa jako usługa pierwszoplanowa typu <code>microphone</code>, co na Androidzie jest jedynym dozwolonym sposobem, by aplikacja mogła nasłuchiwać przez całą noc.</p>
+  <p><span class="plat and">Android</span> Tu także działają obie drogi: ten sam detektor akustyczny i model rozpoznawania dźwięków <em>YAMNet</em> od Google. Model jest częścią aplikacji, działa w telefonie i niczego nie pobiera ani nie wysyła. Nocne monitorowanie działa jako usługa pierwszoplanowa typu <code>microphone</code>, co na Androidzie jest jedynym dozwolonym sposobem, by aplikacja mogła nasłuchiwać przez całą noc.</p>
 
   <p class="note">Night Guard to pomoc z zakresu wellness, nie narzędzie diagnostyczne. Nie stawia diagnozy i nie leczy. Jeśli w nocy przestajesz oddychać albo budzisz się, łapiąc powietrze, skonsultuj się z lekarzem.</p>
 </section>
@@ -128,7 +128,7 @@
     <tbody>
       <tr>
         <td>Mikrofon</td>
-        <td>Night Guard — rozpoznawanie chrapania. Prośba pojawia się dopiero przy pierwszym uruchomieniu trybu nocnego.</td>
+        <td>Night Guard (rozpoznawanie chrapania). Prośba pojawia się dopiero przy pierwszym uruchomieniu trybu nocnego.</td>
         <td>tylko pełna wersja</td>
       </tr>
       <tr>
@@ -143,7 +143,7 @@
       </tr>
       <tr>
         <td>Zdrowie</td>
-        <td>Zapis minut uważności. Opcjonalne — bez tego uprawnienia aplikacja działa normalnie.</td>
+        <td>Zapis minut uważności. Opcjonalne, bez tego uprawnienia aplikacja działa normalnie.</td>
         <td>obie wersje</td>
       </tr>
       <tr>
@@ -153,7 +153,7 @@
       </tr>
     </tbody>
   </table>
-  <p><strong>Lite Breathune na Androidzie nie prosi o mikrofon ani o powiadomienia.</strong> Używa tylko wibracji i — jeśli na to zezwolisz — zapisu w Health Connect.</p>
+  <p><strong>Lite Breathune na Androidzie nie prosi o mikrofon ani o powiadomienia.</strong> Używa tylko wibracji i, jeśli na to zezwolisz, zapisu w Health Connect.</p>
 </section>
 
 <section id="data">
@@ -163,8 +163,8 @@
   <ul>
     <li>historia ukończonych ćwiczeń i seria dni,</li>
     <li>własne programy oddechowe,</li>
-    <li>zapisy monitorowanych nocy (czasy i długości epizodów, głośność),</li>
-    <li>twoje ustawienia — motyw, dźwięk, język, czułość.</li>
+    <li>zapisy monitorowanych nocy (czasy i długości epizodów, głośność, rodzaje dźwięków do analizy nocy),</li>
+    <li>twoje ustawienia (motyw, dźwięk, język, czułość).</li>
   </ul>
 
   <div class="card" id="zzzentinel">
@@ -177,19 +177,19 @@
     <ul>
       <li>Historię ćwiczeń usuniesz bezpośrednio w aplikacji w części <strong>Historia</strong>.</li>
       <li>Zapisy nocy usuniesz w <strong>Historii nocy → Usuń wszystkie noce</strong>.</li>
-      <li><strong>Odinstalowanie aplikacji usuwa absolutnie wszystko.</strong> Ponieważ nic nie jest w chmurze, nie musisz nas prosić o usunięcie — nie mamy o tobie niczego, co moglibyśmy usunąć.</li>
+      <li><strong>Odinstalowanie aplikacji usuwa absolutnie wszystko.</strong> Ponieważ nic nie jest w chmurze, nie musisz nas prosić o usunięcie. Nie mamy o tobie niczego, co moglibyśmy usunąć.</li>
       <li>Dane zapisane w aplikacji Zdrowie (Apple Health) lub w Health Connect zarządzasz w tych aplikacjach.</li>
     </ul>
   </div>
 
   <h3>Dzieci</h3>
-  <p>Breathune nie jest przeznaczony dla dzieci i nie jest do nich kierowany. Świadomie nie zbieramy danych od nikogo — a więc także od dzieci.</p>
+  <p>Breathune nie jest przeznaczony dla dzieci i nie jest do nich kierowany. Nie zbieramy danych od nikogo, a więc także od dzieci.</p>
 
   <h3>Płatności</h3>
-  <p>Pełna wersja to jednorazowa płatność, bez subskrypcji i bez zakupów w aplikacji. Płatność obsługuje App Store albo Google Play — Breathune nie widzi i nie przechowuje żadnych danych płatniczych.</p>
+  <p>Pełna wersja to jednorazowa płatność, bez subskrypcji i bez zakupów w aplikacji. Płatność obsługuje App Store albo Google Play. Breathune nie widzi i nie przechowuje żadnych danych płatniczych.</p>
 
   <h3>Zmiany tych zasad</h3>
-  <p>Każdą zmianę opublikujemy na tej stronie razem z nową datą obowiązywania. Gdyby kiedykolwiek zmieniła się sama zasada — czyli to, że nic nie jest zbierane — powiemy o tym wyraźnie bezpośrednio w aplikacji.</p>
+  <p>Każdą zmianę opublikujemy na tej stronie razem z nową datą obowiązywania. Gdyby kiedyś zmieniła się sama zasada, że nic nie jest zbierane, powiemy o tym wyraźnie w aplikacji.</p>
 
   <h3>Kontakt</h3>
   <p>Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
@@ -199,7 +199,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Obowiązuje od <strong>24 września 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/pl/">Strona główna</a> · <a href="/pl/support/">Pomoc</a></p>
+    <p>Obowiązuje od <strong>30 września 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/pl/">Strona główna</a> · <a href="/pl/support/">Pomoc</a></p>
   </div>
 </footer>
 
