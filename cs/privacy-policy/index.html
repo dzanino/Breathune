@@ -31,8 +31,8 @@
       </svg>
       <div>
         <h1>Ochrana soukromí</h1>
-        <p>Tento překlad slouží pro tvé pohodlí; závazná je slovenská a anglická verze na <a href="/privacy-policy/" style="color:#fff;text-decoration:underline">/privacy-policy/</a>.</p>
-        <p>Breathune a Lite Breathune — telefon, tablet a hodinky (iPhone, Apple Watch, Android, Wear OS)</p>
+        <p>Tento překlad je tu pro tvé pohodlí. Závazná je slovenská a anglická verze na <a href="/privacy-policy/" style="color:#fff;text-decoration:underline">/privacy-policy/</a>.</p>
+        <p>Breathune a Lite Breathune na telefonu, tabletu a hodinkách (iPhone, Apple Watch, Android, Wear OS)</p>
       </div>
     </div>
     <!--LANGBAR:start-->
@@ -65,7 +65,7 @@
 <section id="summary">
   <div class="card key">
     <h3>Krátká verze</h3>
-    <p><strong>Breathune o tobě nesbírá nic.</strong> Nemá účet, nepřihlašuješ se, neobsahuje analytiku, reklamy ani knihovny třetích stran. Aplikace neodesílá žádné údaje — v jejím kódu není jediné síťové volání. Všechno, co si v ní naměříš, zůstává v tvém zařízení.</p>
+    <p><strong>Breathune o tobě nesbírá nic.</strong> Nemá účet, nepřihlašuješ se, neobsahuje analytiku, reklamy ani sledovací knihovny třetích stran. Aplikace neodesílá žádné údaje, v jejím kódu není jediné síťové volání. Všechno, co si v ní naměříš, zůstává v tvém zařízení.</p>
   </div>
 
   <h3>Provozovatel</h3>
@@ -76,7 +76,7 @@
     <li>Nevytváří účet ani profil a nevyžaduje přihlášení.</li>
     <li>Nepoužívá analytiku, měření návštěvnosti ani sledování chování.</li>
     <li>Neobsahuje reklamy ani reklamní identifikátory.</li>
-    <li>Neodesílá data na server — vlastní ani cizí. Funguje úplně offline.</li>
+    <li>Neodesílá údaje na žádný server, vlastní ani cizí. Funguje úplně offline.</li>
     <li>Nesdílí nic s třetími stranami, protože nemá co sdílet.</li>
     <li>Nepřistupuje ke kontaktům, fotkám, poloze ani historii prohlížení.</li>
   </ul>
@@ -85,7 +85,7 @@
 <section id="microphone">
   <h2>Mikrofon a noční sledování</h2>
 
-  <p>Plná verze obsahuje <strong>Night Guard</strong> — noční rozpoznávání chrápání. Je to jediná funkce, která používá mikrofon. <strong>Lite Breathune o mikrofon vůbec nežádá.</strong></p>
+  <p>Plná verze obsahuje <strong>Night Guard</strong>, tedy noční rozpoznávání chrápání. Je to jediná funkce, která používá mikrofon. <strong>Lite Breathune o mikrofon vůbec nežádá.</strong></p>
 
   <div class="card">
     <h3>Jak to funguje</h3>
@@ -93,14 +93,14 @@
       <li>Mikrofon se zapne <strong>jen tehdy, když noční režim sám spustíš</strong> tlačítkem, a běží, dokud ho nezastavíš.</li>
       <li>Během běhu je trvale viditelné oznámení s tlačítkem pro zastavení, aby nikdy nebylo pochyb, že sledování běží.</li>
       <li>Zvuk se zpracovává <strong>výhradně v paměti zařízení</strong>. Nikdy se neukládá na disk, nikdy se neodesílá, nikdy se nesdílí.</li>
-      <li>V zařízení zůstávají jen metadata událostí: <strong>čas začátku epizody, její délka a naměřená hlasitost</strong>. Nic, z čeho by se dal zvuk obnovit.</li>
-      <li>Ráno aplikace ukáže, kolik hodin mikrofon opravdu běžel — abys nemusel věřit, ale viděl.</li>
+      <li>V zařízení zůstávají jen metadata událostí: <strong>čas začátku epizody, její délka a naměřená hlasitost</strong>, pro rozbor noci i to, jaký druh zvuku se ozval (třeba řeč nebo kašel). Nic, z čeho by se dal zvuk obnovit.</li>
+      <li>Ráno aplikace ukáže, kolik hodin mikrofon opravdu běžel, takže to nemusíš brát na slovo.</li>
     </ul>
   </div>
 
-  <p><span class="plat ios">iOS</span> Analýzu provádí systémový rámec <em>SoundAnalysis</em> přímo v telefonu. Aplikace deklaruje režim zvuku na pozadí, aby analýza pokračovala, i když telefon leží zamčený na nočním stolku.</p>
+  <p><span class="plat ios">iOS</span> Chrápání hledají dvě nezávislé cesty a obě běží přímo v telefonu: vlastní akustický detektor, který sleduje špičky hlasitosti nad šumem místnosti, převahu nízkých frekvencí a pravidelnost dechového rytmu, a vestavěný klasifikátor zvuků Apple <em>SoundAnalysis</em>, který rozliší chrápání, řeč, kašel nebo hudbu. Aplikace deklaruje režim zvuku na pozadí, aby analýza pokračovala, i když telefon leží zamčený na nočním stolku.</p>
 
-  <p><span class="plat and">Android</span> Analýzu provádí vlastní akustický algoritmus přímo v telefonu — sleduje špičky hlasitosti nad šumem místnosti, převahu nízkých frekvencí a pravidelnost dechového rytmu. Běží jako služba v popředí typu <code>microphone</code>, což je na Androidu jediný povolený způsob, jak může aplikace poslouchat celou noc.</p>
+  <p><span class="plat and">Android</span> I tady fungují dvě cesty: stejný akustický detektor a model pro rozpoznávání zvuků <em>YAMNet</em> od Googlu. Model je přímo součástí aplikace, běží v telefonu a nic nestahuje ani neodesílá. Noční sledování běží jako služba v popředí typu <code>microphone</code>, což je na Androidu jediný povolený způsob, jak může aplikace poslouchat celou noc.</p>
 
   <p class="note">Night Guard je wellness pomůcka, ne diagnostický nástroj. Nestanovuje diagnózu a neléčí. Pokud v noci přestáváš dýchat nebo se budíš s lapáním po dechu, poraď se s lékařem.</p>
 </section>
@@ -108,7 +108,7 @@
 <section id="health">
   <h2>Zdravotní údaje</h2>
 
-  <p><span class="plat ios">iOS</span> Pokud to povolíš, Breathune zapíše dokončené cvičení do <strong>Apple Zdraví</strong> jako minuty všímavosti. Na Apple Watch během cvičení čte tvůj tep, aby ti na konci ukázala průměr. Volitelně umí zapsat sledovanou noc jako čas „V posteli“. Jiné zdravotní údaje nečte.</p>
+  <p><span class="plat ios">iOS</span> Pokud to povolíš, Breathune zapíše dokončené cvičení do <strong>Apple Zdraví</strong> jako minuty všímavosti. Na Apple Watch během cvičení čte tvůj tep, aby ti na konci ukázal průměr. Volitelně umí zapsat sledovanou noc jako čas „V posteli“. Jiné zdravotní údaje nečte.</p>
 
   <p><span class="plat and">Android</span> Pokud to povolíš, Breathune zapíše dokončené cvičení do <strong>Health Connect</strong> jako relaci všímavosti. Z Health Connect <strong>nic nečte</strong>. Oprávnění kdykoli odebereš v aplikaci Health Connect v části Oprávnění.</p>
 
@@ -128,7 +128,7 @@
     <tbody>
       <tr>
         <td>Mikrofon</td>
-        <td>Night Guard — rozpoznávání chrápání. Žádá se o něj až při prvním spuštění nočního režimu.</td>
+        <td>Night Guard (rozpoznávání chrápání). Aplikace o něj požádá až při prvním spuštění nočního režimu.</td>
         <td>jen plná verze</td>
       </tr>
       <tr>
@@ -143,7 +143,7 @@
       </tr>
       <tr>
         <td>Zdraví</td>
-        <td>Zápis minut všímavosti. Volitelné — bez oprávnění aplikace funguje normálně.</td>
+        <td>Zápis minut všímavosti. Volitelné, bez oprávnění aplikace funguje normálně.</td>
         <td>obě verze</td>
       </tr>
       <tr>
@@ -153,7 +153,7 @@
       </tr>
     </tbody>
   </table>
-  <p><strong>Lite Breathune na Androidu nežádá o mikrofon ani o oznámení.</strong> Používá jen vibrace a — pokud to povolíš — zápis do Health Connect.</p>
+  <p><strong>Lite Breathune na Androidu nežádá o mikrofon ani o oznámení.</strong> Používá jen vibrace a, pokud to povolíš, zápis do Health Connect.</p>
 </section>
 
 <section id="data">
@@ -163,8 +163,8 @@
   <ul>
     <li>historie dokončených cvičení a série dní,</li>
     <li>vlastní dechové programy,</li>
-    <li>záznamy sledovaných nocí (časy a délky epizod, hlasitost),</li>
-    <li>tvoje nastavení — motiv, zvuk, jazyk, citlivost.</li>
+    <li>záznamy sledovaných nocí (časy a délky epizod, hlasitost, druhy zvuků pro rozbor noci),</li>
+    <li>tvoje nastavení (motiv, zvuk, jazyk, citlivost).</li>
   </ul>
 
   <div class="card" id="zzzentinel">
@@ -177,19 +177,19 @@
     <ul>
       <li>Historii cvičení smažeš přímo v aplikaci v části <strong>Historie</strong>.</li>
       <li>Noční záznamy smažeš v <strong>Historii nocí → Vymazat všechny noci</strong>.</li>
-      <li><strong>Odinstalováním aplikace se smaže úplně všechno.</strong> Protože nic není v cloudu, nemusíš nás o smazání žádat — nemáme o tobě nic, co bychom mohli smazat.</li>
+      <li><strong>Odinstalováním aplikace se smaže úplně všechno.</strong> Protože nic není v cloudu, nemusíš nás o smazání žádat. Nemáme o tobě nic, co bychom mohli smazat.</li>
       <li>Údaje zapsané do Apple Zdraví nebo Health Connect spravuješ v těchto aplikacích.</li>
     </ul>
   </div>
 
   <h3>Děti</h3>
-  <p>Breathune není určen dětem a nezaměřuje se na ně. Vědomě neshromažďujeme údaje od nikoho — tedy ani od dětí.</p>
+  <p>Breathune není určen dětem a nezaměřuje se na ně. Nesbíráme údaje od nikoho, tedy ani od dětí.</p>
 
   <h3>Platby</h3>
-  <p>Plná verze je jednorázová platba, bez předplatného a bez nákupů v aplikaci. Platbu zpracovává App Store nebo Google Play — Breathune nevidí a neukládá žádné platební údaje.</p>
+  <p>Plná verze je jednorázová platba, bez předplatného a bez nákupů v aplikaci. Platbu zpracovává App Store nebo Google Play. Breathune žádné platební údaje nevidí ani neukládá.</p>
 
   <h3>Změny těchto zásad</h3>
-  <p>Jakoukoli změnu zveřejníme na této stránce spolu s novým datem účinnosti. Pokud by se někdy změnil samotný princip — tedy že se nic nesbírá — řekneme to zřetelně přímo v aplikaci.</p>
+  <p>Jakoukoli změnu zveřejníme na této stránce spolu s novým datem účinnosti. Pokud by se někdy změnila samotná zásada, že se nic nesbírá, jasně to oznámíme přímo v aplikaci.</p>
 
   <h3>Kontakt</h3>
   <p>Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
@@ -199,7 +199,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Platné od <strong>24. září 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/cs/">Úvod</a> · <a href="/cs/support/">Podpora</a></p>
+    <p>Platné od <strong>30. září 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/cs/">Úvod</a> · <a href="/cs/support/">Podpora</a></p>
   </div>
 </footer>
 

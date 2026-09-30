@@ -36,8 +36,8 @@
       </svg>
       <div>
         <h1>Politique de confidentialité</h1>
-        <p>Cette traduction est fournie pour ta commodité ; seule la version slovaque et anglaise publiée sur <a href="/privacy-policy/" style="color:inherit;text-decoration:underline">/privacy-policy/</a> fait foi.</p>
-        <p>Breathune et Lite Breathune — téléphone, tablette et montre (iPhone, Apple Watch, Android, Wear OS)</p>
+        <p>Cette traduction est là pour te faciliter la lecture. Seule la version slovaque et anglaise publiée sur <a href="/privacy-policy/" style="color:inherit;text-decoration:underline">/privacy-policy/</a> fait foi.</p>
+        <p>Breathune et Lite Breathune sur téléphone, tablette et montre (iPhone, Apple Watch, Android, Wear OS)</p>
       </div>
     </div>
     <!--LANGBAR:start-->
@@ -70,7 +70,7 @@
 <section id="summary">
   <div class="card key">
     <h3>En bref</h3>
-    <p><strong>Breathune ne collecte rien sur toi.</strong> Pas de compte, pas de connexion, pas d’analytique, pas de publicité ni de bibliothèques tierces. L’app ne transmet aucune donnée — son code ne contient pas un seul appel réseau. Tout ce que tu y enregistres reste sur ton appareil.</p>
+    <p><strong>Breathune ne collecte rien sur toi.</strong> Pas de compte, pas de connexion, pas d’analytique, pas de publicité ni de bibliothèques tierces de suivi. L’app ne transmet aucune donnée, son code ne contient pas un seul appel réseau. Tout ce que tu y enregistres reste sur ton appareil.</p>
   </div>
 
   <h3>Responsable</h3>
@@ -90,7 +90,7 @@
 <section id="microphone">
   <h2>Micro et suivi nocturne</h2>
 
-  <p>La version complète comprend <strong>Night Guard</strong> — la détection du ronflement pendant la nuit. C’est la seule fonction qui utilise le micro. <strong>Lite Breathune ne demande jamais l’accès au micro.</strong></p>
+  <p>La version complète comprend <strong>Night Guard</strong>, la détection du ronflement pendant la nuit. C’est la seule fonction qui utilise le micro. <strong>Lite Breathune ne demande jamais l’accès au micro.</strong></p>
 
   <div class="card">
     <h3>Comment ça fonctionne</h3>
@@ -98,14 +98,14 @@
       <li>Le micro s’active <strong>uniquement quand tu lances toi-même le mode nuit</strong> avec le bouton, et fonctionne jusqu’à ce que tu l’arrêtes.</li>
       <li>Pendant ce temps, une notification permanente avec un bouton d’arrêt reste visible, pour qu’il n’y ait jamais de doute sur le fait que le suivi est actif.</li>
       <li>Le son est traité <strong>exclusivement dans la mémoire de l’appareil</strong>. Il n’est jamais écrit sur le disque, jamais transmis, jamais partagé.</li>
-      <li>Seules les métadonnées des événements restent sur l’appareil : <strong>l’heure de début de chaque épisode, sa durée et le volume mesuré</strong>. Rien qui permettrait de reconstituer le son.</li>
-      <li>Le matin, l’app indique combien d’heures le micro a réellement fonctionné — pour que tu n’aies pas à nous croire sur parole, mais que tu puisses le voir.</li>
+      <li>Seules les métadonnées des événements restent sur l’appareil : <strong>l’heure de début de chaque épisode, sa durée et le volume mesuré</strong>, et pour l’analyse de la nuit, le type de son (par exemple parole ou toux). Rien qui permettrait de reconstituer le son.</li>
+      <li>Le matin, l’app indique combien d’heures le micro a réellement fonctionné. Tu n’as donc pas à nous croire sur parole.</li>
     </ul>
   </div>
 
-  <p><span class="plat ios">iOS</span> L’analyse est effectuée directement sur le téléphone par le framework système <em>SoundAnalysis</em> d’Apple. L’app déclare le mode audio en arrière-plan pour que l’analyse continue pendant que le téléphone repose verrouillé sur la table de chevet.</p>
+  <p><span class="plat ios">iOS</span> Le ronflement est repéré par deux voies indépendantes, qui tournent toutes deux sur le téléphone : notre propre détecteur acoustique, qui surveille les pics de volume au-dessus du bruit de fond, la prédominance des basses fréquences et la régularité du rythme respiratoire, et le classificateur de sons intégré d’Apple, <em>SoundAnalysis</em>, qui distingue le ronflement de la parole, de la toux ou de la musique. L’app déclare le mode audio en arrière-plan pour que l’analyse continue pendant que le téléphone repose verrouillé sur la table de chevet.</p>
 
-  <p><span class="plat and">Android</span> L’analyse est effectuée directement sur le téléphone par notre propre algorithme acoustique — il suit les pics de volume au-dessus du bruit de fond de la pièce, la prédominance des basses fréquences et la régularité du rythme respiratoire. Il fonctionne comme un service de premier plan de type <code>microphone</code>, la seule manière autorisée sur Android pour qu’une app puisse écouter toute la nuit.</p>
+  <p><span class="plat and">Android</span> Les deux mêmes voies sont utilisées : le même détecteur acoustique et le modèle de reconnaissance des sons <em>YAMNet</em> de Google. Le modèle est intégré à l’app, tourne sur le téléphone et ne télécharge ni n’envoie rien. Le suivi nocturne fonctionne comme un service de premier plan de type <code>microphone</code>, la seule manière autorisée sur Android pour qu’une app puisse écouter toute la nuit.</p>
 
   <p class="note">Night Guard est un outil de bien-être, pas un outil de diagnostic. Il ne pose aucun diagnostic et ne soigne rien. Si tu arrêtes de respirer la nuit ou si tu te réveilles en cherchant ton souffle, consulte un médecin.</p>
 </section>
@@ -133,7 +133,7 @@
     <tbody>
       <tr>
         <td>Micro</td>
-        <td>Night Guard — détection du ronflement. Demandée seulement au premier lancement du mode nuit.</td>
+        <td>Night Guard (détection du ronflement). Demandée seulement au premier lancement du mode nuit.</td>
         <td>version complète uniquement</td>
       </tr>
       <tr>
@@ -148,7 +148,7 @@
       </tr>
       <tr>
         <td>Santé</td>
-        <td>Enregistrement des minutes de pleine conscience. Facultatif — sans cette autorisation, l’app fonctionne normalement.</td>
+        <td>Enregistrement des minutes de pleine conscience. Facultatif : sans cette autorisation, l’app fonctionne normalement.</td>
         <td>les deux versions</td>
       </tr>
       <tr>
@@ -158,7 +158,7 @@
       </tr>
     </tbody>
   </table>
-  <p><strong>Sur Android, Lite Breathune ne demande jamais l’accès au micro ni aux notifications.</strong> Elle utilise uniquement les vibrations et — si tu l’autorises — l’écriture dans Health Connect.</p>
+  <p><strong>Sur Android, Lite Breathune ne demande jamais l’accès au micro ni aux notifications.</strong> Elle utilise uniquement les vibrations et, si tu l’autorises, l’écriture dans Health Connect.</p>
 </section>
 
 <section id="data">
@@ -168,8 +168,8 @@
   <ul>
     <li>l’historique des séances terminées et ta série de jours,</li>
     <li>tes programmes de respiration personnalisés,</li>
-    <li>les données des nuits suivies (heures et durées des épisodes, volume),</li>
-    <li>tes réglages — thème, son, langue, sensibilité.</li>
+    <li>les données des nuits suivies (heures et durées des épisodes, volume, types de sons pour l’analyse de la nuit),</li>
+    <li>tes réglages (thème, son, langue, sensibilité).</li>
   </ul>
 
   <div class="card" id="zzzentinel">
@@ -182,19 +182,19 @@
     <ul>
       <li>L’historique des séances : supprime-le directement dans l’app, dans la section <strong>Historique</strong>.</li>
       <li>Les données des nuits : supprime-les dans <strong>Historique des nuits → Supprimer toutes les nuits</strong>.</li>
-      <li><strong>Désinstaller l’app efface absolument tout.</strong> Comme rien n’est dans le cloud, tu n’as jamais besoin de nous demander de supprimer quoi que ce soit — nous ne détenons rien sur toi.</li>
+      <li><strong>Désinstaller l’app efface absolument tout.</strong> Comme rien n’est dans le cloud, tu n’as jamais besoin de nous demander de supprimer quoi que ce soit. Nous ne détenons rien sur toi.</li>
       <li>Les données écrites dans Santé (Apple) ou Health Connect se gèrent dans ces apps.</li>
     </ul>
   </div>
 
   <h3>Enfants</h3>
-  <p>Breathune ne s’adresse pas aux enfants et ne les cible pas. Nous ne collectons sciemment de données auprès de personne — enfants compris.</p>
+  <p>Breathune ne s’adresse pas aux enfants et ne les cible pas. Nous ne collectons de données auprès de personne, enfants compris.</p>
 
   <h3>Paiements</h3>
-  <p>La version complète est un achat unique — sans abonnement et sans achats intégrés. Le paiement est géré par l’App Store ou Google Play ; Breathune ne voit et ne conserve aucune donnée de paiement.</p>
+  <p>La version complète est un achat unique, sans abonnement ni achats intégrés. Le paiement est géré par l’App Store ou Google Play ; Breathune ne voit et ne conserve aucune donnée de paiement.</p>
 
   <h3>Modifications de cette politique</h3>
-  <p>Toute modification sera publiée sur cette page avec une nouvelle date d’entrée en vigueur. Si le principe même — à savoir que rien n’est collecté — devait un jour changer, nous le dirions clairement dans l’app.</p>
+  <p>Toute modification sera publiée sur cette page avec une nouvelle date d’entrée en vigueur. Si le principe même, à savoir que rien n’est collecté, devait un jour changer, nous le dirions clairement dans l’app.</p>
 
   <h3>Contact</h3>
   <p>Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
@@ -204,7 +204,7 @@
 
 <footer>
   <div class="wrap">
-    <p>En vigueur depuis le <strong>24 septembre 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/fr/">Accueil</a> · <a href="/fr/support/">Assistance</a></p>
+    <p>En vigueur depuis le <strong>30 septembre 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/fr/">Accueil</a> · <a href="/fr/support/">Assistance</a></p>
   </div>
 </footer>
 

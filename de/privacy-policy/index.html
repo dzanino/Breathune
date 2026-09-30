@@ -31,8 +31,8 @@
       </svg>
       <div>
         <h1>Datenschutzerklärung</h1>
-        <p>Diese Übersetzung dient nur der Orientierung; verbindlich ist die slowakische und englische Fassung unter <a href="/privacy-policy/" style="color:inherit;text-decoration:underline">/privacy-policy/</a>.</p>
-        <p>Breathune und Lite Breathune — Telefon, Tablet und Uhr (iPhone, Apple Watch, Android, Wear OS)</p>
+        <p>Diese Übersetzung dient nur der Orientierung. Verbindlich ist die slowakische und englische Fassung unter <a href="/privacy-policy/" style="color:inherit;text-decoration:underline">/privacy-policy/</a>.</p>
+        <p>Breathune und Lite Breathune auf Telefon, Tablet und Uhr (iPhone, Apple Watch, Android, Wear OS)</p>
       </div>
     </div>
     <!--LANGBAR:start-->
@@ -65,7 +65,7 @@
 <section id="summary">
   <div class="card key">
     <h3>Die Kurzfassung</h3>
-    <p><strong>Breathune sammelt nichts über dich.</strong> Es gibt kein Konto, keine Anmeldung, keine Analyse, keine Werbung und keine Bibliotheken von Drittanbietern. Die App sendet keinerlei Daten — ihr Code enthält keinen einzigen Netzwerkaufruf. Alles, was du in ihr aufzeichnest, bleibt auf deinem Gerät.</p>
+    <p><strong>Breathune sammelt nichts über dich.</strong> Es gibt kein Konto, keine Anmeldung, keine Analyse, keine Werbung und keine Tracking-Bibliotheken von Drittanbietern. Die App sendet keinerlei Daten, ihr Code enthält keinen einzigen Netzwerkaufruf. Alles, was du in ihr aufzeichnest, bleibt auf deinem Gerät.</p>
   </div>
 
   <h3>Verantwortlicher</h3>
@@ -76,7 +76,7 @@
     <li>Sie legt kein Konto und kein Profil an und verlangt keine Anmeldung.</li>
     <li>Sie nutzt keine Analyse, keine Nutzungsmessung und kein Verhaltens-Tracking.</li>
     <li>Sie enthält keine Werbung und keine Werbe-IDs.</li>
-    <li>Sie sendet keine Daten an einen Server — weder an unseren noch an einen fremden. Sie funktioniert vollständig offline.</li>
+    <li>Sie sendet keine Daten an einen Server, weder an unseren noch an einen fremden. Sie funktioniert vollständig offline.</li>
     <li>Sie teilt nichts mit Dritten, weil es nichts zu teilen gibt.</li>
     <li>Sie greift nicht auf deine Kontakte, Fotos, deinen Standort oder deinen Browserverlauf zu.</li>
   </ul>
@@ -85,7 +85,7 @@
 <section id="microphone">
   <h2>Mikrofon und nächtliche Überwachung</h2>
 
-  <p>Die Vollversion enthält <strong>Night Guard</strong> — die nächtliche Schnarcherkennung. Sie ist die einzige Funktion, die das Mikrofon nutzt. <strong>Lite Breathune fragt überhaupt nicht nach dem Mikrofon.</strong></p>
+  <p>Die Vollversion enthält <strong>Night Guard</strong>, die nächtliche Schnarcherkennung. Sie ist die einzige Funktion, die das Mikrofon nutzt. <strong>Lite Breathune fragt überhaupt nicht nach dem Mikrofon.</strong></p>
 
   <div class="card">
     <h3>So funktioniert es</h3>
@@ -93,14 +93,14 @@
       <li>Das Mikrofon schaltet sich <strong>nur ein, wenn du den Nachtmodus selbst</strong> per Taste startest, und läuft, bis du ihn beendest.</li>
       <li>Während es läuft, ist ständig eine Mitteilung mit einer Stopp-Taste sichtbar, damit nie ein Zweifel besteht, dass die Überwachung aktiv ist.</li>
       <li>Der Ton wird <strong>ausschließlich im Arbeitsspeicher des Geräts</strong> verarbeitet. Er wird nie gespeichert, nie gesendet, nie geteilt.</li>
-      <li>Auf dem Gerät bleiben nur Metadaten der Ereignisse: <strong>Beginn einer Episode, ihre Dauer und die gemessene Lautstärke</strong>. Nichts, woraus sich der Ton wiederherstellen ließe.</li>
-      <li>Am Morgen zeigt die App, wie viele Stunden das Mikrofon tatsächlich lief — damit du nicht vertrauen musst, sondern es siehst.</li>
+      <li>Auf dem Gerät bleiben nur Metadaten der Ereignisse: <strong>Beginn einer Episode, ihre Dauer und die gemessene Lautstärke</strong>, für die Nachtanalyse außerdem die Art des Geräuschs (etwa Sprechen oder Husten). Nichts, woraus sich der Ton wiederherstellen ließe.</li>
+      <li>Am Morgen zeigt die App, wie viele Stunden das Mikrofon tatsächlich lief. Du musst uns also nicht einfach glauben.</li>
     </ul>
   </div>
 
-  <p><span class="plat ios">iOS</span> Die Analyse übernimmt Apples Systemframework <em>SoundAnalysis</em> direkt auf dem Telefon. Die App meldet den Hintergrund-Audiomodus an, damit die Analyse weiterläuft, während das Telefon gesperrt auf dem Nachttisch liegt.</p>
+  <p><span class="plat ios">iOS</span> Schnarchen wird auf zwei unabhängigen Wegen erkannt, beide direkt auf dem Telefon: mit einem eigenen akustischen Detektor, der auf Lautstärkespitzen über dem Grundrauschen, das Überwiegen tiefer Frequenzen und die Regelmäßigkeit des Atemrhythmus achtet, und mit Apples eingebautem Geräuschklassifikator <em>SoundAnalysis</em>, der Schnarchen von Sprechen, Husten oder Musik unterscheidet. Die App meldet den Hintergrund-Audiomodus an, damit die Analyse weiterläuft, während das Telefon gesperrt auf dem Nachttisch liegt.</p>
 
-  <p><span class="plat and">Android</span> Die Analyse übernimmt ein eigener akustischer Algorithmus direkt auf dem Telefon — er verfolgt Lautstärkespitzen über dem Grundrauschen des Zimmers, das Überwiegen tiefer Frequenzen und die Regelmäßigkeit des Atemrhythmus. Er läuft als Vordergrunddienst vom Typ <code>microphone</code>; das ist unter Android der einzige erlaubte Weg, wie eine App die ganze Nacht zuhören darf.</p>
+  <p><span class="plat and">Android</span> Auch hier gibt es beide Wege: denselben akustischen Detektor und das Geräuscherkennungsmodell <em>YAMNet</em> von Google. Das Modell ist Teil der App, läuft auf dem Telefon und lädt nichts herunter und sendet nichts. Die Nachtüberwachung läuft als Vordergrunddienst vom Typ <code>microphone</code>; das ist unter Android der einzige erlaubte Weg, wie eine App die ganze Nacht zuhören darf.</p>
 
   <p class="note">Night Guard ist ein Wellness-Helfer, kein Diagnosewerkzeug. Er stellt keine Diagnosen und behandelt nichts. Wenn du nachts aufhörst zu atmen oder nach Luft schnappend aufwachst, sprich bitte mit einem Arzt.</p>
 </section>
@@ -128,7 +128,7 @@
     <tbody>
       <tr>
         <td>Mikrofon</td>
-        <td>Night Guard — Schnarcherkennung. Wird erst beim ersten Start des Nachtmodus abgefragt.</td>
+        <td>Night Guard (Schnarcherkennung). Wird erst beim ersten Start des Nachtmodus abgefragt.</td>
         <td>nur Vollversion</td>
       </tr>
       <tr>
@@ -143,7 +143,7 @@
       </tr>
       <tr>
         <td>Gesundheit</td>
-        <td>Eintragen von Achtsamkeitsminuten. Optional — ohne Berechtigung funktioniert die App ganz normal.</td>
+        <td>Eintragen von Achtsamkeitsminuten. Optional, ohne Berechtigung funktioniert die App ganz normal.</td>
         <td>beide Versionen</td>
       </tr>
       <tr>
@@ -153,7 +153,7 @@
       </tr>
     </tbody>
   </table>
-  <p><strong>Lite Breathune fragt unter Android weder nach dem Mikrofon noch nach Mitteilungen.</strong> Sie nutzt nur die Vibration und — wenn du es erlaubst — das Eintragen in Health Connect.</p>
+  <p><strong>Lite Breathune fragt unter Android weder nach dem Mikrofon noch nach Mitteilungen.</strong> Sie nutzt nur die Vibration und, wenn du es erlaubst, das Eintragen in Health Connect.</p>
 </section>
 
 <section id="data">
@@ -163,8 +163,8 @@
   <ul>
     <li>der Verlauf abgeschlossener Übungen und die Serie von Tagen,</li>
     <li>eigene Atemprogramme,</li>
-    <li>Einträge überwachter Nächte (Zeitpunkte und Dauer der Episoden, Lautstärke),</li>
-    <li>deine Einstellungen — Motiv, Ton, Sprache, Empfindlichkeit.</li>
+    <li>Einträge überwachter Nächte (Zeitpunkte und Dauer der Episoden, Lautstärke, Geräuscharten für die Nachtanalyse),</li>
+    <li>deine Einstellungen (Motiv, Ton, Sprache, Empfindlichkeit).</li>
   </ul>
 
   <div class="card" id="zzzentinel">
@@ -177,19 +177,19 @@
     <ul>
       <li>Den Übungsverlauf löschst du direkt in der App im Bereich <strong>Verlauf</strong>.</li>
       <li>Nachteinträge löschst du unter <strong>Nachtverlauf → Alle Nächte löschen</strong>.</li>
-      <li><strong>Wenn du die App deinstallierst, wird wirklich alles gelöscht.</strong> Da nichts in der Cloud liegt, musst du uns nie um eine Löschung bitten — wir haben nichts über dich, was wir löschen könnten.</li>
+      <li><strong>Wenn du die App deinstallierst, wird wirklich alles gelöscht.</strong> Da nichts in der Cloud liegt, musst du uns nie um eine Löschung bitten. Wir haben nichts über dich, was wir löschen könnten.</li>
       <li>Daten, die in Apple Health oder Health Connect eingetragen wurden, verwaltest du in diesen Apps.</li>
     </ul>
   </div>
 
   <h3>Kinder</h3>
-  <p>Breathune ist nicht für Kinder bestimmt und richtet sich nicht an sie. Wir erheben wissentlich von niemandem Daten — also auch nicht von Kindern.</p>
+  <p>Breathune ist nicht für Kinder bestimmt und richtet sich nicht an sie. Wir erheben von niemandem Daten, also auch nicht von Kindern.</p>
 
   <h3>Zahlungen</h3>
-  <p>Die Vollversion ist ein Einmalkauf, ohne Abo und ohne In-App-Käufe. Die Zahlung wickeln der App Store oder Google Play ab — Breathune sieht und speichert keine Zahlungsdaten.</p>
+  <p>Die Vollversion ist ein Einmalkauf, ohne Abo und ohne In-App-Käufe. Die Zahlung wickeln der App Store oder Google Play ab. Breathune sieht und speichert keine Zahlungsdaten.</p>
 
   <h3>Änderungen dieser Erklärung</h3>
-  <p>Jede Änderung veröffentlichen wir auf dieser Seite zusammen mit einem neuen Gültigkeitsdatum. Sollte sich je das Grundprinzip ändern — dass nichts gesammelt wird —, sagen wir das klar und deutlich direkt in der App.</p>
+  <p>Jede Änderung veröffentlichen wir auf dieser Seite zusammen mit einem neuen Gültigkeitsdatum. Sollte sich je der Grundsatz ändern, dass nichts gesammelt wird, sagen wir das klar und deutlich direkt in der App.</p>
 
   <h3>Kontakt</h3>
   <p>Ján Šikuta · <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
@@ -199,7 +199,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Gültig ab <strong>24. September 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/de/">Startseite</a> · <a href="/de/support/">Support</a></p>
+    <p>Gültig ab <strong>30. September 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="/de/">Startseite</a> · <a href="/de/support/">Support</a></p>
   </div>
 </footer>
 
