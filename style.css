@@ -36,13 +36,20 @@ header p{margin:10px 0 0; opacity:.92}
 }
 .back:hover{opacity:1; text-decoration:underline}
 
-.langbar{display:flex; gap:8px; margin-top:20px}
+.langbar{display:flex; flex-wrap:wrap; gap:8px; margin-top:20px}
 .langbar button{
   font:inherit; font-size:14px; font-weight:600; cursor:pointer;
   padding:7px 15px; border-radius:999px; color:#fff;
   background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3);
 }
 .langbar button[aria-pressed="true"]{background:#fff; color:var(--deep); border-color:#fff}
+.langbar a{
+  font-size:14px; font-weight:600; text-decoration:none; line-height:1.2;
+  padding:7px 13px; border-radius:999px; color:#fff;
+  background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3);
+}
+.langbar a:hover{background:rgba(255,255,255,.26); text-decoration:none}
+.langbar a[aria-current="page"]{background:#fff; color:var(--deep); border-color:#fff}
 
 nav{position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--line)}
 nav .wrap{display:flex; gap:22px; padding:12px 20px; overflow-x:auto}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr" data-fixed-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breathune — Assistance</title>
+<meta name="description" content="Assistance pour l’application Breathune sur iOS et Android — questions fréquentes et contact.">
+<meta property="og:title" content="Breathune — Assistance">
+<meta property="og:description" content="Questions fréquentes, résolution des problèmes du mode nuit et contact direct avec l’auteur de Breathune.">
+<meta property="og:image" content="https://breathune.eu/assets/icon.png">
+<meta property="og:url" content="https://breathune.eu/fr/support/">
+<meta property="og:locale" content="fr_FR">
+<link rel="canonical" href="https://breathune.eu/fr/support/">
+<!--HREFLANG:start-->
+<link rel="alternate" hreflang="sk" href="https://breathune.eu/support/">
+<link rel="alternate" hreflang="cs" href="https://breathune.eu/cs/support/">
+<link rel="alternate" hreflang="de" href="https://breathune.eu/de/support/">
+<link rel="alternate" hreflang="fr" href="https://breathune.eu/fr/support/">
+<link rel="alternate" hreflang="it" href="https://breathune.eu/it/support/">
+<link rel="alternate" hreflang="pl" href="https://breathune.eu/pl/support/">
+<link rel="alternate" hreflang="x-default" href="https://breathune.eu/support/">
+<!--HREFLANG:end-->
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="back" href="/fr/">← Breathune</a>
+    <div class="brand">
+      <svg width="46" height="46" viewBox="0 0 52 52" aria-hidden="true">
+        <circle cx="26" cy="26" r="24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.4"/>
+        <circle cx="26" cy="26" r="16" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.6"/>
+        <circle cx="26" cy="26" r="9"  fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2"/>
+        <circle cx="26" cy="26" r="4.5" fill="#fff"/>
+      </svg>
+      <div>
+        <h1>Assistance</h1>
+        <p>Breathune et Lite Breathune — téléphone, tablette et montre (iPhone, Apple Watch, Android, Wear OS)</p>
+      </div>
+    </div>
+    <!--LANGBAR:start-->
+<div class="langbar" role="group" aria-label="Language">
+  <a href="/support/?lang=sk" hreflang="sk" lang="sk" data-lang-link="sk" title="Slovenčina">SK</a>
+  <a href="/support/?lang=en" hreflang="en" lang="en" data-lang-link="en" title="English">EN</a>
+  <a href="/cs/support/" hreflang="cs" lang="cs" data-lang-link="cs" title="Čeština">CS</a>
+  <a href="/de/support/" hreflang="de" lang="de" data-lang-link="de" title="Deutsch">DE</a>
+  <a href="/fr/support/" aria-current="page" lang="fr" title="Français">FR</a>
+  <a href="/it/support/" hreflang="it" lang="it" data-lang-link="it" title="Italiano">IT</a>
+  <a href="/pl/support/" hreflang="pl" lang="pl" data-lang-link="pl" title="Polski">PL</a>
+</div>
+<!--LANGBAR:end-->
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#contact">M’écrire</a>
+    <a href="#night">Mode nuit</a>
+    <a href="#breathing">Respiration</a>
+    <a href="#versions">Versions</a>
+    <a href="/fr/privacy-policy/">Confidentialité</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="contact">
+  <p class="lede">Écris-moi à <a class="mail" href="mailto:jansikuta@me.com">jansikuta@me.com</a>. Je réponds personnellement, en général sous quelques jours.</p>
+
+  <div class="card key">
+    <h3>Pour régler ça du premier coup</h3>
+    <p style="margin:0">Indique s’il te plaît <strong>ton appareil et la version du système</strong> (p. ex. Samsung Galaxy S20+, Android 13), <strong>la version de l’app</strong> (tout en bas des Options) et <strong>ce que tu faisais quand le problème est survenu</strong>.</p>
+  </div>
+</section>
+
+<section id="night">
+  <h2>Mode nuit</h2>
+
+  <details>
+    <summary>Night Guard n’a rien détecté pendant la nuit</summary>
+    <p>Essaie dans cet ordre : <strong>1.</strong> Règle la sensibilité de détection sur <em>Élevée</em> dans les réglages de la nuit. <strong>2.</strong> Pose le téléphone sur la table de chevet, le bord inférieur tourné vers le lit — pas sous l’oreiller ni dans un tiroir. <strong>3.</strong> Laisse-le en charge. <strong>4.</strong> Le matin, regarde la valeur <em>Micro actif</em> — si elle est nettement en dessous de 100 %, le système a interrompu le service et il faut l’autoriser à fonctionner en arrière-plan (voir la question suivante).</p>
+  </details>
+
+  <details>
+    <summary>Le mode nuit s’est arrêté tout seul pendant la nuit <span class="plat and">Android</span></summary>
+    <p>Samsung, Xiaomi, Huawei et OnePlus ferment agressivement les applications en arrière-plan. Accorde une exception à Breathune :</p>
+    <ul>
+      <li><strong>Samsung :</strong> Paramètres → Batterie → Limites d’utilisation en arrière-plan → Applications jamais en veille → ajoute Breathune. Et aussi Paramètres → Applications → Breathune → Batterie → <em>Non restreinte</em>.</li>
+      <li><strong>Xiaomi :</strong> Paramètres → Applications → Breathune → Économiseur de batterie → <em>Aucune restriction</em> ; et verrouille Breathune dans l’écran des applications récentes.</li>
+      <li><strong>Autres :</strong> Paramètres → Applications → Breathune → Batterie → <em>Non restreinte</em>.</li>
+      <li><strong>Ne balaie pas l’app</strong> hors de l’écran des applications récentes — cela met fin à la session.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>L’app signale un ronflement alors que je ne ronflais pas</summary>
+    <p>La détection repose sur un rythme régulier de sons graves. Un bruit qui se répète à peu près au rythme de la respiration — un frigo qui cliquette ou un ventilateur — peut y ressembler. Baisse la sensibilité sur <em>Faible</em> et, si possible, éloigne la source du bruit de la chambre.</p>
+  </details>
+
+  <details>
+    <summary>Le son est-il enregistré ?</summary>
+    <p>Non. Le son est traité uniquement en mémoire et n’est jamais écrit sur le disque ni transmis. Seuls l’heure, la durée et le volume des épisodes sont conservés. Tous les détails se trouvent dans la <a href="/fr/privacy-policy/#microphone">politique de confidentialité</a>.</p>
+  </details>
+</section>
+
+<section id="breathing">
+  <h2>Respiration</h2>
+
+  <details>
+    <summary>Je n’entends pas le son de la respiration</summary>
+    <p>Vérifie si le <em>Mode silencieux (haptique seulement)</em> est activé dans les Options — dans ce mode, la respiration est volontairement guidée uniquement par les vibrations. Vérifie ensuite le volume des médias (pas celui de la sonnerie) et si le téléphone n’est pas connecté à un autre appareil Bluetooth.</p>
+  </details>
+
+  <details>
+    <summary>Je ne sens pas les vibrations</summary>
+    <p>Vérifie que l’option <em>Vibrations aux changements de phase</em> est activée dans les Options et que le téléphone n’est pas en mode Ne pas déranger avec les vibrations désactivées. Certains téléphones ont un réglage séparé de l’intensité des vibrations dans les paramètres de son du système.</p>
+  </details>
+
+  <details>
+    <summary>Je ressens des picotements ou j’entends un léger bourdonnement pendant une rétention</summary>
+    <p>Lors d’une rétention plus longue, c’est courant et sans danger — l’app le signale elle-même pendant la séance. Si c’est désagréable, touche l’écran pour passer la phase ou termine la séance à tout moment. <strong>Ne pratique jamais Souffle puissant dans l’eau ni en conduisant.</strong></p>
+  </details>
+
+  <details>
+    <summary>Les séances n’apparaissent pas dans Health Connect <span class="plat and">Android</span></summary>
+    <p>Ouvre l’app <strong>Health Connect</strong> → Autorisations des applications → Breathune et autorise l’écriture des séances de pleine conscience. Sur les téléphones plus anciens, il faut d’abord installer Health Connect depuis le Play Store. Sans cette autorisation, l’app fonctionne normalement, elle n’écrit simplement rien.</p>
+  </details>
+
+  <details>
+    <summary>Comment changer la langue ?</summary>
+    <p>Options → Apparence → <em>Langue</em>. Par défaut, l’app suit la langue du système ; elle est disponible en slovaque, tchèque, anglais, allemand, français, italien et polonais.</p>
+  </details>
+</section>
+
+<section id="versions">
+  <h2>Versions et paiements</h2>
+
+  <details>
+    <summary>Quelle est la différence entre Lite et la version complète ?</summary>
+    <p>Lite propose la Méthode Šikuta, deux thèmes et l’historique des sept derniers jours ; sur iPhone, également les deux premiers exercices de l’entraînement quotidien anti-ronflement. La version complète ajoute cinq autres programmes (Relaxation 4-7-8, Concentration, Cohérence 5-5, Souffle puissant, Soupir cyclique), les six thèmes avec le final arc-en-ciel, les programmes personnalisés, l’entraînement anti-ronflement complet, Night Guard, l’app pour montre et un historique illimité. Ce sont deux applications distinctes — tu installes la version complète séparément et tu peux garder ou supprimer Lite, comme tu préfères.</p>
+  </details>
+
+  <details>
+    <summary>Vais-je perdre mon historique en passant à la version complète ?</summary>
+    <p>Ce sont deux applications distinctes, chacune garde donc son propre historique — la version complète démarre à zéro. Tu peux garder Lite installée, ses données restent intactes.</p>
+  </details>
+
+  <details>
+    <summary>Remboursements</summary>
+    <p>Les paiements sont gérés par l’App Store ou Google Play, les remboursements passent donc par eux — chez Apple sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, chez Google dans ton <a href="https://play.google.com/store/account/orderhistory">historique des commandes</a>. Si quelque chose ne fonctionne pas, écris-moi d’abord — je pourrai peut-être le corriger.</p>
+  </details>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span data-fz>Breathune</span> · Ján Šikuta · <a href="/fr/">Accueil</a> · <a href="/fr/privacy-policy/">Confidentialité</a></p>
+  </div>
+</footer>
+
+<script src="/lang.js"></script>
+<script src="/site.js" defer></script>
+</body>
+</html>
