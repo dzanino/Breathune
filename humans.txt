@@ -1,5 +1,5 @@
 /* TEAM */
-Author: Ján Šikuta — physician, Slovakia
+Author: Ján Šikuta - physician, Slovakia
 Contact: jansikuta@me.com
 Site: https://breathune.eu/
 
