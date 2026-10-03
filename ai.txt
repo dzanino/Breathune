@@ -1,4 +1,4 @@
-# ai.txt — breathune.eu
+# ai.txt - breathune.eu
 # Usage policy for AI crawlers, assistants and training.
 
 Site: https://breathune.eu/

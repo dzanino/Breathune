@@ -7,7 +7,7 @@
   var OWN = ['cs', 'de', 'fr', 'it', 'pl'];
   var KEY = 'breathune-lang';
   var script = document.currentScript;
-  // Základ webu (breathune.eu/ aj dzanino.github.io/Breathune/) – odvodený od adresy tohto skriptu.
+  // Základ webu (breathune.eu/ aj dzanino.github.io/Breathune/) - odvodený od adresy tohto skriptu.
   var base = script && script.src ? script.src.replace(/lang\.js(\?.*)?$/, '') : location.origin + '/';
 
   function save(code) { try { localStorage.setItem(KEY, code); } catch (e) {} }
@@ -18,7 +18,7 @@
     a.addEventListener('click', function () { save(a.getAttribute('data-lang-link')); });
   });
 
-  // Stránka v jednom jazyku (/cs/, /de/ … alebo článok) – nič neprepíname.
+  // Stránka v jednom jazyku (/cs/, /de/ … alebo článok) - nič neprepíname.
   var fixed = root.getAttribute('data-fixed-lang');
   if (fixed) { save(fixed); return; }
   var buttons = document.querySelectorAll('.langbar button[data-set]');

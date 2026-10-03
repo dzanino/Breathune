@@ -105,7 +105,7 @@ details[open]{padding-bottom:6px}
 summary{cursor:pointer; font-weight:600; padding:14px 0; list-style:none}
 summary::-webkit-details-marker{display:none}
 summary::before{content:"+"; color:var(--teal); font-weight:700; margin-right:10px}
-details[open] summary::before{content:"–"}
+details[open] summary::before{content:"-"}
 
 .mail{font-weight:600}
 footer{border-top:1px solid var(--line); padding:26px 20px 50px; color:var(--muted); font-size:14px}
@@ -215,3 +215,60 @@ table.cmp td:nth-child(3){font-weight:600}
 .quote{margin:26px 0 0; padding:16px 18px; background:var(--card); border-radius:14px; border:1px solid var(--line); font-style:italic; color:var(--ink)}
 .quote cite{display:block; margin-top:6px; font-style:normal; color:var(--muted); font-size:14px}
 footer .fine{font-size:12.5px; margin-top:14px}
+
+/* ===================== Breathune 4.0 – vzhľad appky =====================
+   Úvod v tónoch Úsvitu, svetlý režim prehliadača = Tichá kniha (kameň, šalvia, serifové nadpisy),
+   tmavý režim = Matné sklo (tlmená zelenomodrá, sklenené karty). Farby sú tie isté ako v appke. */
+:root{
+  --aqua:#5e8c68; --teal:#3f6f4a; --deep:#22295a;
+  --ink:#1d221d; --muted:#5b6159; --bg:#eceee9; --card:#f7f8f4; --line:#d6dad1; --warn:#9a5b00;
+  --btn:#3f6f4a; --btn-ink:#f4f7f2; --chip:rgba(63,111,74,.12);
+  --gold:#ffd38a; --gold-ink:#2b1e05;
+  --serif:"Newsreader","New York",ui-serif,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --aqua:#59c2b3; --teal:#59c2b3; --ink:#dcebe8; --muted:#86a5a0; --bg:#041818;
+    --card:rgba(255,255,255,.055); --line:rgba(255,255,255,.10); --warn:#f0b55a;
+    --btn:#3e9e92; --btn-ink:#04201d; --chip:rgba(89,194,179,.16);
+  }
+  body{background:linear-gradient(180deg,#0a2d31 0,#06201f 520px,#031212 100%) fixed}
+}
+h1,h2,h3{font-family:var(--serif); font-weight:600; letter-spacing:0}
+@media (prefers-color-scheme: dark){ h1,h2,h3{font-family:var(--sans); font-weight:700} }
+
+/* Úvod: Úsvit */
+header, header.hero{background:linear-gradient(180deg,#22295a 0%,#3a3a72 46%,#6e5482 78%,#7c5168 100%)}
+header h1, header.hero h1{font-family:var(--sans); font-weight:800; letter-spacing:.2px}
+header.hero .tagline{color:var(--gold)}
+.appicon{border-radius:30px; box-shadow:0 18px 44px rgba(10,8,40,.45), 0 0 0 1px rgba(255,255,255,.18)}
+.langbar button[aria-pressed="true"], .langbar a[aria-current="page"]{color:var(--deep)}
+.store{background:rgba(255,255,255,.10); border-color:rgba(255,255,255,.22)}
+a.store:hover{background:rgba(255,255,255,.18)}
+.stores a.store:first-child{background:var(--gold); color:var(--gold-ink); border-color:transparent; box-shadow:0 10px 26px rgba(255,211,138,.25)}
+.stores a.store:first-child:hover{background:#ffdea3}
+
+/* Navigácia ako lišta v appke */
+nav{background:color-mix(in srgb, var(--bg) 86%, transparent); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px)}
+
+/* Karty: zaoblené ako v appke, v tmavom režime sklo */
+.card, .step, .tile, details, .tablewrap, .quote, body.home .note{border-radius:18px}
+@media (prefers-color-scheme: dark){
+  .card, .step, .tile, details, .tablewrap, .quote, body.home .note{-webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px)}
+}
+.btn, .step .num, .tier{background:var(--btn); color:var(--btn-ink)}
+.tier.both{background:var(--chip); color:var(--teal)}
+.pat, .zzz-price{background:var(--chip); color:var(--teal)}
+.plat{background:var(--btn); color:var(--btn-ink)}
+body.home .note{border-left-color:var(--teal)}
+
+/* Galéria náhľadov appky */
+.gallery{display:flex; gap:18px; overflow-x:auto; scroll-snap-type:x mandatory; padding:8px 2px 16px; margin-top:20px; scrollbar-width:thin}
+.gallery figure{flex:0 0 210px; margin:0; scroll-snap-align:start}
+.gallery img{display:block; width:100%; height:auto; border-radius:28px; border:1px solid var(--line); box-shadow:0 14px 34px rgba(0,0,0,.20)}
+.gallery figcaption{margin-top:9px; text-align:center; font-size:14px; color:var(--muted)}
+@media (max-width:640px){ .gallery figure{flex-basis:62vw} }
+.shots img{border-radius:26px}
+.brand{align-items:flex-start}
+.brand .mark{flex:none;margin-top:2px;border-radius:11px;box-shadow:0 4px 12px rgba(0,0,0,.25)}

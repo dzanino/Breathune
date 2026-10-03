@@ -1,4 +1,4 @@
-/* breathune.eu — site.js
+/* breathune.eu - site.js
    Anonymous visit counter: no cookies, no identifiers, nothing stored about the visitor.
    A visit = first page opened in a browser tab session (sessionStorage), not every page view.
    Bots and headless browsers are not counted. Owner can exclude own device in the panel.
@@ -42,7 +42,7 @@
       .then(function (j) { return j && j.value > 0 ? j.value : 0; })
       .catch(function () { return null; });
   }
-  function fmt(n) { return n === null ? '–' : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+  function fmt(n) { return n === null ? '-' : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
 
   var panel = null;
   function close() { if (panel) { panel.remove(); panel = null; } }
@@ -81,7 +81,7 @@
       panel.querySelector('[data-x="body"]').innerHTML =
         '<div style="display:grid;grid-template-columns:1fr auto;gap:2px 12px">' +
           '<span>Celkom</span><b style="color:#fff">' + fmt(total) + '</b>' +
-          '<span>Denný priemer</span><b style="color:#fff">' + (avg === null ? '–' : avg) + '</b>' +
+          '<span>Denný priemer</span><b style="color:#fff">' + (avg === null ? '-' : avg) + '</b>' +
           '<span>Dnes</span><b style="color:#fff">' + fmt(v[1]) + '</b>' +
           '<span>Včera</span><b style="color:#fff">' + fmt(v[2]) + '</b>' +
           '<span>Posledných 7 dní</span><b style="color:#fff">' + fmt(week) + '</b>' +
