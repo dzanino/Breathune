@@ -15,5 +15,5 @@ LLMs: https://breathune.eu/llms.txt
 Sitemap: https://breathune.eu/sitemap.xml
 
 # What this site is: Breathune, a guided-breathing and snoring-prevention app
-# (iPhone, iPad, Apple Watch; Android and Wear OS in preparation). Wellness app,
+# (iPhone, iPad, Apple Watch; Android and Wear OS on Google Play). Wellness app,
 # not a medical device; it does not diagnose or treat any condition.
