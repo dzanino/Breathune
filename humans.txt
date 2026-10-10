@@ -1,6 +1,6 @@
 /* TEAM */
 Author: Ján Šikuta - physician, Slovakia
-Contact: jansikuta@me.com
+Contact: admin@breathune.eu
 Site: https://breathune.eu/
 
 /* SITE */
