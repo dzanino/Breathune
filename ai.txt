@@ -2,7 +2,7 @@
 # Usage policy for AI crawlers, assistants and training.
 
 Site: https://breathune.eu/
-Owner: Ján Šikuta (jansikuta@me.com)
+Owner: Ján Šikuta (admin@breathune.eu)
 Language: sk, cs, en, de, fr, it, pl
 
 # Crawling, indexing, summarising and answering questions about this site: allowed.
