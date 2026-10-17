@@ -1,4 +1,4 @@
-/* Breathune — spoločný štýl pre index, privacy-policy a support. */
+/* Breathune - spoločný štýl pre index, privacy-policy a support. */
 :root{
   --aqua:#33b8cc; --teal:#1a8599; --deep:#0d3a4a;
   --ink:#0f2028; --muted:#5b7480;
@@ -111,7 +111,7 @@ details[open] summary::before{content:"-"}
 footer{border-top:1px solid var(--line); padding:26px 20px 50px; color:var(--muted); font-size:14px}
 footer a{color:var(--muted)}
 
-/* ===================== Úvodná stránka 2026 — hero, obchody, návod, programy, porovnanie =====================
+/* ===================== Úvodná stránka 2026 - hero, obchody, návod, programy, porovnanie =====================
    Pridané na koniec, aby privacy-policy/ a support/ ostali nedotknuté. */
 :root{ --maxw-wide:980px }
 .hero .wrap{max-width:var(--maxw-wide)}

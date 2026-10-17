@@ -1,10 +1,10 @@
-# breathune.eu — robots.txt
+# breathune.eu - robots.txt
 # Stránka je verejná a plne otvorená pre indexovanie.
 
 User-agent: *
 Allow: /
 
-# AI asistenti a crawler-y pre generatívne vyhľadávanie — vítané
+# AI asistenti a crawler-y pre generatívne vyhľadávanie - vítané
 User-agent: GPTBot
 Allow: /
 
