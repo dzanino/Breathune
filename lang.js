@@ -1,10 +1,10 @@
 /* Jazyk webu.
    - Slovenčina a angličtina sú na hlavných stránkach spolu a prepínajú sa tlačidlami (sk/en).
-   - Čeština, nemčina, francúzština, taliančina a poľština majú vlastné stránky v /cs/, /de/, /fr/, /it/, /pl/.
+   - Čeština, nemčina, francúzština, taliančina, poľština, španielčina a portugalčina (Brazília) majú vlastné stránky v /cs/, /de/, /fr/, /it/, /pl/, /es/, /pt/.
    Voľba sa pamätá; bez voľby rozhoduje jazyk prehliadača (neznámy jazyk → angličtina, slovenčina → slovenčina). */
 (function () {
   var root = document.documentElement;
-  var OWN = ['cs', 'de', 'fr', 'it', 'pl'];
+  var OWN = ['cs', 'de', 'fr', 'it', 'pl', 'es', 'pt'];
   var KEY = 'breathune-lang';
   var script = document.currentScript;
   // Základ webu (breathune.eu/ aj dzanino.github.io/Breathune/) - odvodený od adresy tohto skriptu.
