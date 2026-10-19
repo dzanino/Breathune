@@ -5,7 +5,7 @@ Site: https://breathune.eu/
 
 /* SITE */
 Last update: 2026-09-30
-Language: Slovak, Czech, English, German, French, Italian, Polish
+Language: Slovak, Czech, English, German, French, Italian, Polish, Spanish, Portuguese (Brazil)
 Hosting: GitHub Pages
 Standards: HTML5, CSS3, JSON-LD (schema.org)
 Principle: no account, no ads, no cloud; everything stays on your device
