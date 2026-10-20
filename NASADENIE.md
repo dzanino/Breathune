@@ -1,7 +1,7 @@
-# Breathune web — nasadenie na GitHub Pages
+# Breathune web: nasadenie na GitHub Pages
 
 Tento priečinok je **jediný zdroj** webu `https://dzanino.github.io/Breathune/`.
-Staršie kópie v `Breathune Full/web/` a `Breathune_Android/web/` už nepoužívaj — rozišli sa.
+Staršie kópie v `Breathune Full/web/` a `Breathune_Android/web/` už nepoužívaj, rozišli sa.
 
 ## Čo sa nahráva
 
@@ -21,9 +21,9 @@ assets/                    ← ikona, favicon, 4 screenshoty (~600 kB spolu)
 
 | Kde je zadaná | URL |
 |---|---|
-| App Store Connect — Privacy Policy URL, Play Console — zásady | `https://dzanino.github.io/Breathune/privacy-policy/` |
-| App Store Connect — Support URL | `https://dzanino.github.io/Breathune/support/` |
-| App Store Connect — Marketing URL | `https://dzanino.github.io/Breathune/` |
+| App Store Connect: Privacy Policy URL, Play Console, zásady | `https://dzanino.github.io/Breathune/privacy-policy/` |
+| App Store Connect: Support URL | `https://dzanino.github.io/Breathune/support/` |
+| App Store Connect: Marketing URL | `https://dzanino.github.io/Breathune/` |
 
 Cesty `privacy-policy/` a `support/` sú zachované bajt po bajte oproti dnešnej živej verzii.
 
@@ -40,7 +40,7 @@ Cesty `privacy-policy/` a `support/` sú zachované bajt po bajte oproti dnešne
 V `index.html` sú dve tlačidlá Google Play označené ako „čoskoro". Pri každom:
 
 1. zmeň `<span class="store soon" aria-disabled="true" data-href="…">` na `<a class="store" href="…" target="_blank" rel="noopener">` (a zatváracie `</span>` na `</a>`),
-2. text `Google Play — čoskoro` / `coming soon` nahraď `Stiahnuť v Google Play` / `Get it on Google Play`.
+2. text `Google Play, čoskoro` / `coming soon` nahraď `Stiahnuť v Google Play` / `Get it on Google Play`.
 
 Odkazy sú už pripravené v `data-href`:
 - Full: `https://play.google.com/store/apps/details?id=sk.sikuta.breathune`
@@ -51,4 +51,4 @@ Odkazy sú už pripravené v `data-href`:
 - Breathune (Full): `https://apps.apple.com/app/breathune/id6782549502`
 - Lite Breathune: `https://apps.apple.com/app/lite-breathune/id6786838686`
 
-Bez kódu krajiny v URL — App Store sám presmeruje na obchod používateľa.
+Bez kódu krajiny v URL, App Store sám presmeruje na obchod používateľa.
