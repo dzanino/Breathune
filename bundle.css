@@ -1,0 +1,35 @@
+/* breathune.eu - bundle.css: sekcia „Breathune + Zzzentinel v jednom bundli“ (nočný Úsvit).
+   Načítava sa za glam.css. Používa farby z glam.css (--gold, --grad, --line, --muted). */
+[data-bf][hidden]{display:none!important}
+
+#bundle .bundle-banner{display:block;margin:22px 0 0;border-radius:24px;overflow:hidden;
+  border:1px solid var(--line-2,rgba(255,255,255,.18));
+  box-shadow:0 30px 70px rgba(0,0,0,.45),0 0 60px rgba(255,211,138,.10);transition:transform .25s ease,box-shadow .25s ease}
+#bundle .bundle-banner:hover{transform:translateY(-3px);box-shadow:0 34px 80px rgba(0,0,0,.5),0 0 70px rgba(255,211,138,.18)}
+#bundle .bundle-banner img{display:block;width:100%;height:auto}
+
+#bundle .card.bundle-card{margin:22px auto 0;max-width:760px;padding:26px 28px}
+.bundle-head{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.bundle-icons{display:flex;flex:0 0 auto}
+.bundle-icons img{width:76px;height:76px;border-radius:22.4%;box-shadow:0 0 0 1px rgba(255,255,255,.16),0 14px 30px rgba(0,0,0,.5),0 0 40px rgba(255,211,138,.18)}
+.bundle-icons img+img{margin-left:-14px;transform:rotate(5deg)}
+.bundle-icons img:first-child{transform:rotate(-5deg)}
+.bundle-price{display:grid;grid-template-columns:auto 1fr;column-gap:16px;align-items:center;flex:1 1 300px}
+.bundle-price .bp-lbl{grid-column:2;grid-row:1;align-self:end;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.bundle-price b{grid-column:1;grid-row:1/3;font-family:var(--serif);font-weight:600;font-size:clamp(38px,6vw,52px);line-height:1;
+  background:linear-gradient(180deg,#ffe8c0 0%,#ffd38a 55%,#f3b965 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bundle-price .bp-save{grid-column:2;grid-row:2;align-self:start;color:#fff;font-weight:600;font-size:16px;line-height:1.3}
+.bundle-sep{margin:16px 0 0;color:var(--muted)}
+.bundle-sep b{color:var(--gold)}
+ul.bundle-list{margin:16px 0 0;padding:0;list-style:none}
+ul.bundle-list li{position:relative;padding:0 0 0 22px;margin:8px 0;line-height:1.5}
+ul.bundle-list li::before{content:"✦";position:absolute;left:0;top:0;color:var(--gold)}
+ul.bundle-list li b{color:#fff}
+#bundle .bundle-card .muted{font-size:14px;margin-top:14px}
+
+@media (max-width:560px){
+  #bundle .card.bundle-card{padding:22px 18px}
+  .bundle-icons img{width:62px;height:62px}
+  .bundle-price{grid-template-columns:1fr}
+  .bundle-price b,.bundle-price .bp-lbl,.bundle-price .bp-save{grid-column:1;grid-row:auto}
+}

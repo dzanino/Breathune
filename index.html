@@ -67,6 +67,7 @@
 <link rel="stylesheet" href="/assets/fonts/newsreader.css">
 <link rel="stylesheet" href="style.css?v=20261003b">
 <link rel="stylesheet" href="/glam.css?v=20261017">
+<link rel="stylesheet" href="/bundle.css?v=20261018">
 </head>
 <body class="home">
 
@@ -127,6 +128,7 @@
     <a href="#programs"><span class="sk">Programy</span><span class="en">Programs</span></a>
     <a href="#snore">Snore No More</a>
     <a href="#compare"><span class="sk">Lite vs Full</span><span class="en">Lite vs Full</span></a>
+    <a href="#bundle">Bundle</a>
     <a href="breathing-for-sleep/"><span class="sk">Dýchanie na spánok</span><span class="en">Breathing for sleep</span></a>
     <a href="privacy-policy/"><span class="sk">Súkromie</span><span class="en">Privacy</span></a>
     <a href="support/"><span class="sk">Podpora</span><span class="en">Support</span></a>
@@ -382,7 +384,7 @@
       <div class="card zzz">
         <div class="zzz-head">
           <h3>Zzzentinel</h3>
-          <span class="zzz-price"><span class="sk">29,99 €</span><span class="en">€29.99</span></span>
+          <span class="zzz-price"><span data-bf="off"><span class="sk">29,99 €</span><span class="en">€29.99</span></span><span data-bf="on" hidden><span class="sk">24,99 €</span><span class="en">€24.99</span></span></span>
         </div>
         <p class="sk">Nočný strážca, ktorý rozpozná a zapíše, čo sa počas spánku ozve: chrápanie, reč zo sna, kašeľ. Keď nejaký zvuk nepozná, poctivo to povie. Ráno namiesto hádania vidíš prehľadnú časovú os. Voliteľný režim Guard Extra Plus navyše ustráži telefón pred zvedavými rukami. Bežné zvuky aj tie, ktoré si sám nahráš, spracúva priamo v telefóne a nič neposiela na server.</p>
         <p class="en">A night watchman that recognizes and logs the sounds of your sleep: snoring, sleep talking, coughing. When it hears something it can't identify, it says so. In the morning you get a clear timeline instead of guesswork. An optional Guard Extra Plus mode also keeps curious hands off your phone. Sounds are processed on the phone and nothing is uploaded to a server.</p>
@@ -391,6 +393,52 @@
         <p class="center" style="margin-top:14px">
           <a class="btn" href="https://dzanino.github.io/Zzzentinel/" target="_blank" rel="noopener"><span class="sk">Pozrieť Zzzentinel</span><span class="en">See Zzzentinel</span> ↗</a>
         </p>
+      </div>
+    </section>
+
+    <!-- ================= BUNDLE (zverejniť až po schválení bundlu v App Store) ================= -->
+    <section id="bundle">
+      <h2 class="sk">Breathune + Zzzentinel v jednom bundli</h2>
+      <h2 class="en">Breathune + Zzzentinel in one bundle</h2>
+      <p class="lede sk">Pokojnejšie dýchanie cez deň, tichšia noc. Obe moje appky v jednom balíku v App Store.</p>
+      <p class="lede en">Breathe calmer by day, sleep quieter by night. Both of my apps in one App Store bundle.</p>
+
+      <a class="bundle-banner" href="https://apps.apple.com/app-bundle/id6824159791" target="_blank" rel="noopener">
+        <picture class="sk" data-bf="off"><source media="(max-width:700px)" srcset="/assets/bundle/bz_bezne_stvorec_sk.jpg"><img src="/assets/bundle/bz_bezne_web_sk.jpg" width="1600" height="600" loading="lazy" alt="Ikony appiek Breathune a Zzzentinel, bundle v App Store za 69,99 €, ušetríš 29,99 € oproti samostatnému nákupu"></picture>
+        <picture class="en" data-bf="off"><source media="(max-width:700px)" srcset="/assets/bundle/bz_bezne_stvorec_en.jpg"><img src="/assets/bundle/bz_bezne_web_en.jpg" width="1600" height="600" loading="lazy" alt="Breathune and Zzzentinel app icons, App Store bundle for €69.99, save €29.99 compared with buying separately"></picture>
+        <picture class="sk" data-bf="on" hidden><source media="(max-width:700px)" srcset="/assets/bundle/bz_blackfriday_stvorec_sk.jpg"><img src="/assets/bundle/bz_blackfriday_web_sk.jpg" width="1600" height="600" loading="lazy" alt="Black Friday 23.-30. 11. 2026: Breathune a Zzzentinel v bundli za 69,99 €"></picture>
+        <picture class="en" data-bf="on" hidden><source media="(max-width:700px)" srcset="/assets/bundle/bz_blackfriday_stvorec_en.jpg"><img src="/assets/bundle/bz_blackfriday_web_en.jpg" width="1600" height="600" loading="lazy" alt="Black Friday Nov 23-30, 2026: Breathune and Zzzentinel bundle for €69.99"></picture>
+      </a>
+
+      <div class="card bundle-card">
+        <div class="bundle-head">
+          <div class="bundle-icons"><img src="/assets/bundle/breathune.png" width="76" height="76" alt="Breathune"><img src="/assets/bundle/zzzentinel.png" width="76" height="76" alt="Zzzentinel"></div>
+          <div class="bundle-price">
+            <span class="bp-lbl sk">Obe appky spolu</span><span class="bp-lbl en">Both apps</span>
+            <b class="sk">69,99 €</b><b class="en">€69.99</b>
+            <span class="bp-save sk" data-bf="off">ušetríš 29,99 € oproti samostatnému nákupu</span>
+            <span class="bp-save en" data-bf="off">save €29.99 compared with buying separately</span>
+            <span class="bp-save sk" data-bf="on" hidden>ušetríš 4,99 € oproti samostatnému nákupu</span>
+            <span class="bp-save en" data-bf="on" hidden>save €4.99 compared with buying separately</span>
+          </div>
+        </div>
+        <p class="bundle-sep sk" data-bf="off">Samostatne stojí Breathune 69,99 € a Zzzentinel 29,99 €. Za cenu samotného Breathune teda dostaneš aj Zzzentinel.</p>
+        <p class="bundle-sep en" data-bf="off">Separately, Breathune is €69.99 and Zzzentinel €29.99. So you get Zzzentinel included for the price of Breathune alone.</p>
+        <p class="bundle-sep sk" data-bf="on" hidden><b>Black Friday 23.-30. 11. 2026:</b> Breathune samostatne 49,99 € (bežne 69,99 €), Zzzentinel 24,99 € (bežne 29,99 €). Bundle ostáva 69,99 €, Zzzentinel k Breathune tak máš len za 20 € navyše.</p>
+        <p class="bundle-sep en" data-bf="on" hidden><b>Black Friday Nov 23-30, 2026:</b> Breathune on its own €49.99 (usually €69.99), Zzzentinel €24.99 (usually €29.99). The bundle stays at €69.99, which makes Zzzentinel just €20 on top of Breathune.</p>
+        <ul class="bundle-list sk">
+          <li><b>Breathune:</b> riadené dýchanie podľa Šikutovej metódy, 4-7-8, box, koherentné 5-5 a vlastné programy. Tréning Snore No More môže pomôcť zmierniť chrápanie. Vedenie dychu aj na Apple Watch.</li>
+          <li><b>Zzzentinel:</b> počas noci počúva a triedi chrápanie, rozprávanie zo sna a kašeľ. Ráno report s nočnou mapou a epizódami na prehratie. Voliteľne siréna Guard Extra Plus.</li>
+          <li><b>Spolu:</b> noci zo Zzzentinelu uvidíš v štatistikách Breathune. Bez účtu, bez reklám, nič neopúšťa telefón.</li>
+        </ul>
+        <ul class="bundle-list en">
+          <li><b>Breathune:</b> guided breathing with the Šikuta method, 4-7-8, box, coherent 5-5 and your own programs. The Snore No More training can help reduce snoring. Breathing guidance on Apple Watch too.</li>
+          <li><b>Zzzentinel:</b> listens through the night and sorts snoring, sleep talking and coughing. A morning report with a night map and episodes to play back. Optional Guard Extra Plus siren.</li>
+          <li><b>Together:</b> nights recorded by Zzzentinel appear in the Breathune statistics. No account, no ads, nothing leaves your phone.</li>
+        </ul>
+        <p class="center" style="margin-top:18px"><a class="btn" href="https://apps.apple.com/app-bundle/id6824159791" target="_blank" rel="noopener"><span class="sk">Bundle v App Store</span><span class="en">Bundle on the App Store</span> ↗</a></p>
+        <p class="muted sk">Bundle je len v App Store (iPhone a Apple Watch). Ak už jednu z appiek máš, App Store ti pri bundli započíta, čo si už zaplatil(a). Ceny v App Store pre Slovensko, v iných krajinách sa môžu líšiť. Obe appky slúžia na relaxáciu a wellness a nie sú zdravotníckou pomôckou.</p>
+        <p class="muted en">The bundle is available on the App Store only (iPhone and Apple Watch). If you already own one of the apps, the App Store counts what you have paid. Prices on the Slovak App Store, they may vary by country. Both apps are meant for relaxation and wellness and are not medical devices.</p>
       </div>
     </section>
 
@@ -441,5 +489,6 @@
 <script src="lang.js"></script>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 <script src="/site.js" defer></script>
+<script src="/bundle-akcia.js" defer></script>
 </body>
 </html>
