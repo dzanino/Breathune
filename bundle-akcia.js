@@ -13,7 +13,9 @@
     de: 'Black Friday bis 30. 11.: Breathune 49,99 € (sonst 69,99 €) · Zzzentinel 24,99 € (sonst 29,99 €) · beide im Bundle 69,99 €',
     fr: 'Black Friday jusqu’au 30/11 : Breathune 49,99 € (au lieu de 69,99 €) · Zzzentinel 24,99 € (au lieu de 29,99 €) · les deux en lot 69,99 €',
     it: 'Black Friday fino al 30/11: Breathune 49,99 € (di solito 69,99 €) · Zzzentinel 24,99 € (di solito 29,99 €) · entrambe nel bundle 69,99 €',
-    pl: 'Black Friday do 30.11: Breathune 49,99 € (zwykle 69,99 €) · Zzzentinel 24,99 € (zwykle 29,99 €) · obie w pakiecie 69,99 €'
+    pl: 'Black Friday do 30.11: Breathune 49,99 € (zwykle 69,99 €) · Zzzentinel 24,99 € (zwykle 29,99 €) · obie w pakiecie 69,99 €',
+    es: 'Black Friday hasta el 30/11: Breathune 49,99 € (normalmente 69,99 €) · Zzzentinel 24,99 € (normalmente 29,99 €) · las dos en un pack 69,99 €',
+    pt: 'Black Friday até 30/11: Breathune 49,99 € (normalmente 69,99 €) · Zzzentinel 24,99 € (normalmente 29,99 €) · os dois no pacote 69,99 €'
   };
 
   var t = Date.now(), q = location.search;
