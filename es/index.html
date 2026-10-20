@@ -7,7 +7,12 @@
 <meta name="description" content="Breathune: respiración guiada y tranquila con el Método Šikuta y el módulo antirronquidos Snore No More. En el móvil, la tableta y el reloj: iPhone, Apple Watch, Android y Wear OS. Sin cuenta y sin anuncios.">
 <meta property="og:title" content="Breathune - respiración guiada y noches más tranquilas">
 <meta property="og:description" content="Respiración guiada y tranquila con el Método Šikuta, y Snore No More contra los ronquidos. Sin cuenta, sin nube, sin anuncios.">
-<meta property="og:image" content="https://breathune.eu/assets/icon.png?v=20261002">
+<meta property="og:image" content="https://breathune.eu/img/og/breathune.png?v=20261020">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Breathune, guided breathing app by Ján Šikuta">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://breathune.eu/img/og/breathune.png?v=20261020">
 <meta property="og:url" content="https://breathune.eu/es/">
 <meta property="og:locale" content="es_ES">
 <link rel="canonical" href="https://breathune.eu/es/">
@@ -23,53 +28,235 @@
 <link rel="alternate" hreflang="x-default" href="https://breathune.eu/">
 <!--HREFLANG:end-->
 <meta name="theme-color" content="#136375">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Breathune",
-  "url": "https://breathune.eu/",
-  "logo": "https://breathune.eu/assets/icon.png?v=20261002",
-  "founder": { "@type": "Person", "name": "Ján Šikuta" }
-}
-</script>
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Breathune",
-    "url": "https://breathune.eu/es/",
-    "inLanguage": "es",
-    "applicationCategory": "HealthApplication",
-    "operatingSystem": "iOS 17+, watchOS",
-    "offers": { "@type": "Offer", "price": "69.99", "priceCurrency": "EUR" },
-    "author": { "@type": "Person", "name": "Ján Šikuta" },
-    "downloadUrl": "https://apps.apple.com/app/breathune/id6782549502",
-    "description": "App de respiración guiada con el Método Šikuta, cinco programas de respiración más (Relajación 4-7-8, Concentración 4-4-4-4, Coherencia 5-5, Fuerza del aliento, Suspiro cíclico) y el módulo antirronquidos Snore No More. Pago único, sin cuenta, sin nube. También en Android y Wear OS."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Lite Breathune",
-    "url": "https://breathune.eu/es/",
-    "inLanguage": "es",
-    "applicationCategory": "HealthApplication",
-    "operatingSystem": "iOS 17+",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-    "author": { "@type": "Person", "name": "Ján Šikuta" },
-    "downloadUrl": "https://apps.apple.com/app/lite-breathune/id6786838686",
-    "description": "Edición Lite de Breathune con el programa de respiración Método Šikuta, sin anuncios para siempre."
-  }
-]
-</script>
-
 <link rel="icon" type="image/png" href="/assets/favicon.png?v=20261002">
 <link rel="apple-touch-icon" href="/assets/icon.png?v=20261002">
 <link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/newsreader.css">
 <link rel="stylesheet" href="/style.css?v=20261003b">
 <link rel="stylesheet" href="/glam.css?v=20261017">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://breathune.eu/#autor",
+   "name": "Ján Šikuta",
+   "jobTitle": "Physician and app developer",
+   "nationality": "Slovak",
+   "url": "https://breathune.eu/",
+   "worksFor": {
+    "@id": "https://breathune.eu/#organizacia"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://breathune.eu/#organizacia",
+   "name": "Breathune",
+   "url": "https://breathune.eu/",
+   "logo": "https://breathune.eu/assets/icon.png?v=20261002",
+   "email": "admin@breathune.eu",
+   "founder": {
+    "@id": "https://breathune.eu/#autor"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://breathune.eu/#web",
+   "url": "https://breathune.eu/",
+   "name": "Breathune",
+   "publisher": {
+    "@id": "https://breathune.eu/#organizacia"
+   },
+   "inLanguage": [
+    "sk",
+    "cs",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pl",
+    "es",
+    "pt-BR"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://breathune.eu/es/#stranka",
+   "url": "https://breathune.eu/es/",
+   "name": "Breathune",
+   "description": "Breathune: respiración guiada y tranquila con el Método Šikuta y el módulo antirronquidos Snore No More. En el móvil, la tableta y el reloj: iPhone, Apple Watch, Android y Wear OS. Sin cuenta y sin anuncios.",
+   "inLanguage": "es",
+   "isPartOf": {
+    "@id": "https://breathune.eu/#web"
+   },
+   "about": {
+    "@id": "https://breathune.eu/#breathune-ios"
+   },
+   "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://breathune.eu/img/og/breathune.png?v=20261020",
+    "width": 1200,
+    "height": 630
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "applicationCategory": "HealthApplication",
+   "author": {
+    "@id": "https://breathune.eu/#autor"
+   },
+   "publisher": {
+    "@id": "https://breathune.eu/#organizacia"
+   },
+   "inLanguage": [
+    "sk",
+    "cs",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pl",
+    "es",
+    "pt-BR"
+   ],
+   "@id": "https://breathune.eu/#breathune-ios",
+   "name": "Breathune",
+   "operatingSystem": "iOS 17+, watchOS",
+   "downloadUrl": "https://apps.apple.com/app/breathune/id6782549502",
+   "url": "https://breathune.eu/",
+   "description": "Guided breathing app with the Šikuta Method, five more breathing programs (Relaxation 4-7-8, Focus 4-4-4-4, Coherent 5-5, Power Breath, Cyclic Sighing) and the Snore No More module for snoring prevention. One-time purchase, no account, no cloud. Wellness app, not a medical device.",
+   "offers": {
+    "@type": "Offer",
+    "price": "69.99",
+    "priceCurrency": "EUR"
+   },
+   "featureList": "Šikuta Method; Relaxation 4-7-8; Focus (box breathing 4-4-4-4); Coherent 5-5; Power Breath; Cyclic Sighing; Snore No More with Night Guard; Apple Watch app; nine languages; no account; no cloud"
+  },
+  {
+   "@type": "SoftwareApplication",
+   "applicationCategory": "HealthApplication",
+   "author": {
+    "@id": "https://breathune.eu/#autor"
+   },
+   "publisher": {
+    "@id": "https://breathune.eu/#organizacia"
+   },
+   "inLanguage": [
+    "sk",
+    "cs",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pl",
+    "es",
+    "pt-BR"
+   ],
+   "@id": "https://breathune.eu/#lite-breathune-ios",
+   "name": "Lite Breathune",
+   "operatingSystem": "iOS 17+",
+   "downloadUrl": "https://apps.apple.com/app/lite-breathune/id6786838686",
+   "url": "https://breathune.eu/",
+   "description": "Free edition of Breathune with the Šikuta Method and the first two exercises of the anti-snoring training. No ads.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "applicationCategory": "HealthApplication",
+   "author": {
+    "@id": "https://breathune.eu/#autor"
+   },
+   "publisher": {
+    "@id": "https://breathune.eu/#organizacia"
+   },
+   "inLanguage": [
+    "sk",
+    "cs",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pl",
+    "es",
+    "pt-BR"
+   ],
+   "@id": "https://breathune.eu/#breathune-android",
+   "name": "Breathune for Android",
+   "operatingSystem": "Android, Wear OS",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=sk.sikuta.breathune",
+   "url": "https://breathune.eu/",
+   "description": "Guided breathing app with the Šikuta Method, five more breathing programs (Relaxation 4-7-8, Focus 4-4-4-4, Coherent 5-5, Power Breath, Cyclic Sighing) and the Snore No More module for snoring prevention. One-time purchase, no account, no cloud. Wellness app, not a medical device."
+  },
+  {
+   "@type": "SoftwareApplication",
+   "applicationCategory": "HealthApplication",
+   "author": {
+    "@id": "https://breathune.eu/#autor"
+   },
+   "publisher": {
+    "@id": "https://breathune.eu/#organizacia"
+   },
+   "inLanguage": [
+    "sk",
+    "cs",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pl",
+    "es",
+    "pt-BR"
+   ],
+   "@id": "https://breathune.eu/#lite-breathune-android",
+   "name": "Lite Breathune for Android",
+   "operatingSystem": "Android",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=sk.sikuta.breathune.lite",
+   "url": "https://breathune.eu/",
+   "description": "Free edition of Breathune with the Šikuta Method and the first two exercises of the anti-snoring training. No ads.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   }
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Box breathing",
+   "description": "Breathing pattern with four equal phases (inhale, hold, exhale, hold), commonly 4-4-4-4 seconds. Called Focus in Breathune.",
+   "inDefinedTermSet": "https://breathune.eu/#pojmy"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "4-7-8 breathing",
+   "description": "Breathing pattern: inhale 4 seconds, hold 7, exhale 8. Called Relaxation 4-7-8 in Breathune.",
+   "inDefinedTermSet": "https://breathune.eu/#pojmy"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Coherent breathing",
+   "description": "Slow breathing at about five breaths per minute, five seconds in and five seconds out.",
+   "inDefinedTermSet": "https://breathune.eu/#pojmy"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Cyclic sighing",
+   "description": "Two nasal inhales followed by one long exhale through the mouth.",
+   "inDefinedTermSet": "https://breathune.eu/#pojmy"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Šikuta Method",
+   "description": "Deepening breathing wave 4-2-6 with calm holds, designed by Ján Šikuta; included in Breathune and Lite Breathune.",
+   "inDefinedTermSet": "https://breathune.eu/#pojmy"
+  }
+ ]
+}
+</script>
 </head>
 <body class="home">
 
