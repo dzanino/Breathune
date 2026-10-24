@@ -794,4 +794,22 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://breathune.eu/ausculta/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/ausculta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/ausculta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/ausculta/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://breathune.eu/en/ausculta/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://breathune.eu/ausculta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://breathune.eu/en/ausculta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://breathune.eu/ausculta/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
