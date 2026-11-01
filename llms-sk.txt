@@ -38,3 +38,9 @@ MUDr. Ján Šikuta, slovenský lekár, autor Šikutovej metódy. Vyvíja aj apli
 ## Ďalej
 
 - Anglická verzia: https://breathune.eu/llms.txt · Plná: https://breathune.eu/llms-full.txt · Pravidlá pre AI: https://breathune.eu/ai.txt · Sitemap: https://breathune.eu/sitemap.xml
+
+## Ako citovať
+
+- APA: Šikuta, J. (2026). Breathune (verzia 5.0) [mobilná aplikácia]. App Store. https://apps.apple.com/app/id6782549502
+- Autor: MUDr. Ján Šikuta, PhD., ORCID https://orcid.org/0000-0002-4690-0317
+- Ausculta (atlas auskultácie od rovnakého autora): https://dzanino.github.io/ausculta-web/methodology.html#cite
