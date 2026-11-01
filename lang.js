@@ -41,7 +41,17 @@
     location.replace(base + wanted + '/' + rest + location.hash);
     return;
   }
-  setLang(wanted === 'sk' || (wanted !== 'en' && browser === 'sk') ? 'sk' : 'en');
+  // Úvodná stránka má od 1. 11. 2026 samostatnú anglickú verziu /en/: angličtina na úvode → presmeruj tam.
+  var rest0 = location.href.indexOf(base) === 0 ? location.href.slice(base.length).replace(/[?#].*$/, '') : null;
+  var isHome = rest0 === '' || rest0 === 'index.html';
+  var lang0 = wanted === 'sk' || (wanted !== 'en' && browser === 'sk') ? 'sk' : 'en';
+  if (isHome && lang0 === 'en' && !query) { save('en'); location.replace(base + 'en/' + location.hash); return; }
+  setLang(lang0);
 
-  buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.set); }); });
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (isHome && b.dataset.set === 'en') { save('en'); location.href = base + 'en/'; return; }
+      setLang(b.dataset.set);
+    });
+  });
 })();
