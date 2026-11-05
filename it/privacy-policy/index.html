@@ -67,6 +67,7 @@
     <a href="#summary">In sintesi</a>
     <a href="#microphone">Microfono</a>
     <a href="#health">Salute</a>
+    <a href="#features">Voce e notifiche</a>
     <a href="#permissions">Autorizzazioni</a>
     <a href="#data">I tuoi dati</a>
     <a href="/it/support/">Assistenza</a>
@@ -121,12 +122,25 @@
 <section id="health">
   <h2>Dati sanitari</h2>
 
-  <p><span class="plat ios">iOS</span> Se lo consenti, Breathune registra un esercizio completato in <strong>Apple Salute</strong> come minuti di consapevolezza. Su Apple Watch legge il tuo battito cardiaco durante l’esercizio per mostrarti la media alla fine. Facoltativamente può registrare una notte monitorata come tempo “A letto”. Se attivi “Sonno e respiro da Apple Salute” in Impostazioni notte, legge per ogni notte monitorata le fasi del sonno e la frequenza respiratoria registrate dall’orologio e le conserva con la notte, solo sul telefono. Puoi disattivarlo in Impostazioni notte o nell’app Salute. Non legge altri dati sanitari.</p>
+  <p><span class="plat ios">iOS</span> Se lo consenti, Breathune registra un esercizio completato in <strong>Apple Salute</strong> come minuti di consapevolezza. Su Apple Watch legge il tuo battito cardiaco durante l’esercizio: durante una sessione con l’orologio lo mostra dal vivo anche sull’iPhone, con l’Avvio calmo lo attende per un momento e alla fine ti mostra la media. Il battito viaggia solo tra l’orologio e l’iPhone associati. Se attivi “Battito notturno (Apple Watch)” in Impostazioni notte, l’orologio misura il battito per tutta la notte e al mattino lo aggiunge ai dati della notte sul telefono. Facoltativamente può registrare una notte monitorata come tempo “A letto”. Se attivi “Sonno e respiro da Apple Salute” in Impostazioni notte, legge per ogni notte monitorata le fasi del sonno e la frequenza respiratoria registrate dall’orologio e le conserva con la notte, solo sul telefono. Puoi disattivarlo in Impostazioni notte o nell’app Salute. Non legge altri dati sanitari.</p>
 
   <p><span class="plat and">Android</span> Se lo consenti, Breathune registra un esercizio completato in <strong>Health Connect</strong> come sessione di consapevolezza. Da Health Connect <strong>non legge nulla</strong>. Puoi revocare l’autorizzazione in qualsiasi momento nell’app Health Connect, nella sezione Autorizzazioni.</p>
-  <p><span class="plat and">Android</span> Se hai uno smartwatch Wear OS, Breathune legge la tua <strong>frequenza cardiaca</strong> dal sensore dell’orologio durante un esercizio, la mostra sull’orologio e sul telefono e salva la media nella cronologia degli esercizi sul telefono. La frequenza cardiaca viaggia solo tra l’orologio e il telefono associati e da nessun’altra parte. Non viene scritta in Health Connect.</p>
+  <p><span class="plat and">Android</span> Se hai uno smartwatch Wear OS, Breathune legge la tua <strong>frequenza cardiaca</strong> dal sensore dell’orologio durante un esercizio, la mostra dal vivo sull’orologio e sul telefono, la attende per un momento con l’Avvio calmo e salva la media nella cronologia degli esercizi sul telefono. La frequenza cardiaca viaggia solo tra l’orologio e il telefono associati e da nessun’altra parte. Non viene scritta in Health Connect.</p>
 
   <p>I dati sanitari restano sul tuo dispositivo e nell’archivio sanitario del sistema. Breathune non li invia da nessun’altra parte.</p>
+</section>
+
+<section id="features">
+  <h2>Guida vocale, notifiche e scorciatoie</h2>
+
+  <p>La <strong>guida vocale</strong> è facoltativa. Le registrazioni della voce sono nell’app e vengono riprodotte sul dispositivo. Non si scarica né si invia nulla, e la guida non ha bisogno del microfono né di alcuna autorizzazione. La voce è stata creata in anticipo con l’IA.</p>
+
+  <p><span class="plat and">Android</span> <strong>Notifica durante la sessione.</strong> Breathune e Lite Breathune mostrano durante la sessione una notifica silenziosa con il nome del programma, la fase attuale, un conto alla rovescia e il pulsante Termina; è visibile anche nella schermata di blocco. Su Android 13 e versioni successive l’app chiede una sola volta, alla prima sessione, l’autorizzazione alle notifiche. Senza autorizzazione funziona allo stesso modo, solo la notifica non compare. La notifica nasce sul telefono e non viene inviato nulla. Puoi cambiare l’autorizzazione nelle impostazioni di sistema.</p>
+
+  <p><span class="plat ios">iOS</span> <strong>Attività in tempo reale.</strong> Durante la sessione la versione completa su iPhone mostra la fase del respiro e un conto alla rovescia nella schermata di blocco, nella Dynamic Island e in StandBy. L’app aggiorna l’attività direttamente sul telefono, senza server e senza notifiche push; i dati restano sul dispositivo. Puoi disattivarla per Breathune nelle Impostazioni di sistema.</p>
+
+  <p><strong>Siri, Comandi rapidi e scorciatoie Android.</strong> Quando apri un programma con Siri, l’app Comandi rapidi o tenendo premuta l’icona su Android, l’app riceve solo la scelta del programma sul dispositivo e apre la schermata prima della sessione. La sessione la avvii sempre tu. Breathune non invia nulla. Le richieste vocali a Siri sono gestite dal sistema Apple secondo le sue regole.</p>
+
 </section>
 
 <section id="permissions">
@@ -147,8 +161,8 @@
       </tr>
       <tr>
         <td>Notifiche</td>
-        <td>La notifica permanente durante la modalità notte e il riepilogo del mattino.</td>
-        <td>solo versione completa</td>
+        <td>Su Android, una notifica silenziosa durante la sessione con la fase e un conto alla rovescia. Nella versione completa, la notifica permanente durante la modalità notte e il riepilogo del mattino. Su iPhone, un promemoria serale facoltativo per l’allenamento.</td>
+        <td>entrambe le versioni</td>
       </tr>
       <tr>
         <td>Vibrazione</td>
@@ -161,13 +175,18 @@
         <td>entrambe le versioni</td>
       </tr>
       <tr>
+        <td>Battito (orologio)</td>
+        <td>Lettura del battito dal sensore dell’orologio durante la sessione (su Apple Watch tramite Apple Salute), su Apple Watch facoltativamente anche di notte. Mostrato sull’orologio e sul telefono associato.</td>
+        <td>solo versione completa</td>
+      </tr>
+      <tr>
         <td>Esecuzione in background</td>
         <td>Perché il monitoraggio notturno continui con lo schermo bloccato.</td>
         <td>solo versione completa</td>
       </tr>
     </tbody>
   </table>
-  <p><strong>Su Android, Lite Breathune non chiede né il microfono né le notifiche.</strong> Usa solo la vibrazione e, se lo consenti, la scrittura in Health Connect.</p>
+  <p><strong>Su Android, Lite Breathune non chiede il microfono.</strong> Usa la vibrazione, la notifica durante la sessione (se la consenti) e, se lo consenti, la scrittura in Health Connect.</p>
 </section>
 
 <section id="data">
@@ -177,9 +196,11 @@
   <ul>
     <li>la cronologia degli esercizi completati e la serie di giorni,</li>
     <li>i tuoi programmi di respirazione personali,</li>
-    <li>i dati delle notti monitorate (orari e durata degli episodi, volume, tipi di suono per l’analisi della notte),</li>
+    <li>i dati delle notti monitorate (orari e durata degli episodi, volume, tipi di suono per l’analisi della notte, facoltativamente il battito dall’orologio),</li>
     <li>le tue impostazioni (tema, suono, lingua, sensibilità).</li>
   </ul>
+
+  <p>L’app in sé non carica nulla nel cloud. Se sul telefono è attivo il backup di sistema (iCloud o backup Google), il sistema può includere i dati privati dell’app nel tuo backup personale e ripristinarli su un nuovo telefono. Il backup lo gestisci nelle impostazioni di sistema. Quando invii tu stesso un programma con Breath Share o un riepilogo della notte, lo invia la condivisione di sistema dove scegli tu.</p>
 
   <div class="card" id="zzzentinel">
     <h3><span class="plat ios">iOS</span> Collegamento con Zzzentinel</h3>
@@ -191,7 +212,7 @@
     <ul>
       <li>La cronologia degli esercizi la cancelli direttamente nell’app, nella sezione <strong>Cronologia</strong>.</li>
       <li>I dati delle notti li cancelli in <strong>Cronologia notti → Elimina tutte le notti</strong>.</li>
-      <li><strong>Disinstallando l’app si cancella assolutamente tutto.</strong> Poiché nulla è nel cloud, non devi chiederci di cancellare niente. Non abbiamo nulla su di te da cancellare.</li>
+      <li><strong>Disinstallando l’app si cancella tutto dal dispositivo.</strong> Poiché Breathune non mette nulla su alcun server, non devi chiederci di cancellare niente. Non abbiamo nulla su di te da cancellare.</li>
       <li>I dati scritti in Apple Salute o Health Connect si gestiscono in quelle app.</li>
     </ul>
   </div>
@@ -213,7 +234,7 @@
 
 <footer>
   <div class="wrap">
-    <p>In vigore dal <strong>10 ottobre 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/it/">Home</a> · <a href="/it/support/">Assistenza</a></p>
+    <p>In vigore dal <strong>5 novembre 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/it/">Home</a> · <a href="/it/support/">Assistenza</a></p>
   </div>
 </footer>
 

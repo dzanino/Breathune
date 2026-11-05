@@ -67,6 +67,7 @@
     <a href="#summary">Shrnutí</a>
     <a href="#microphone">Mikrofon</a>
     <a href="#health">Zdraví</a>
+    <a href="#features">Hlas a oznámení</a>
     <a href="#permissions">Oprávnění</a>
     <a href="#data">Tvoje údaje</a>
     <a href="/cs/support/">Podpora</a>
@@ -121,12 +122,25 @@
 <section id="health">
   <h2>Zdravotní údaje</h2>
 
-  <p><span class="plat ios">iOS</span> Pokud to povolíš, Breathune zapíše dokončené cvičení do <strong>Apple Zdraví</strong> jako minuty všímavosti. Na Apple Watch během cvičení čte tvůj tep, aby ti na konci ukázal průměr. Volitelně umí zapsat sledovanou noc jako čas „V posteli“. Pokud v Nastavení noci zapneš „Spánek a dech z Apple Zdraví“, přečte pro každou sledovanou noc fáze spánku a dechovou frekvenci, které zapsaly hodinky, a uloží je u noci jen v telefonu. Vypneš to v Nastavení noci nebo v aplikaci Zdraví. Jiné zdravotní údaje nečte.</p>
+  <p><span class="plat ios">iOS</span> Pokud to povolíš, Breathune zapíše dokončené cvičení do <strong>Apple Zdraví</strong> jako minuty všímavosti. Na Apple Watch během cvičení čte tvůj tep: při cvičení s hodinkami ho zobrazuje naživo i na iPhonu, při Klidném startu na něj chvíli čeká a na konci ti ukáže průměr. Tep putuje jen mezi spárovanými hodinkami a iPhonem. Pokud v nastavení noci zapneš „Tep během noci (Apple Watch)“, hodinky měří tep celou noc a ráno ho připojí k záznamu noci v telefonu. Volitelně umí zapsat sledovanou noc jako čas „V posteli“. Pokud v Nastavení noci zapneš „Spánek a dech z Apple Zdraví“, přečte pro každou sledovanou noc fáze spánku a dechovou frekvenci, které zapsaly hodinky, a uloží je u noci jen v telefonu. Vypneš to v Nastavení noci nebo v aplikaci Zdraví. Jiné zdravotní údaje nečte.</p>
 
   <p><span class="plat and">Android</span> Pokud to povolíš, Breathune zapíše dokončené cvičení do <strong>Health Connect</strong> jako relaci všímavosti. Z Health Connect <strong>nic nečte</strong>. Oprávnění kdykoli odebereš v aplikaci Health Connect v části Oprávnění.</p>
-  <p><span class="plat and">Android</span> Pokud máš hodinky s Wear OS, Breathune na nich během cvičení čte tvůj <strong>tep</strong> ze snímače hodinek, zobrazí ho na hodinkách i v telefonu a po cvičení uloží jeho průměr do historie cvičení v telefonu. Tep se přenáší jen mezi spárovanými hodinkami a telefonem a nikam jinam. Do Health Connect se nezapisuje.</p>
+  <p><span class="plat and">Android</span> Pokud máš hodinky s Wear OS, Breathune na nich během cvičení čte tvůj <strong>tep</strong> ze snímače hodinek, zobrazuje ho naživo na hodinkách i v telefonu, při Klidném startu na něj chvíli čeká a po cvičení uloží jeho průměr do historie cvičení v telefonu. Tep se přenáší jen mezi spárovanými hodinkami a telefonem a nikam jinam. Do Health Connect se nezapisuje.</p>
 
   <p>Zdravotní údaje zůstávají v tvém zařízení a v systémovém úložišti zdraví. Breathune je neposílá nikam jinam.</p>
+</section>
+
+<section id="features">
+  <h2>Hlasový průvodce, oznámení a zkratky</h2>
+
+  <p><strong>Hlasový průvodce</strong> je volitelný. Nahrávky hlasu jsou přímo v aplikaci a přehrávají se v zařízení. Nic se nestahuje ani neodesílá, průvodce nepotřebuje mikrofon ani žádné oprávnění. Hlas byl předem vytvořený pomocí AI.</p>
+
+  <p><span class="plat and">Android</span> <strong>Oznámení během cvičení.</strong> Breathune i Lite Breathune ukazují během cvičení tiché oznámení s názvem programu, aktuální fází, odpočtem a tlačítkem Ukončit, je vidět i na zamčené obrazovce. Na Androidu 13 a novějším si o oprávnění k oznámením aplikace řekne jednou, při prvním cvičení. Bez oprávnění funguje stejně, jen se oznámení neukáže. Oznámení vzniká v telefonu a nic se neodesílá. Oprávnění změníš v nastavení systému.</p>
+
+  <p><span class="plat ios">iOS</span> <strong>Živá aktivita (Live Activity).</strong> Plná verze na iPhonu ukazuje během cvičení na zamčené obrazovce, v Dynamic Islandu a v režimu StandBy fázi dechu a odpočet. Aktivitu aktualizuje přímo aplikace v telefonu, bez serveru a bez push zpráv, údaje zůstávají v zařízení. Vypneš ji v Nastavení systému u Breathune.</p>
+
+  <p><strong>Siri, Zkratky a zkratky na Androidu.</strong> Když otevřeš program přes Siri, aplikaci Zkratky nebo podržením ikony na Androidu, aplikace dostane jen výběr programu v zařízení a otevře obrazovku před cvičením. Cvičení spouštíš vždy ty. Breathune přitom nic neodesílá. Hlasové příkazy pro Siri zpracovává systém Apple podle svých pravidel.</p>
+
 </section>
 
 <section id="permissions">
@@ -147,8 +161,8 @@
       </tr>
       <tr>
         <td>Oznámení</td>
-        <td>Trvalé oznámení během nočního režimu a ranní souhrn.</td>
-        <td>jen plná verze</td>
+        <td>Na Androidu tiché oznámení během cvičení s fází a odpočtem. V plné verzi trvalé oznámení během nočního režimu a ranní souhrn. Na iPhonu volitelná večerní připomínka tréninku.</td>
+        <td>obě verze</td>
       </tr>
       <tr>
         <td>Vibrace</td>
@@ -161,13 +175,18 @@
         <td>obě verze</td>
       </tr>
       <tr>
+        <td>Tep (hodinky)</td>
+        <td>Čtení tepu ze snímače hodinek během cvičení (na Apple Watch přes Apple Zdraví), na Apple Watch volitelně i během noci. Zobrazí se na hodinkách a ve spárovaném telefonu.</td>
+        <td>jen plná verze</td>
+      </tr>
+      <tr>
         <td>Běh na pozadí</td>
         <td>Aby noční sledování pokračovalo při zamčené obrazovce.</td>
         <td>jen plná verze</td>
       </tr>
     </tbody>
   </table>
-  <p><strong>Lite Breathune na Androidu nežádá o mikrofon ani o oznámení.</strong> Používá jen vibrace a, pokud to povolíš, zápis do Health Connect.</p>
+  <p><strong>Lite Breathune na Androidu nežádá o mikrofon.</strong> Používá vibrace, oznámení během cvičení (pokud ho povolíš) a, pokud to povolíš, zápis do Health Connect.</p>
 </section>
 
 <section id="data">
@@ -177,9 +196,11 @@
   <ul>
     <li>historie dokončených cvičení a série dní,</li>
     <li>vlastní dechové programy,</li>
-    <li>záznamy sledovaných nocí (časy a délky epizod, hlasitost, druhy zvuků pro rozbor noci),</li>
+    <li>záznamy sledovaných nocí (časy a délky epizod, hlasitost, druhy zvuků pro rozbor noci, volitelně tep z hodinek),</li>
     <li>tvoje nastavení (motiv, zvuk, jazyk, citlivost).</li>
   </ul>
+
+  <p>Aplikace sama nic do cloudu nenahrává. Pokud máš v telefonu zapnutou systémovou zálohu (iCloud nebo záloha Google), systém může soukromé údaje aplikace zahrnout do tvé vlastní zálohy a obnovit je na novém telefonu. Zálohu spravuješ v nastavení systému. Když sám pošleš program přes Breath Share nebo souhrn noci, odešle ho systémové sdílení tam, kam si vybereš.</p>
 
   <div class="card" id="zzzentinel">
     <h3><span class="plat ios">iOS</span> Propojení se Zzzentinelem</h3>
@@ -191,7 +212,7 @@
     <ul>
       <li>Historii cvičení smažeš přímo v aplikaci v části <strong>Historie</strong>.</li>
       <li>Noční záznamy smažeš v <strong>Historii nocí → Vymazat všechny noci</strong>.</li>
-      <li><strong>Odinstalováním aplikace se smaže úplně všechno.</strong> Protože nic není v cloudu, nemusíš nás o smazání žádat. Nemáme o tobě nic, co bychom mohli smazat.</li>
+      <li><strong>Odinstalováním aplikace se ze zařízení smaže všechno.</strong> Protože Breathune nic neukládá na žádný server, nemusíš nás o smazání žádat. Nemáme o tobě nic, co bychom mohli smazat.</li>
       <li>Údaje zapsané do Apple Zdraví nebo Health Connect spravuješ v těchto aplikacích.</li>
     </ul>
   </div>
@@ -213,7 +234,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Platné od <strong>10. října 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/cs/">Úvod</a> · <a href="/cs/support/">Podpora</a></p>
+    <p>Platné od <strong>5. listopadu 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/cs/">Úvod</a> · <a href="/cs/support/">Podpora</a></p>
   </div>
 </footer>
 
