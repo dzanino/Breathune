@@ -9,8 +9,8 @@ Staršie kópie v `Breathune Full/web/` a `Breathune_Android/web/` už nepouží
 index.html                 ← nová úvodná stránka (SK/EN)
 style.css                  ← spoločný štýl (nové pravidlá sú zúžené na body.home)
 lang.js                    ← prepínač jazyka (nezmenený)
-privacy-policy/index.html  ← NEZMENENÝ – URL zadaná v App Store Connect aj Play Console
-support/index.html         ← NEZMENENÝ – URL zadaná v App Store Connect
+privacy-policy/index.html  ← NEZMENENÝ, URL zadaná v App Store Connect aj Play Console
+support/index.html         ← NEZMENENÝ, URL zadaná v App Store Connect
 assets/                    ← ikona, favicon, 4 screenshoty (~600 kB spolu)
 .nojekyll                  ← GitHub Pages neprejde obsah cez Jekyll
 ```
@@ -32,7 +32,7 @@ Cesty `privacy-policy/` a `support/` sú zachované bajt po bajte oproti dnešne
 1. Otvor repozitár **dzanino/Breathune** na GitHube.
 2. Nahraj obsah tohto priečinka do koreňa repozitára (Add file → Upload files, alebo cez git).
    Prepíšu sa `index.html`, `style.css`, `lang.js`; pribudne `assets/` a `.nojekyll`.
-3. Počkaj ~1–2 minúty a skontroluj `https://dzanino.github.io/Breathune/`.
+3. Počkaj ~1-2 minúty a skontroluj `https://dzanino.github.io/Breathune/`.
    Ak vidíš starú verziu, obnov stránku so Shift (cache).
 
 ## Keď bude Android v Google Play

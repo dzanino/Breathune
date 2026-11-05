@@ -67,6 +67,7 @@
     <a href="#summary">Zusammenfassung</a>
     <a href="#microphone">Mikrofon</a>
     <a href="#health">Gesundheit</a>
+    <a href="#features">Stimme und Mitteilungen</a>
     <a href="#permissions">Berechtigungen</a>
     <a href="#data">Deine Daten</a>
     <a href="/de/support/">Support</a>
@@ -121,12 +122,25 @@
 <section id="health">
   <h2>Gesundheitsdaten</h2>
 
-  <p><span class="plat ios">iOS</span> Wenn du es erlaubst, trägt Breathune eine abgeschlossene Übung als Achtsamkeitsminuten in <strong>Apple Health</strong> ein. Auf der Apple Watch liest die App während der Übung deinen Puls, um dir am Ende den Durchschnitt zu zeigen. Optional kann sie eine überwachte Nacht als Zeit „Im Bett“ eintragen. Wenn du in den Nachteinstellungen „Schlaf und Atmung aus Apple Health“ einschaltest, liest sie für jede aufgezeichnete Nacht die Schlafphasen und die Atemfrequenz, die deine Uhr aufgezeichnet hat, und speichert sie bei der Nacht nur auf dem Telefon. Ausschalten kannst du das in den Nachteinstellungen oder in der Health-App. Andere Gesundheitsdaten liest sie nicht.</p>
+  <p><span class="plat ios">iOS</span> Wenn du es erlaubst, trägt Breathune eine abgeschlossene Übung als Achtsamkeitsminuten in <strong>Apple Health</strong> ein. Auf der Apple Watch liest die App während der Übung deinen Puls: Bei einer Übung mit der Uhr zeigt sie ihn auch live auf dem iPhone, beim Ruhigen Start wartet sie kurz darauf, und am Ende siehst du den Durchschnitt. Der Puls wird nur zwischen der gekoppelten Uhr und dem iPhone übertragen. Wenn du in den Nachteinstellungen „Puls in der Nacht (Apple Watch)“ einschaltest, misst die Uhr den Puls die ganze Nacht und fügt ihn morgens dem Nachteintrag auf dem Telefon hinzu. Optional kann sie eine überwachte Nacht als Zeit „Im Bett“ eintragen. Wenn du in den Nachteinstellungen „Schlaf und Atmung aus Apple Health“ einschaltest, liest sie für jede aufgezeichnete Nacht die Schlafphasen und die Atemfrequenz, die deine Uhr aufgezeichnet hat, und speichert sie bei der Nacht nur auf dem Telefon. Ausschalten kannst du das in den Nachteinstellungen oder in der Health-App. Andere Gesundheitsdaten liest sie nicht.</p>
 
   <p><span class="plat and">Android</span> Wenn du es erlaubst, trägt Breathune eine abgeschlossene Übung als Achtsamkeitssitzung in <strong>Health Connect</strong> ein. Aus Health Connect <strong>liest sie nichts</strong>. Die Berechtigung kannst du jederzeit in der App Health Connect unter Berechtigungen widerrufen.</p>
-  <p><span class="plat and">Android</span> Wenn du eine Wear-OS-Uhr hast, liest Breathune während einer Übung deinen <strong>Puls</strong> vom Sensor der Uhr, zeigt ihn auf der Uhr und auf dem Telefon an und speichert den Durchschnitt im Übungsverlauf auf dem Telefon. Der Puls wird nur zwischen der gekoppelten Uhr und dem Telefon übertragen und nirgendwohin sonst. In Health Connect wird er nicht eingetragen.</p>
+  <p><span class="plat and">Android</span> Wenn du eine Wear-OS-Uhr hast, liest Breathune während einer Übung deinen <strong>Puls</strong> vom Sensor der Uhr, zeigt ihn live auf der Uhr und auf dem Telefon an, wartet beim Ruhigen Start kurz darauf und speichert den Durchschnitt im Übungsverlauf auf dem Telefon. Der Puls wird nur zwischen der gekoppelten Uhr und dem Telefon übertragen und nirgendwohin sonst. In Health Connect wird er nicht eingetragen.</p>
 
   <p>Gesundheitsdaten bleiben auf deinem Gerät und im Gesundheitsspeicher des Systems. Breathune schickt sie nirgendwohin sonst.</p>
+</section>
+
+<section id="features">
+  <h2>Sprachführung, Mitteilungen und Kurzbefehle</h2>
+
+  <p>Die <strong>Sprachführung</strong> ist optional. Die Sprachaufnahmen sind in der App enthalten und werden auf dem Gerät abgespielt. Es wird nichts heruntergeladen oder gesendet, und die Sprachführung braucht weder das Mikrofon noch eine Berechtigung. Die Stimme wurde vorab mit KI erstellt.</p>
+
+  <p><span class="plat and">Android</span> <strong>Mitteilung während der Übung.</strong> Breathune und Lite Breathune zeigen während der Übung eine lautlose Mitteilung mit dem Programmnamen, der aktuellen Phase, einem Countdown und der Taste Beenden; sie ist auch auf dem Sperrbildschirm sichtbar. Unter Android 13 und neuer fragt die App einmal, bei der ersten Übung, nach der Berechtigung für Mitteilungen. Ohne Berechtigung funktioniert alles gleich, nur die Mitteilung erscheint nicht. Die Mitteilung entsteht auf dem Telefon, und es wird nichts gesendet. Die Berechtigung änderst du in den Systemeinstellungen.</p>
+
+  <p><span class="plat ios">iOS</span> <strong>Live-Aktivität.</strong> Die Vollversion auf dem iPhone zeigt während der Übung auf dem Sperrbildschirm, in der Dynamic Island und im StandBy-Modus die Atemphase und einen Countdown. Die App aktualisiert die Aktivität direkt auf dem Telefon, ohne Server und ohne Push-Nachrichten; die Daten bleiben auf dem Gerät. Ausschalten kannst du sie in den Systemeinstellungen bei Breathune.</p>
+
+  <p><strong>Siri, Kurzbefehle und Android-Verknüpfungen.</strong> Wenn du ein Programm über Siri, die App Kurzbefehle oder durch langes Drücken des Symbols unter Android öffnest, erhält die App nur die Programmauswahl auf dem Gerät und öffnet den Bildschirm vor der Übung. Die Übung startest immer du. Breathune sendet dabei nichts. Sprachbefehle für Siri verarbeitet das System von Apple nach dessen eigenen Regeln.</p>
+
 </section>
 
 <section id="permissions">
@@ -147,8 +161,8 @@
       </tr>
       <tr>
         <td>Mitteilungen</td>
-        <td>Die dauerhafte Mitteilung während des Nachtmodus und die Morgen-Zusammenfassung.</td>
-        <td>nur Vollversion</td>
+        <td>Unter Android eine lautlose Mitteilung während der Übung mit Phase und Countdown. In der Vollversion die dauerhafte Mitteilung während des Nachtmodus und die Morgen-Zusammenfassung. Auf dem iPhone eine optionale abendliche Trainingserinnerung.</td>
+        <td>beide Versionen</td>
       </tr>
       <tr>
         <td>Vibration</td>
@@ -161,13 +175,18 @@
         <td>beide Versionen</td>
       </tr>
       <tr>
+        <td>Puls (Uhr)</td>
+        <td>Lesen des Pulses vom Sensor der Uhr während der Übung (auf der Apple Watch über Apple Health), auf der Apple Watch optional auch nachts. Angezeigt auf der Uhr und auf dem gekoppelten Telefon.</td>
+        <td>nur Vollversion</td>
+      </tr>
+      <tr>
         <td>Ausführung im Hintergrund</td>
         <td>Damit die nächtliche Überwachung bei gesperrtem Bildschirm weiterläuft.</td>
         <td>nur Vollversion</td>
       </tr>
     </tbody>
   </table>
-  <p><strong>Lite Breathune fragt unter Android weder nach dem Mikrofon noch nach Mitteilungen.</strong> Sie nutzt nur die Vibration und, wenn du es erlaubst, das Eintragen in Health Connect.</p>
+  <p><strong>Lite Breathune fragt unter Android nicht nach dem Mikrofon.</strong> Sie nutzt die Vibration, die Mitteilung während der Übung (wenn du sie erlaubst) und, wenn du es erlaubst, das Eintragen in Health Connect.</p>
 </section>
 
 <section id="data">
@@ -177,9 +196,11 @@
   <ul>
     <li>der Verlauf abgeschlossener Übungen und die Serie von Tagen,</li>
     <li>eigene Atemprogramme,</li>
-    <li>Einträge überwachter Nächte (Zeitpunkte und Dauer der Episoden, Lautstärke, Geräuscharten für die Nachtanalyse),</li>
+    <li>Einträge überwachter Nächte (Zeitpunkte und Dauer der Episoden, Lautstärke, Geräuscharten für die Nachtanalyse, optional der Puls von der Uhr),</li>
     <li>deine Einstellungen (Motiv, Ton, Sprache, Empfindlichkeit).</li>
   </ul>
+
+  <p>Die App selbst lädt nichts in eine Cloud hoch. Wenn auf deinem Telefon die Systemsicherung eingeschaltet ist (iCloud oder Google-Sicherung), kann das System die privaten Daten der App in deine eigene Sicherung aufnehmen und auf einem neuen Telefon wiederherstellen. Diese Sicherung verwaltest du in den Systemeinstellungen. Wenn du selbst ein Programm über Breath Share oder eine Nachtzusammenfassung verschickst, sendet das Teilen-Menü des Systems sie dorthin, wo du es auswählst.</p>
 
   <div class="card" id="zzzentinel">
     <h3><span class="plat ios">iOS</span> Verbindung mit Zzzentinel</h3>
@@ -191,7 +212,7 @@
     <ul>
       <li>Den Übungsverlauf löschst du direkt in der App im Bereich <strong>Verlauf</strong>.</li>
       <li>Nachteinträge löschst du unter <strong>Nachtverlauf → Alle Nächte löschen</strong>.</li>
-      <li><strong>Wenn du die App deinstallierst, wird wirklich alles gelöscht.</strong> Da nichts in der Cloud liegt, musst du uns nie um eine Löschung bitten. Wir haben nichts über dich, was wir löschen könnten.</li>
+      <li><strong>Wenn du die App deinstallierst, wird alles vom Gerät gelöscht.</strong> Da Breathune nichts auf einen Server legt, musst du uns nie um eine Löschung bitten. Wir haben nichts über dich, was wir löschen könnten.</li>
       <li>Daten, die in Apple Health oder Health Connect eingetragen wurden, verwaltest du in diesen Apps.</li>
     </ul>
   </div>
@@ -213,7 +234,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Gültig ab <strong>10. Oktober 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/de/">Startseite</a> · <a href="/de/support/">Support</a></p>
+    <p>Gültig ab <strong>5. November 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/de/">Startseite</a> · <a href="/de/support/">Support</a></p>
   </div>
 </footer>
 

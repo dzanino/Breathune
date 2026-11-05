@@ -67,6 +67,7 @@
     <a href="#summary">Podsumowanie</a>
     <a href="#microphone">Mikrofon</a>
     <a href="#health">Zdrowie</a>
+    <a href="#features">Głos i powiadomienia</a>
     <a href="#permissions">Uprawnienia</a>
     <a href="#data">Twoje dane</a>
     <a href="/pl/support/">Pomoc</a>
@@ -121,12 +122,25 @@
 <section id="health">
   <h2>Dane zdrowotne</h2>
 
-  <p><span class="plat ios">iOS</span> Jeśli na to zezwolisz, Breathune zapisze ukończone ćwiczenie w aplikacji <strong>Zdrowie</strong> (Apple Health) jako minuty uważności. Na Apple Watch podczas ćwiczenia odczytuje twoje tętno, żeby na końcu pokazać ci średnią. Opcjonalnie może zapisać monitorowaną noc jako czas „W łóżku”. Jeśli w Ustawieniach nocy włączysz „Sen i oddech z Apple Zdrowie”, dla każdej monitorowanej nocy odczyta fazy snu i częstość oddechu zapisane przez zegarek i zachowa je przy nocy tylko w telefonie. Wyłączysz to w Ustawieniach nocy albo w aplikacji Zdrowie. Innych danych zdrowotnych nie odczytuje.</p>
+  <p><span class="plat ios">iOS</span> Jeśli na to zezwolisz, Breathune zapisze ukończone ćwiczenie w aplikacji <strong>Zdrowie</strong> (Apple Health) jako minuty uważności. Na Apple Watch podczas ćwiczenia odczytuje twoje tętno: przy ćwiczeniu z zegarkiem pokazuje je na żywo także na iPhonie, przy Spokojnym starcie chwilę na nie czeka, a na końcu pokazuje ci średnią. Tętno jest przesyłane tylko między sparowanym zegarkiem a iPhonem. Jeśli w Ustawieniach nocy włączysz „Tętno w nocy (Apple Watch)”, zegarek mierzy tętno przez całą noc i rano dołącza je do zapisu nocy w telefonie. Opcjonalnie może zapisać monitorowaną noc jako czas „W łóżku”. Jeśli w Ustawieniach nocy włączysz „Sen i oddech z Apple Zdrowie”, dla każdej monitorowanej nocy odczyta fazy snu i częstość oddechu zapisane przez zegarek i zachowa je przy nocy tylko w telefonie. Wyłączysz to w Ustawieniach nocy albo w aplikacji Zdrowie. Innych danych zdrowotnych nie odczytuje.</p>
 
   <p><span class="plat and">Android</span> Jeśli na to zezwolisz, Breathune zapisze ukończone ćwiczenie w <strong>Health Connect</strong> jako sesję uważności. Z Health Connect <strong>niczego nie odczytuje</strong>. Uprawnienie możesz w każdej chwili cofnąć w aplikacji Health Connect w części Uprawnienia.</p>
-  <p><span class="plat and">Android</span> Jeśli masz zegarek z Wear OS, Breathune odczytuje na nim podczas ćwiczenia Twój <strong>puls</strong> z czujnika zegarka, pokazuje go na zegarku i w telefonie, a średnią zapisuje w historii ćwiczeń w telefonie. Puls jest przesyłany tylko między sparowanym zegarkiem a telefonem i nigdzie indziej. Nie jest zapisywany w Health Connect.</p>
+  <p><span class="plat and">Android</span> Jeśli masz zegarek z Wear OS, Breathune odczytuje na nim podczas ćwiczenia Twój <strong>puls</strong> z czujnika zegarka, pokazuje go na żywo na zegarku i w telefonie, przy Spokojnym starcie chwilę na niego czeka, a średnią zapisuje w historii ćwiczeń w telefonie. Puls jest przesyłany tylko między sparowanym zegarkiem a telefonem i nigdzie indziej. Nie jest zapisywany w Health Connect.</p>
 
   <p>Dane zdrowotne zostają w twoim urządzeniu i w systemowym magazynie danych zdrowotnych. Breathune nie wysyła ich nigdzie indziej.</p>
+</section>
+
+<section id="features">
+  <h2>Przewodnik głosowy, powiadomienia i skróty</h2>
+
+  <p><strong>Przewodnik głosowy</strong> jest opcjonalny. Nagrania głosu są w aplikacji i odtwarzane na urządzeniu. Nic nie jest pobierane ani wysyłane, a przewodnik nie potrzebuje mikrofonu ani żadnego uprawnienia. Głos został wcześniej utworzony przy użyciu AI.</p>
+
+  <p><span class="plat and">Android</span> <strong>Powiadomienie podczas ćwiczenia.</strong> Breathune i Lite Breathune pokazują podczas ćwiczenia ciche powiadomienie z nazwą programu, bieżącą fazą, odliczaniem i przyciskiem Zakończ; widać je także na ekranie blokady. Na Androidzie 13 i nowszym aplikacja raz, przy pierwszym ćwiczeniu, prosi o uprawnienie do powiadomień. Bez niego działa tak samo, tylko powiadomienie się nie pojawia. Powiadomienie powstaje w telefonie i nic nie jest wysyłane. Uprawnienie zmienisz w ustawieniach systemu.</p>
+
+  <p><span class="plat ios">iOS</span> <strong>Aktywność na żywo.</strong> Pełna wersja na iPhonie pokazuje podczas ćwiczenia na ekranie blokady, w Dynamic Island i w trybie StandBy fazę oddechu i odliczanie. Aplikacja aktualizuje aktywność bezpośrednio w telefonie, bez serwera i bez wiadomości push; dane zostają na urządzeniu. Wyłączysz ją w Ustawieniach systemu przy Breathune.</p>
+
+  <p><strong>Siri, Skróty i skróty na Androidzie.</strong> Gdy otworzysz program przez Siri, aplikację Skróty albo przytrzymując ikonę na Androidzie, aplikacja dostaje tylko wybór programu na urządzeniu i otwiera ekran przed ćwiczeniem. Ćwiczenie zawsze uruchamiasz ty. Breathune niczego przy tym nie wysyła. Polecenia głosowe dla Siri przetwarza system Apple według własnych zasad.</p>
+
 </section>
 
 <section id="permissions">
@@ -147,8 +161,8 @@
       </tr>
       <tr>
         <td>Powiadomienia</td>
-        <td>Stałe powiadomienie podczas trybu nocnego i poranne podsumowanie.</td>
-        <td>tylko pełna wersja</td>
+        <td>Na Androidzie ciche powiadomienie podczas ćwiczenia z fazą i odliczaniem. W pełnej wersji stałe powiadomienie podczas trybu nocnego i poranne podsumowanie. Na iPhonie opcjonalne wieczorne przypomnienie o treningu.</td>
+        <td>obie wersje</td>
       </tr>
       <tr>
         <td>Wibracje</td>
@@ -161,13 +175,18 @@
         <td>obie wersje</td>
       </tr>
       <tr>
+        <td>Tętno (zegarek)</td>
+        <td>Odczyt tętna z czujnika zegarka podczas ćwiczenia (na Apple Watch przez Apple Zdrowie), na Apple Watch opcjonalnie także w nocy. Wyświetlane na zegarku i w sparowanym telefonie.</td>
+        <td>tylko pełna wersja</td>
+      </tr>
+      <tr>
         <td>Działanie w tle</td>
         <td>Żeby nocne monitorowanie trwało przy zablokowanym ekranie.</td>
         <td>tylko pełna wersja</td>
       </tr>
     </tbody>
   </table>
-  <p><strong>Lite Breathune na Androidzie nie prosi o mikrofon ani o powiadomienia.</strong> Używa tylko wibracji i, jeśli na to zezwolisz, zapisu w Health Connect.</p>
+  <p><strong>Lite Breathune na Androidzie nie prosi o mikrofon.</strong> Używa wibracji, powiadomienia podczas ćwiczenia (jeśli na nie zezwolisz) i, jeśli na to zezwolisz, zapisu w Health Connect.</p>
 </section>
 
 <section id="data">
@@ -177,9 +196,11 @@
   <ul>
     <li>historia ukończonych ćwiczeń i seria dni,</li>
     <li>własne programy oddechowe,</li>
-    <li>zapisy monitorowanych nocy (czasy i długości epizodów, głośność, rodzaje dźwięków do analizy nocy),</li>
+    <li>zapisy monitorowanych nocy (czasy i długości epizodów, głośność, rodzaje dźwięków do analizy nocy, opcjonalnie tętno z zegarka),</li>
     <li>twoje ustawienia (motyw, dźwięk, język, czułość).</li>
   </ul>
+
+  <p>Sama aplikacja niczego nie wysyła do chmury. Jeśli w telefonie masz włączoną kopię zapasową systemu (iCloud lub kopia Google), system może dołączyć prywatne dane aplikacji do twojej własnej kopii i przywrócić je na nowym telefonie. Kopią zarządzasz w ustawieniach systemu. Gdy sam wyślesz program przez Breath Share albo podsumowanie nocy, systemowe udostępnianie wyśle je tam, gdzie wybierzesz.</p>
 
   <div class="card" id="zzzentinel">
     <h3><span class="plat ios">iOS</span> Połączenie z Zzzentinelem</h3>
@@ -191,7 +212,7 @@
     <ul>
       <li>Historię ćwiczeń usuniesz bezpośrednio w aplikacji w części <strong>Historia</strong>.</li>
       <li>Zapisy nocy usuniesz w <strong>Historii nocy → Usuń wszystkie noce</strong>.</li>
-      <li><strong>Odinstalowanie aplikacji usuwa absolutnie wszystko.</strong> Ponieważ nic nie jest w chmurze, nie musisz nas prosić o usunięcie. Nie mamy o tobie niczego, co moglibyśmy usunąć.</li>
+      <li><strong>Odinstalowanie aplikacji usuwa z urządzenia wszystko.</strong> Ponieważ Breathune niczego nie umieszcza na żadnym serwerze, nie musisz nas prosić o usunięcie. Nie mamy o tobie niczego, co moglibyśmy usunąć.</li>
       <li>Dane zapisane w aplikacji Zdrowie (Apple Health) lub w Health Connect zarządzasz w tych aplikacjach.</li>
     </ul>
   </div>
@@ -213,7 +234,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Obowiązuje od <strong>10 października 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/pl/">Strona główna</a> · <a href="/pl/support/">Pomoc</a></p>
+    <p>Obowiązuje od <strong>5 listopada 2026</strong>. <span data-fz>Breathune</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/pl/">Strona główna</a> · <a href="/pl/support/">Pomoc</a></p>
   </div>
 </footer>
 
