@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ausculta: atlas auskultácie na učenie sa počúvať srdce, pľúca a brucho</title>
-<meta name="description" content="Ausculta je vzdelávacia appka pre iPhone: atlas učebnicových ukážok srdca, pľúc a brucha z otvorených databáz, kvíz, porovnanie ukážok a návod na auskultáciu stetoskopom. Nie je zdravotnícka pomôcka.">
+<meta name="description" content="Ausculta je vzdelávacia appka pre iPhone: 42 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených databáz, mapa miest auskultácie, prípady, kvíz, denný tréning a návod pre stetoskop. Nepoužíva mikrofón a nie je zdravotnícka pomôcka.">
 <link rel="canonical" href="https://breathune.eu/ausculta/">
 <!--HREFLANG:start-->
 <link rel="alternate" hreflang="sk" href="https://breathune.eu/ausculta/">
@@ -20,7 +20,7 @@
 <!--HREFLANG:end-->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ausculta: atlas auskultácie">
-<meta property="og:description" content="Ausculta je vzdelávacia appka pre iPhone: atlas učebnicových ukážok srdca, pľúc a brucha z otvorených databáz, kvíz, porovnanie ukážok a návod na auskultáciu stetoskopom. Nie je zdravotnícka pomôcka.">
+<meta property="og:description" content="Ausculta je vzdelávacia appka pre iPhone: 42 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených databáz, mapa miest auskultácie, prípady, kvíz, denný tréning a návod pre stetoskop. Nepoužíva mikrofón a nie je zdravotnícka pomôcka.">
 <meta property="og:image" content="https://breathune.eu/img/og/ausculta.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,10 +41,10 @@
   .crumbs a{color:var(--teal)}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","description":"Ausculta je vzdelávacia appka pre iPhone: atlas učebnicových ukážok srdca, pľúc a brucha z otvorených databáz, kvíz, porovnanie ukážok a návod na auskultáciu stetoskopom. Nie je zdravotnícka pomôcka.","author":{"@type":"Person","name":"Ján Šikuta"},"url":"https://breathune.eu/ausculta/"}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","softwareVersion":"2.2","description":"Ausculta je vzdelávacia appka pre iPhone: 42 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených databáz, mapa miest auskultácie, prípady, kvíz, denný tréning a návod pre stetoskop. Nepoužíva mikrofón a nie je zdravotnícka pomôcka.","author":{"@type":"Person","name":"Ján Šikuta","sameAs":"https://orcid.org/0000-0002-4690-0317"},"url":"https://breathune.eu/ausculta/"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Je Ausculta zdravotnícka pomôcka?","acceptedAnswer":{"@type":"Answer","text":"Nie. Je to vzdelávací nástroj na učenie sa počúvať. Nič nemeria, nediagnostikuje a nenahrádza vyšetrenie lekárom. Pri zdravotných ťažkostiach sa obráťte na lekára."}},{"@type":"Question","name":"Odkiaľ sú zvukové ukážky?","acceptedAnswer":{"@type":"Answer","text":"Z otvorených výskumných databáz (napríklad PhysioNet) a jednej zvukovej knižnice. Pri každej ukážke je uvedený zdroj a licencia, súhrn je aj v appke v časti O aplikácii."}},{"@type":"Question","name":"Používa Ausculta mikrofón?","acceptedAnswer":{"@type":"Answer","text":"Nie. Appka len prehráva nahraté ukážky z atlasu, mikrofón nepoužíva a nezbiera žiadne údaje."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Je Ausculta zdravotnícka pomôcka?","acceptedAnswer":{"@type":"Answer","text":"Nie. Je to vzdelávací nástroj na učenie sa počúvať. Nič nemeria, nediagnostikuje a nenahrádza vyšetrenie lekárom. Pri zdravotných ťažkostiach sa obráťte na lekára."}},{"@type":"Question","name":"Odkiaľ sú zvukové ukážky?","acceptedAnswer":{"@type":"Answer","text":"Z otvorených výskumných databáz (napríklad PhysioNet) a jednej zvukovej knižnice. Pri každej ukážke je uvedený zdroj a licencia, súhrn je aj v appke v časti O aplikácii."}},{"@type":"Question","name":"Používa Ausculta mikrofón?","acceptedAnswer":{"@type":"Answer","text":"Nie. Appka len prehráva nahraté ukážky z atlasu, mikrofón nepoužíva a nezbiera žiadne údaje."}},{"@type":"Question","name":"V akých jazykoch je Ausculta?","acceptedAnswer":{"@type":"Answer","text":"V slovenčine, angličtine, češtine a nemčine; riadi sa jazykom iPhonu. Popisy ukážok, kvíz, prípady aj návod sú vo všetkých štyroch jazykoch."}},{"@type":"Question","name":"Kde sa ukladá priebeh tréningu?","acceptedAnswer":{"@type":"Answer","text":"Len v telefóne. Appka nemá účet ani server, priebeh denného tréningu a prehľad vypočutých ukážok sa nikam neodosielajú."}}]}
 </script>
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
 </head>
@@ -79,28 +79,29 @@
 
 <section id="co-je">
   <h2>Čo je Ausculta</h2>
-  <p class="lede">Ausculta (z latinského <em>auscultare</em>, pozorne počúvať) je vzdelávací nástroj na učenie sa auskultácie. Jadrom je atlas učebnicových ukážok srdca, pľúc a brucha z otvorených výskumných databáz, každá s popisom, zdrojom a licenciou.</p>
-  <p>Je to atlas na <strong>počúvanie a porovnávanie</strong> nahratých ukážok. Appka nepoužíva mikrofón, nič nemeria a nikoho nevyšetruje. Vznikla v rovnakej dielni ako Breathune a je určená študentom medicíny a ošetrovateľstva, lekárom aj všetkým, ktorí sa chcú naučiť lepšie počúvať.</p>
+  <p class="lede">Ausculta (z latinského <em>auscultare</em>, pozorne počúvať) je vzdelávací nástroj na učenie sa auskultácie. Jadrom je atlas 42 učebnicových ukážok zvukov srdca, pľúc a brucha z otvorených výskumných databáz, každá s popisom, zdrojom a licenciou.</p>
+  <p>Je to atlas na <strong>počúvanie a porovnávanie</strong> nahratých ukážok. Appka nepoužíva mikrofón, nič nemeria a nikoho nevyšetruje. Vznikla v rovnakej dielni ako Breathune a je určená študentom medicíny a ošetrovateľstva, lekárom aj všetkým, ktorí sa chcú naučiť lepšie počúvať. Je v slovenčine, angličtine, češtine a nemčine.</p>
 </section>
 
 <section id="funkcie">
   <h2>Čo v appke nájdete</h2>
-  <div class="steps"><div class="step"><span class="num">1</span><h3>Atlas ukážok</h3><p>Zvuky srdca, pľúc a brucha, plus ukážky EKG so zvukom na jednej časovej osi. Pri každej ukážke je popis, zdroj a licencia.</p></div><div class="step"><span class="num">2</span><h3>Kvíz</h3><p>Ukážka sa prehrá a vy vyberiete typ zvuku. Hneď uvidíte učebnicový popis. Hodnotia sa len vaše odpovede.</p></div><div class="step"><span class="num">3</span><h3>Porovnanie dvoch ukážok</h3><p>Pustite si jednu ukážku, potom druhú, a všímajte si rozdiel. Appka si pamätá, ktoré ukážky ste už počuli.</p></div><div class="step"><span class="num">4</span><h3>Návod</h3><p>Kde a ako počúvať stetoskopom: zvon a membrána, miesta auskultácie srdca a pľúc a štyri kvadranty brucha.</p></div></div>
+  <p class="lede">Nové vo verzii 2.2: mapa miest auskultácie, prípady, denný tréning, nástroje prehrávania a appka v češtine a nemčine.</p>
+  <div class="steps"><div class="step"><span class="num">1</span><h3>Atlas ukážok</h3><p>42 učebnicových ukážok z otvorených databáz: 18 zo srdca, 17 z pľúc a 7 z brucha, pri každej popis, zdroj a licencia. K tomu 4 ukážky EKG so zvukom srdca na jednej časovej osi.</p></div><div class="step"><span class="num">2</span><h3>Nástroje prehrávania</h3><p>Spomalenie na 0,75× a 0,5× bez zmeny výšky tónu, slučka vybraného úseku a filtre Zvon, Membrána a Široké na nahrávke. Pri 20 ukážkach sú na krivke značky S1 a S2 alebo úseky zvukov podľa anotácií zdrojových databáz.</p></div><div class="step"><span class="num">3</span><h3>Mapa miest</h3><p>Hrudník spredu, chrbát a brucho s miestami auskultácie. Ťuknutím na miesto sa otvoria ukážky, ktoré tam boli podľa zdrojovej databázy nahraté.</p></div><div class="step"><span class="num">4</span><h3>Prípady</h3><p>Šesť krátkych učebnicových situácií zostavených z ukážok atlasu. Prejdete označené miesta, pri každom si vypočujete ukážku a pomenujete typ zvuku.</p></div><div class="step"><span class="num">5</span><h3>Kvíz a porovnanie</h3><p>Kvíz prehrá ukážku a vy vyberiete typ zvuku; hneď uvidíte učebnicový popis. Porovnať dve pustí dve ukážky vedľa seba. Hodnotia sa len vaše odpovede.</p></div><div class="step"><span class="num">6</span><h3>Denný tréning</h3><p>Rozložené opakovanie: správne pomenovaný zvuk sa vráti s rastúcim odstupom dní, pomýlený hneď v najbližšom tréningu. Priebeh zostáva len v telefóne.</p></div><div class="step"><span class="num">7</span><h3>Návod</h3><p>Kde a ako počúvať klasickým stetoskopom: zvon a membrána, miesta auskultácie srdca a pľúc a štyri kvadranty brucha.</p></div><div class="step"><span class="num">8</span><h3>Štyri jazyky a súkromie</h3><p>Appka je v slovenčine, angličtine, češtine a nemčine. Nemá účet ani server, nepoužíva mikrofón a nezbiera žiadne údaje.</p></div></div>
 </section>
 
 <section id="pro">
   <h2>Bez poplatku a Ausculta Pro</h2>
-  <p>Kvíz, porovnanie, návod, časť atlasu a všetky ukážky EKG so zvukom sú bez poplatku. Jednorazový nákup <strong>Ausculta Pro</strong> odomkne zvyšné ukážky atlasu, ktoré sa potom objavia aj v kvíze a v porovnaní. Dobrovoľný príspevok na vývoj nič neodomyká.</p>
+  <p>Na stiahnutie bez poplatku: 12 zo 42 ukážok atlasu, všetky 4 ukážky EKG so zvukom, mapa miest, prípady, kvíz, denný tréning, porovnanie, nástroje prehrávania a celý návod. Jednorazový nákup <strong>Ausculta Pro</strong> odomkne zvyšných 30 ukážok, ktoré sa potom objavia aj na mape, v kvíze, v prípadoch a v tréningu. Dobrovoľný príspevok na vývoj nič neodomyká.</p>
   <!-- App Store: po schválení pridať tlačidlo s odkazom https://apps.apple.com/app/id6819630118 -->
   <div class="tiles">
-    <a class="tile" href="https://dzanino.github.io/ausculta-web/support.html"><h3>Podpora a súkromie</h3><p>Často kladené otázky, kontakt a zásady ochrany súkromia. Appka nezbiera žiadne údaje.</p><span class="arrow">Prejsť na podporu →</span></a>
+    <a class="tile" href="https://dzanino.github.io/ausculta-web/support.html"><h3>Podpora a súkromie</h3><p>Často kladené otázky, kontakt a zásady ochrany súkromia. Appka nepoužíva mikrofón a nezbiera žiadne údaje.</p><span class="arrow">Prejsť na podporu →</span></a>
     <a class="tile" href="https://dzanino.github.io/ausculta-web/methodology.html"><h3>Technické info a zdroje</h3><p>Ako Ausculta funguje, odkiaľ pochádzajú ukážky a pod akými licenciami sú.</p><span class="arrow">Čítať →</span></a>
   </div>
 </section>
 
 <section id="faq">
   <h2>Časté otázky</h2>
-  <details><summary>Je Ausculta zdravotnícka pomôcka?</summary><p>Nie. Je to vzdelávací nástroj na učenie sa počúvať. Nič nemeria, nediagnostikuje a nenahrádza vyšetrenie lekárom. Pri zdravotných ťažkostiach sa obráťte na lekára.</p></details><details><summary>Odkiaľ sú zvukové ukážky?</summary><p>Z otvorených výskumných databáz (napríklad PhysioNet) a jednej zvukovej knižnice. Pri každej ukážke je uvedený zdroj a licencia, súhrn je aj v appke v časti O aplikácii.</p></details><details><summary>Používa Ausculta mikrofón?</summary><p>Nie. Appka len prehráva nahraté ukážky z atlasu, mikrofón nepoužíva a nezbiera žiadne údaje.</p></details>
+  <details><summary>Je Ausculta zdravotnícka pomôcka?</summary><p>Nie. Je to vzdelávací nástroj na učenie sa počúvať. Nič nemeria, nediagnostikuje a nenahrádza vyšetrenie lekárom. Pri zdravotných ťažkostiach sa obráťte na lekára.</p></details><details><summary>Odkiaľ sú zvukové ukážky?</summary><p>Z otvorených výskumných databáz (napríklad PhysioNet) a jednej zvukovej knižnice. Pri každej ukážke je uvedený zdroj a licencia, súhrn je aj v appke v časti O aplikácii.</p></details><details><summary>Používa Ausculta mikrofón?</summary><p>Nie. Appka len prehráva nahraté ukážky z atlasu, mikrofón nepoužíva a nezbiera žiadne údaje.</p></details><details><summary>V akých jazykoch je Ausculta?</summary><p>V slovenčine, angličtine, češtine a nemčine; riadi sa jazykom iPhonu. Popisy ukážok, kvíz, prípady aj návod sú vo všetkých štyroch jazykoch.</p></details><details><summary>Kde sa ukladá priebeh tréningu?</summary><p>Len v telefóne. Appka nemá účet ani server, priebeh denného tréningu a prehľad vypočutých ukážok sa nikam neodosielajú.</p></details>
 </section>
 
 </main>

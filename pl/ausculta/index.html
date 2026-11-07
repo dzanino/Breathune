@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ausculta: atlas osłuchiwania do nauki słuchania serca, płuc i brzucha</title>
-<meta name="description" content="Ausculta to edukacyjna aplikacja na iPhone'a: atlas podręcznikowych próbek dźwięków serca, płuc i brzucha z otwartych baz danych, quiz, porównanie dwóch próbek i poradnik osłuchiwania stetoskopem. Nie jest wyrobem medycznym.">
+<meta name="description" content="Ausculta to edukacyjna aplikacja na iPhone'a: 42 podręcznikowe próbki dźwięków serca, płuc i brzucha z otwartych baz danych, mapa miejsc osłuchiwania, przypadki, quiz, codzienny trening i poradnik stetoskopu. Nie używa mikrofonu i nie jest wyrobem medycznym.">
 <link rel="canonical" href="https://breathune.eu/pl/ausculta/">
 <!--HREFLANG:start-->
 <link rel="alternate" hreflang="sk" href="https://breathune.eu/ausculta/">
@@ -20,7 +20,7 @@
 <!--HREFLANG:end-->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ausculta: atlas osłuchiwania">
-<meta property="og:description" content="Ausculta to edukacyjna aplikacja na iPhone'a: atlas podręcznikowych próbek dźwięków serca, płuc i brzucha z otwartych baz danych, quiz, porównanie dwóch próbek i poradnik osłuchiwania stetoskopem. Nie jest wyrobem medycznym.">
+<meta property="og:description" content="Ausculta to edukacyjna aplikacja na iPhone'a: 42 podręcznikowe próbki dźwięków serca, płuc i brzucha z otwartych baz danych, mapa miejsc osłuchiwania, przypadki, quiz, codzienny trening i poradnik stetoskopu. Nie używa mikrofonu i nie jest wyrobem medycznym.">
 <meta property="og:image" content="https://breathune.eu/img/og/ausculta.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,10 +41,10 @@
   .crumbs a{color:var(--teal)}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","description":"Ausculta to edukacyjna aplikacja na iPhone'a: atlas podręcznikowych próbek dźwięków serca, płuc i brzucha z otwartych baz danych, quiz, porównanie dwóch próbek i poradnik osłuchiwania stetoskopem. Nie jest wyrobem medycznym.","author":{"@type":"Person","name":"Ján Šikuta"},"url":"https://breathune.eu/pl/ausculta/"}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","softwareVersion":"2.2","description":"Ausculta to edukacyjna aplikacja na iPhone'a: 42 podręcznikowe próbki dźwięków serca, płuc i brzucha z otwartych baz danych, mapa miejsc osłuchiwania, przypadki, quiz, codzienny trening i poradnik stetoskopu. Nie używa mikrofonu i nie jest wyrobem medycznym.","author":{"@type":"Person","name":"Ján Šikuta","sameAs":"https://orcid.org/0000-0002-4690-0317"},"url":"https://breathune.eu/pl/ausculta/"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy Ausculta jest wyrobem medycznym?","acceptedAnswer":{"@type":"Answer","text":"Nie. To narzędzie edukacyjne do nauki słuchania. Niczego nie mierzy, nie stawia diagnoz i nie zastępuje badania lekarskiego. W razie problemów zdrowotnych skontaktuj się z lekarzem."}},{"@type":"Question","name":"Skąd pochodzą próbki dźwięków?","acceptedAnswer":{"@type":"Answer","text":"Z otwartych baz badawczych (na przykład PhysioNet) i jednej biblioteki dźwięków. Przy każdej próbce podano źródło i licencję, zestawienie jest też w aplikacji w sekcji O aplikacji."}},{"@type":"Question","name":"Czy Ausculta używa mikrofonu?","acceptedAnswer":{"@type":"Answer","text":"Nie. Aplikacja tylko odtwarza nagrane próbki z atlasu, nie używa mikrofonu i nie zbiera żadnych danych."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy Ausculta jest wyrobem medycznym?","acceptedAnswer":{"@type":"Answer","text":"Nie. To narzędzie edukacyjne do nauki słuchania. Niczego nie mierzy, nie stawia diagnoz i nie zastępuje badania lekarskiego. W razie problemów zdrowotnych skontaktuj się z lekarzem."}},{"@type":"Question","name":"Skąd pochodzą próbki dźwięków?","acceptedAnswer":{"@type":"Answer","text":"Z otwartych baz badawczych (na przykład PhysioNet) i jednej biblioteki dźwięków. Przy każdej próbce podano źródło i licencję, zestawienie jest też w aplikacji w sekcji O aplikacji."}},{"@type":"Question","name":"Czy Ausculta używa mikrofonu?","acceptedAnswer":{"@type":"Answer","text":"Nie. Aplikacja tylko odtwarza nagrane próbki z atlasu, nie używa mikrofonu i nie zbiera żadnych danych."}},{"@type":"Question","name":"W jakich językach jest Ausculta?","acceptedAnswer":{"@type":"Answer","text":"Po słowacku, angielsku, czesku i niemiecku; kieruje się językiem iPhone'a. Opisy próbek, quiz, przypadki i poradnik są we wszystkich czterech językach."}},{"@type":"Question","name":"Gdzie zapisują się moje postępy?","acceptedAnswer":{"@type":"Answer","text":"Tylko w telefonie. Aplikacja nie ma konta ani serwera; postępy codziennego treningu i lista odsłuchanych próbek nie są nigdzie wysyłane."}}]}
 </script>
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
 </head>
@@ -79,28 +79,29 @@
 
 <section id="what">
   <h2>Czym jest Ausculta</h2>
-  <p class="lede">Ausculta (z łac. <em>auscultare</em>, uważnie słuchać) to narzędzie edukacyjne do nauki osłuchiwania. Sercem aplikacji jest atlas podręcznikowych próbek dźwięków serca, płuc i brzucha z otwartych baz badawczych, każda z opisem, źródłem i licencją.</p>
-  <p>To atlas do <strong>słuchania i porównywania</strong> nagranych próbek. Aplikacja nie używa mikrofonu, niczego nie mierzy i nikogo nie bada. Powstała w tej samej pracowni co Breathune i jest przeznaczona dla studentów medycyny i pielęgniarstwa, lekarzy oraz wszystkich, którzy chcą lepiej słuchać. Sama aplikacja jest dostępna po słowacku i angielsku.</p>
+  <p class="lede">Ausculta (z łac. <em>auscultare</em>, uważnie słuchać) to narzędzie edukacyjne do nauki osłuchiwania. Sercem aplikacji jest atlas 42 podręcznikowych próbek dźwięków serca, płuc i brzucha z otwartych baz badawczych, każda z opisem, źródłem i licencją.</p>
+  <p>To atlas do <strong>słuchania i porównywania</strong> nagranych próbek. Aplikacja nie używa mikrofonu, niczego nie mierzy i nikogo nie bada. Powstała w tej samej pracowni co Breathune i jest przeznaczona dla studentów medycyny i pielęgniarstwa, lekarzy oraz wszystkich, którzy chcą lepiej słuchać. Sama aplikacja jest dostępna po słowacku, angielsku, czesku i niemiecku.</p>
 </section>
 
 <section id="features">
   <h2>Co jest w aplikacji</h2>
-  <div class="steps"><div class="step"><span class="num">1</span><h3>Atlas próbek</h3><p>Dźwięki serca, płuc i brzucha oraz próbki EKG z dźwiękiem na jednej osi czasu. Każda próbka ma opis, źródło i licencję.</p></div><div class="step"><span class="num">2</span><h3>Quiz</h3><p>Próbka jest odtwarzana, a Ty wybierasz rodzaj dźwięku. Od razu widzisz podręcznikowy opis. Oceniane są tylko Twoje odpowiedzi.</p></div><div class="step"><span class="num">3</span><h3>Porównanie dwóch próbek</h3><p>Odtwórz jedną próbkę, potem drugą i wsłuchaj się w różnicę. Aplikacja pamięta, które próbki już słyszałeś.</p></div><div class="step"><span class="num">4</span><h3>Poradnik</h3><p>Gdzie i jak osłuchiwać stetoskopem: lejek i membrana, miejsca osłuchiwania serca i płuc oraz cztery kwadranty brzucha.</p></div></div>
+  <p class="lede">Nowości w wersji 2.2: mapa miejsc osłuchiwania, przypadki, codzienny trening, narzędzia odtwarzania oraz aplikacja po czesku i niemiecku.</p>
+  <div class="steps"><div class="step"><span class="num">1</span><h3>Atlas próbek</h3><p>42 podręcznikowe próbki z otwartych baz: 18 z serca, 17 z płuc i 7 z brzucha, każda z opisem, źródłem i licencją. Do tego 4 próbki EKG z dźwiękiem serca na jednej osi czasu.</p></div><div class="step"><span class="num">2</span><h3>Narzędzia odtwarzania</h3><p>Spowolnienie do 0,75× i 0,5× bez zmiany wysokości dźwięku, pętla wybranego fragmentu i filtry Bell (lejek), Diaphragm (membrana) i Wide (szeroki) na nagraniu. W 20 próbkach na wykresie są znaczniki S1 i S2 lub fragmenty dźwięków według adnotacji baz źródłowych.</p></div><div class="step"><span class="num">3</span><h3>Mapa miejsc</h3><p>Klatka piersiowa od przodu, plecy i brzuch z miejscami osłuchiwania. Dotknięcie miejsca otwiera próbki, które według bazy źródłowej zostały tam nagrane.</p></div><div class="step"><span class="num">4</span><h3>Przypadki</h3><p>Sześć krótkich podręcznikowych sytuacji złożonych z próbek atlasu. Przechodzisz zaznaczone miejsca, przy każdym słuchasz próbki i nazywasz rodzaj dźwięku.</p></div><div class="step"><span class="num">5</span><h3>Quiz i porównanie</h3><p>Quiz odtwarza próbkę, a Ty wybierasz rodzaj dźwięku; od razu widzisz podręcznikowy opis. Porównanie odtwarza dwie próbki obok siebie. Oceniane są tylko Twoje odpowiedzi.</p></div><div class="step"><span class="num">6</span><h3>Codzienny trening</h3><p>Powtarzanie w odstępach: dźwięk nazwany poprawnie wraca po rosnącej liczbie dni, pomylony już w następnym treningu. Postępy zostają w telefonie.</p></div><div class="step"><span class="num">7</span><h3>Poradnik</h3><p>Gdzie i jak osłuchiwać klasycznym stetoskopem: lejek i membrana, miejsca osłuchiwania serca i płuc oraz cztery kwadranty brzucha.</p></div><div class="step"><span class="num">8</span><h3>Cztery języki i prywatność</h3><p>Aplikacja jest dostępna po słowacku, angielsku, czesku i niemiecku. Nie ma konta ani serwera, nie używa mikrofonu i nie zbiera żadnych danych.</p></div></div>
 </section>
 
 <section id="pro">
   <h2>Bez opłat i Ausculta Pro</h2>
-  <p>Quiz, porównanie, poradnik, część atlasu i wszystkie próbki EKG z dźwiękiem są bez opłat. Jednorazowy zakup <strong>Ausculta Pro</strong> odblokowuje pozostałe próbki atlasu, które pojawiają się wtedy także w quizie i w porównaniu. Dobrowolny datek na rozwój niczego nie odblokowuje.</p>
+  <p>Bez opłat: 12 z 42 próbek atlasu, wszystkie 4 próbki EKG z dźwiękiem, mapa miejsc, przypadki, quiz, codzienny trening, porównanie, narzędzia odtwarzania i cały poradnik. Jednorazowy zakup <strong>Ausculta Pro</strong> odblokowuje pozostałe 30 próbek, które pojawiają się wtedy także na mapie, w quizie, w przypadkach i w treningu. Dobrowolny datek na rozwój niczego nie odblokowuje.</p>
   <!-- App Store: po schválení pridať tlačidlo s odkazom https://apps.apple.com/app/id6819630118 -->
   <div class="tiles">
-    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/support.html"><h3>Pomoc i prywatność</h3><p>Częste pytania, kontakt i polityka prywatności. Aplikacja nie zbiera żadnych danych.</p><span class="arrow">Przejdź do pomocy →</span></a>
+    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/support.html"><h3>Pomoc i prywatność</h3><p>Częste pytania, kontakt i polityka prywatności. Aplikacja nie używa mikrofonu i nie zbiera żadnych danych.</p><span class="arrow">Przejdź do pomocy →</span></a>
     <a class="tile" href="https://dzanino.github.io/ausculta-web/en/methodology.html"><h3>Informacje techniczne i źródła</h3><p>Jak działa Ausculta, skąd pochodzą próbki i na jakich licencjach.</p><span class="arrow">Czytaj dalej →</span></a>
   </div>
 </section>
 
 <section id="faq">
   <h2>Częste pytania</h2>
-  <details><summary>Czy Ausculta jest wyrobem medycznym?</summary><p>Nie. To narzędzie edukacyjne do nauki słuchania. Niczego nie mierzy, nie stawia diagnoz i nie zastępuje badania lekarskiego. W razie problemów zdrowotnych skontaktuj się z lekarzem.</p></details><details><summary>Skąd pochodzą próbki dźwięków?</summary><p>Z otwartych baz badawczych (na przykład PhysioNet) i jednej biblioteki dźwięków. Przy każdej próbce podano źródło i licencję, zestawienie jest też w aplikacji w sekcji O aplikacji.</p></details><details><summary>Czy Ausculta używa mikrofonu?</summary><p>Nie. Aplikacja tylko odtwarza nagrane próbki z atlasu, nie używa mikrofonu i nie zbiera żadnych danych.</p></details>
+  <details><summary>Czy Ausculta jest wyrobem medycznym?</summary><p>Nie. To narzędzie edukacyjne do nauki słuchania. Niczego nie mierzy, nie stawia diagnoz i nie zastępuje badania lekarskiego. W razie problemów zdrowotnych skontaktuj się z lekarzem.</p></details><details><summary>Skąd pochodzą próbki dźwięków?</summary><p>Z otwartych baz badawczych (na przykład PhysioNet) i jednej biblioteki dźwięków. Przy każdej próbce podano źródło i licencję, zestawienie jest też w aplikacji w sekcji O aplikacji.</p></details><details><summary>Czy Ausculta używa mikrofonu?</summary><p>Nie. Aplikacja tylko odtwarza nagrane próbki z atlasu, nie używa mikrofonu i nie zbiera żadnych danych.</p></details><details><summary>W jakich językach jest Ausculta?</summary><p>Po słowacku, angielsku, czesku i niemiecku; kieruje się językiem iPhone'a. Opisy próbek, quiz, przypadki i poradnik są we wszystkich czterech językach.</p></details><details><summary>Gdzie zapisują się moje postępy?</summary><p>Tylko w telefonie. Aplikacja nie ma konta ani serwera; postępy codziennego treningu i lista odsłuchanych próbek nie są nigdzie wysyłane.</p></details>
 </section>
 
 </main>

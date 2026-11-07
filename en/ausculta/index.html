@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ausculta: an auscultation atlas for learning to listen to heart, lung and bowel sounds</title>
-<meta name="description" content="Ausculta is an educational iPhone app: an atlas of textbook heart, lung and bowel sound excerpts from open databases, a quiz, side-by-side comparison and a guide to auscultation with a stethoscope. Not a medical device.">
+<meta name="description" content="Ausculta is an educational iPhone app: 42 textbook heart, lung and bowel sound examples from open databases, a map of the auscultation sites, cases, a quiz, daily practice and a stethoscope guide. It does not use the microphone and is not a medical device.">
 <link rel="canonical" href="https://breathune.eu/en/ausculta/">
 <!--HREFLANG:start-->
 <link rel="alternate" hreflang="sk" href="https://breathune.eu/ausculta/">
@@ -20,7 +20,7 @@
 <!--HREFLANG:end-->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ausculta: auscultation atlas">
-<meta property="og:description" content="Ausculta is an educational iPhone app: an atlas of textbook heart, lung and bowel sound excerpts from open databases, a quiz, side-by-side comparison and a guide to auscultation with a stethoscope. Not a medical device.">
+<meta property="og:description" content="Ausculta is an educational iPhone app: 42 textbook heart, lung and bowel sound examples from open databases, a map of the auscultation sites, cases, a quiz, daily practice and a stethoscope guide. It does not use the microphone and is not a medical device.">
 <meta property="og:image" content="https://breathune.eu/img/og/ausculta.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,10 +41,10 @@
   .crumbs a{color:var(--teal)}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","description":"Ausculta is an educational iPhone app: an atlas of textbook heart, lung and bowel sound excerpts from open databases, a quiz, side-by-side comparison and a guide to auscultation with a stethoscope. Not a medical device.","author":{"@type":"Person","name":"Ján Šikuta"},"url":"https://breathune.eu/en/ausculta/"}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","softwareVersion":"2.2","description":"Ausculta is an educational iPhone app: 42 textbook heart, lung and bowel sound examples from open databases, a map of the auscultation sites, cases, a quiz, daily practice and a stethoscope guide. It does not use the microphone and is not a medical device.","author":{"@type":"Person","name":"Ján Šikuta","sameAs":"https://orcid.org/0000-0002-4690-0317"},"url":"https://breathune.eu/en/ausculta/"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Ausculta a medical device?","acceptedAnswer":{"@type":"Answer","text":"No. It is an educational tool for learning to listen. It does not measure, diagnose or replace an examination by a doctor. If you have health concerns, see a doctor."}},{"@type":"Question","name":"Where do the sound excerpts come from?","acceptedAnswer":{"@type":"Answer","text":"From open research databases (for example PhysioNet) and one sound library. Each excerpt shows its source and licence, and a summary is in the app under About."}},{"@type":"Question","name":"Does Ausculta use the microphone?","acceptedAnswer":{"@type":"Answer","text":"No. The app only plays the recorded atlas excerpts; it does not use the microphone and collects no data."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Ausculta a medical device?","acceptedAnswer":{"@type":"Answer","text":"No. It is an educational tool for learning to listen. It does not measure, diagnose or replace an examination by a doctor. If you have health concerns, see a doctor."}},{"@type":"Question","name":"Where do the sound examples come from?","acceptedAnswer":{"@type":"Answer","text":"From open research databases (for example PhysioNet) and one sound library. Each example shows its source and licence, and a summary is in the app under About."}},{"@type":"Question","name":"Does Ausculta use the microphone?","acceptedAnswer":{"@type":"Answer","text":"No. The app only plays the recorded atlas examples; it does not use the microphone and collects no data."}},{"@type":"Question","name":"Which languages is Ausculta in?","acceptedAnswer":{"@type":"Answer","text":"Slovak, English, Czech and German; it follows the language of your iPhone. The descriptions, the quiz, the cases and the guide are in all four languages."}},{"@type":"Question","name":"Where is my practice progress stored?","acceptedAnswer":{"@type":"Answer","text":"Only on the phone. The app has no account or server; the daily practice progress and the overview of examples you have heard are never sent anywhere."}}]}
 </script>
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
 </head>
@@ -53,7 +53,7 @@
 <header>
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
     <div style="flex:1;min-width:220px">
-      <a class="back" href="/">← Breathune</a>
+      <a class="back" href="/en/">← Breathune</a>
       <div class="brand">
         <img class="mark" src="/assets/ausculta-icon.png" width="46" height="46" alt="">
         <div>
@@ -70,7 +70,7 @@
 
 <nav>
   <div class="wrap">
-    <p class="crumbs" style="margin:0"><a href="/">Breathune</a> › Ausculta</p>
+    <p class="crumbs" style="margin:0"><a href="/en/">Breathune</a> › Ausculta</p>
     <a href="#what">What Ausculta is</a><a href="#features">What is in the app</a><a href="#pro">No cost and Pro</a><a href="#faq">FAQ</a>
   </div>
 </nav>
@@ -79,28 +79,29 @@
 
 <section id="what">
   <h2>What Ausculta is</h2>
-  <p class="lede">Ausculta (from Latin <em>auscultare</em>, to listen closely) is an educational tool for learning auscultation. At its core is an atlas of textbook heart, lung and bowel sound excerpts from open research databases, each with a description, source and licence.</p>
-  <p>It is an atlas for <strong>listening to and comparing</strong> recorded examples. The app does not use the microphone, measures nothing and examines no one. It comes from the same workshop as Breathune and is meant for medical and nursing students, doctors, and anyone who wants to listen more carefully.</p>
+  <p class="lede">Ausculta (from Latin <em>auscultare</em>, to listen closely) is an educational tool for learning auscultation. At its core is an atlas of 42 textbook heart, lung and bowel sound examples from open research databases, each with a description, source and licence.</p>
+  <p>It is an atlas for <strong>listening to and comparing</strong> recorded examples. The app does not use the microphone, measures nothing and examines no one. It comes from the same workshop as Breathune and is meant for medical and nursing students, doctors, and anyone who wants to listen more carefully. It is in Slovak, English, Czech and German.</p>
 </section>
 
 <section id="features">
   <h2>What is in the app</h2>
-  <div class="steps"><div class="step"><span class="num">1</span><h3>Sound atlas</h3><p>Heart, lung and bowel sounds, plus ECG excerpts with sound on one timeline. Every excerpt has a description, source and licence.</p></div><div class="step"><span class="num">2</span><h3>Quiz</h3><p>An excerpt plays and you pick the type of sound. You immediately see the textbook description. Only your answers are scored.</p></div><div class="step"><span class="num">3</span><h3>Compare two</h3><p>Play one excerpt, then the other, and listen for the difference. The app remembers which excerpts you have already heard.</p></div><div class="step"><span class="num">4</span><h3>Guide</h3><p>Where and how to listen with a stethoscope: bell and diaphragm, the auscultation sites of the heart and lungs, and the four quadrants of the abdomen.</p></div></div>
+  <p class="lede">New in 2.2: a map of the auscultation sites, cases, daily practice, playback tools, and the app in Czech and German.</p>
+  <div class="steps"><div class="step"><span class="num">1</span><h3>Atlas of examples</h3><p>42 textbook examples from open databases: 18 heart, 17 lung and 7 bowel sounds, each with a description, source and licence. Plus 4 ECG examples with heart sound on one time axis.</p></div><div class="step"><span class="num">2</span><h3>Playback tools</h3><p>Slower playback at 0.75× and 0.5× without a change in pitch, a loop over a chosen stretch and the Bell, Diaphragm and Wide filters on the recording. In 20 examples the waveform carries S1 and S2 marks or sound stretches from the annotations of the source databases.</p></div><div class="step"><span class="num">3</span><h3>Site map</h3><p>The chest from the front, the back and the abdomen with the auscultation sites. Tap a site to open the examples that, according to the source database, were recorded there.</p></div><div class="step"><span class="num">4</span><h3>Cases</h3><p>Six short textbook situations built from atlas examples. You walk through the marked sites, listen to an example at each one and name the type of sound.</p></div><div class="step"><span class="num">5</span><h3>Quiz and comparison</h3><p>The quiz plays an example and you pick the type of sound; the textbook description follows right away. Compare two plays two examples side by side. Only your answers are scored.</p></div><div class="step"><span class="num">6</span><h3>Daily practice</h3><p>Spaced repetition: a sound you name correctly comes back after a growing number of days, one you get wrong in the very next session. Your progress stays on the phone.</p></div><div class="step"><span class="num">7</span><h3>Guide</h3><p>Where and how to listen with a conventional stethoscope: bell and diaphragm, the auscultation sites of the heart and lungs, and the four quadrants of the abdomen.</p></div><div class="step"><span class="num">8</span><h3>Four languages and privacy</h3><p>The app is in Slovak, English, Czech and German. It has no account or server, does not use the microphone and collects no data.</p></div></div>
 </section>
 
 <section id="pro">
   <h2>No cost and Ausculta Pro</h2>
-  <p>The quiz, comparison, the guide, part of the atlas and all ECG excerpts with sound come at no cost. A one-time purchase, <strong>Ausculta Pro</strong>, unlocks the remaining atlas excerpts, which then also appear in the quiz and in the comparison. A voluntary contribution to development unlocks nothing.</p>
+  <p>At no cost: 12 of the 42 atlas examples, all 4 ECG examples with sound, the site map, cases, quiz, daily practice, comparison, the playback tools and the whole guide. A one-time purchase, <strong>Ausculta Pro</strong>, unlocks the other 30 examples, which then also appear on the map, in the quiz, in the cases and in practice. A voluntary contribution to development unlocks nothing.</p>
   <!-- App Store: po schválení pridať tlačidlo s odkazom https://apps.apple.com/app/id6819630118 -->
   <div class="tiles">
-    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/support.html"><h3>Support and privacy</h3><p>Frequently asked questions, contact and the privacy policy. The app collects no data.</p><span class="arrow">Go to support →</span></a>
-    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/methodology.html"><h3>Technical info and sources</h3><p>How Ausculta works, where the excerpts come from and under which licences.</p><span class="arrow">Read more →</span></a>
+    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/support.html"><h3>Support and privacy</h3><p>Frequently asked questions, contact and the privacy policy. The app does not use the microphone and collects no data.</p><span class="arrow">Go to support →</span></a>
+    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/methodology.html"><h3>Technical info and sources</h3><p>How Ausculta works, where the examples come from and under which licences.</p><span class="arrow">Read more →</span></a>
   </div>
 </section>
 
 <section id="faq">
   <h2>FAQ</h2>
-  <details><summary>Is Ausculta a medical device?</summary><p>No. It is an educational tool for learning to listen. It does not measure, diagnose or replace an examination by a doctor. If you have health concerns, see a doctor.</p></details><details><summary>Where do the sound excerpts come from?</summary><p>From open research databases (for example PhysioNet) and one sound library. Each excerpt shows its source and licence, and a summary is in the app under About.</p></details><details><summary>Does Ausculta use the microphone?</summary><p>No. The app only plays the recorded atlas excerpts; it does not use the microphone and collects no data.</p></details>
+  <details><summary>Is Ausculta a medical device?</summary><p>No. It is an educational tool for learning to listen. It does not measure, diagnose or replace an examination by a doctor. If you have health concerns, see a doctor.</p></details><details><summary>Where do the sound examples come from?</summary><p>From open research databases (for example PhysioNet) and one sound library. Each example shows its source and licence, and a summary is in the app under About.</p></details><details><summary>Does Ausculta use the microphone?</summary><p>No. The app only plays the recorded atlas examples; it does not use the microphone and collects no data.</p></details><details><summary>Which languages is Ausculta in?</summary><p>Slovak, English, Czech and German; it follows the language of your iPhone. The descriptions, the quiz, the cases and the guide are in all four languages.</p></details><details><summary>Where is my practice progress stored?</summary><p>Only on the phone. The app has no account or server; the daily practice progress and the overview of examples you have heard are never sent anywhere.</p></details>
 </section>
 
 </main>
@@ -108,7 +109,7 @@
 <footer>
   <div class="wrap">
     <p>Ausculta is an educational listening tool. It is not a medical device, does not measure or diagnose, and does not replace an examination by a doctor.</p>
-    <p class="fine"><span data-fz>©</span> 2026 Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="https://dzanino.github.io/ausculta-web/en/privacy.html">Privacy</a> · <a href="https://dzanino.github.io/ausculta-web/en/support.html">Support</a> · <a href="/">breathune.eu</a></p>
+    <p class="fine"><span data-fz>©</span> 2026 Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="https://dzanino.github.io/ausculta-web/en/privacy.html">Privacy</a> · <a href="https://dzanino.github.io/ausculta-web/en/support.html">Support</a> · <a href="/en/">breathune.eu</a></p>
   </div>
 </footer>
 

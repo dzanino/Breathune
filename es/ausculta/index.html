@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ausculta: atlas de auscultación para aprender a escuchar el corazón, los pulmones y el abdomen</title>
-<meta name="description" content="Ausculta es una app educativa para iPhone: un atlas de fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos abiertas, un cuestionario, la comparación de dos fragmentos y una guía de auscultación con estetoscopio. No es un producto sanitario.">
+<meta name="description" content="Ausculta es una app educativa para iPhone: 42 fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos abiertas, mapa de los focos de auscultación, casos, cuestionario, práctica diaria y guía del estetoscopio. No usa el micrófono y no es un producto sanitario.">
 <link rel="canonical" href="https://breathune.eu/es/ausculta/">
 <!--HREFLANG:start-->
 <link rel="alternate" hreflang="sk" href="https://breathune.eu/ausculta/">
@@ -20,7 +20,7 @@
 <!--HREFLANG:end-->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ausculta: atlas de auscultación">
-<meta property="og:description" content="Ausculta es una app educativa para iPhone: un atlas de fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos abiertas, un cuestionario, la comparación de dos fragmentos y una guía de auscultación con estetoscopio. No es un producto sanitario.">
+<meta property="og:description" content="Ausculta es una app educativa para iPhone: 42 fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos abiertas, mapa de los focos de auscultación, casos, cuestionario, práctica diaria y guía del estetoscopio. No usa el micrófono y no es un producto sanitario.">
 <meta property="og:image" content="https://breathune.eu/img/og/ausculta.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -41,10 +41,10 @@
   .crumbs a{color:var(--teal)}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","description":"Ausculta es una app educativa para iPhone: un atlas de fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos abiertas, un cuestionario, la comparación de dos fragmentos y una guía de auscultación con estetoscopio. No es un producto sanitario.","author":{"@type":"Person","name":"Ján Šikuta"},"url":"https://breathune.eu/es/ausculta/"}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Ausculta","applicationCategory":"EducationalApplication","operatingSystem":"iOS","softwareVersion":"2.2","description":"Ausculta es una app educativa para iPhone: 42 fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos abiertas, mapa de los focos de auscultación, casos, cuestionario, práctica diaria y guía del estetoscopio. No usa el micrófono y no es un producto sanitario.","author":{"@type":"Person","name":"Ján Šikuta","sameAs":"https://orcid.org/0000-0002-4690-0317"},"url":"https://breathune.eu/es/ausculta/"}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Es Ausculta un producto sanitario?","acceptedAnswer":{"@type":"Answer","text":"No. Es una herramienta educativa para aprender a escuchar. No mide nada, no diagnostica y no sustituye la exploración médica. Si tiene problemas de salud, consulte a un médico."}},{"@type":"Question","name":"¿De dónde proceden los fragmentos sonoros?","acceptedAnswer":{"@type":"Answer","text":"De bases de datos de investigación abiertas (por ejemplo PhysioNet) y de una biblioteca de sonidos. De cada fragmento se indica la fuente y la licencia, y hay un resumen en la app, en Acerca de."}},{"@type":"Question","name":"¿Usa Ausculta el micrófono?","acceptedAnswer":{"@type":"Answer","text":"No. La app solo reproduce los fragmentos grabados del atlas, no usa el micrófono y no recoge ningún dato."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Es Ausculta un producto sanitario?","acceptedAnswer":{"@type":"Answer","text":"No. Es una herramienta educativa para aprender a escuchar. No mide nada, no diagnostica y no sustituye la exploración médica. Si tiene problemas de salud, consulte a un médico."}},{"@type":"Question","name":"¿De dónde proceden los fragmentos sonoros?","acceptedAnswer":{"@type":"Answer","text":"De bases de datos de investigación abiertas (por ejemplo PhysioNet) y de una biblioteca de sonidos. De cada fragmento se indica la fuente y la licencia, y hay un resumen en la app, en Acerca de."}},{"@type":"Question","name":"¿Usa Ausculta el micrófono?","acceptedAnswer":{"@type":"Answer","text":"No. La app solo reproduce los fragmentos grabados del atlas, no usa el micrófono y no recoge ningún dato."}},{"@type":"Question","name":"¿En qué idiomas está Ausculta?","acceptedAnswer":{"@type":"Answer","text":"En eslovaco, inglés, checo y alemán; sigue el idioma del iPhone. Las descripciones, el cuestionario, los casos y la guía están en los cuatro idiomas."}},{"@type":"Question","name":"¿Dónde se guarda mi progreso?","acceptedAnswer":{"@type":"Answer","text":"Solo en el teléfono. La app no tiene cuenta ni servidor; el progreso de la práctica diaria y la lista de fragmentos escuchados no se envían a ningún sitio."}}]}
 </script>
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
 </head>
@@ -58,7 +58,7 @@
         <img class="mark" src="/assets/ausculta-icon.png" width="46" height="46" alt="">
         <div>
           <h1>Ausculta</h1>
-          <p>Atlas de auscultación: aprende a escuchar el corazón, los pulmones y el abdomen</p>
+          <p>Atlas de auscultación: aprenda a escuchar el corazón, los pulmones y el abdomen</p>
         </div>
       </div>
     </div>
@@ -79,28 +79,29 @@
 
 <section id="what">
   <h2>Qué es Ausculta</h2>
-  <p class="lede">Ausculta (del latín <em>auscultare</em>, escuchar con atención) es una herramienta educativa para aprender auscultación. Su núcleo es un atlas de fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos de investigación abiertas, cada uno con descripción, fuente y licencia.</p>
-  <p>Es un atlas para <strong>escuchar y comparar</strong> fragmentos grabados. La app no usa el micrófono, no mide nada y no explora a nadie. Nace del mismo taller que Breathune y está pensada para estudiantes de medicina y enfermería, médicos y cualquiera que quiera aprender a escuchar mejor. La app está disponible en eslovaco e inglés.</p>
+  <p class="lede">Ausculta (del latín <em>auscultare</em>, escuchar con atención) es una herramienta educativa para aprender auscultación. Su núcleo es un atlas de 42 fragmentos de libro de texto con sonidos del corazón, los pulmones y el abdomen de bases de datos de investigación abiertas, cada uno con descripción, fuente y licencia.</p>
+  <p>Es un atlas para <strong>escuchar y comparar</strong> fragmentos grabados. La app no usa el micrófono, no mide nada y no explora a nadie. Nace del mismo taller que Breathune y está pensada para estudiantes de medicina y enfermería, médicos y cualquiera que quiera aprender a escuchar mejor. La app está disponible en eslovaco, inglés, checo y alemán.</p>
 </section>
 
 <section id="features">
   <h2>Qué incluye la app</h2>
-  <div class="steps"><div class="step"><span class="num">1</span><h3>Atlas de fragmentos</h3><p>Sonidos del corazón, los pulmones y el abdomen, y fragmentos de ECG con sonido en una misma línea de tiempo. Cada fragmento tiene descripción, fuente y licencia.</p></div><div class="step"><span class="num">2</span><h3>Cuestionario</h3><p>Se reproduce un fragmento y usted elige el tipo de sonido. Ve enseguida la descripción del libro de texto. Solo se puntúan sus respuestas.</p></div><div class="step"><span class="num">3</span><h3>Comparar dos fragmentos</h3><p>Escuche un fragmento, luego el otro, y fíjese en la diferencia. La app recuerda qué fragmentos ya ha escuchado.</p></div><div class="step"><span class="num">4</span><h3>Guía</h3><p>Dónde y cómo escuchar con el estetoscopio: campana y membrana, los focos de auscultación del corazón y los pulmones y los cuatro cuadrantes del abdomen.</p></div></div>
+  <p class="lede">Novedades de la versión 2.2: mapa de los focos de auscultación, casos, práctica diaria, herramientas de reproducción y la app en checo y alemán.</p>
+  <div class="steps"><div class="step"><span class="num">1</span><h3>Atlas de fragmentos</h3><p>42 fragmentos de libro de texto de bases de datos abiertas: 18 del corazón, 17 de los pulmones y 7 del abdomen, cada uno con descripción, fuente y licencia. Además, 4 fragmentos de ECG con sonido del corazón en una misma línea de tiempo.</p></div><div class="step"><span class="num">2</span><h3>Herramientas de reproducción</h3><p>Reproducción a 0,75× y 0,5× sin cambiar el tono, bucle sobre un tramo elegido y filtros Bell (campana), Diaphragm (membrana) y Wide (amplio) sobre la grabación. En 20 fragmentos la forma de onda lleva marcas de S1 y S2 (primer y segundo ruido cardíaco) o tramos anotados según las bases de datos de origen.</p></div><div class="step"><span class="num">3</span><h3>Mapa de focos</h3><p>El tórax de frente, la espalda y el abdomen con los focos de auscultación. Al tocar un foco se abren los fragmentos que, según la base de datos de origen, se grabaron allí.</p></div><div class="step"><span class="num">4</span><h3>Casos</h3><p>Seis situaciones breves de libro de texto compuestas con fragmentos del atlas. Usted recorre los focos marcados, escucha un fragmento en cada uno y nombra el tipo de sonido.</p></div><div class="step"><span class="num">5</span><h3>Cuestionario y comparación</h3><p>El cuestionario reproduce un fragmento y usted elige el tipo de sonido; enseguida aparece la descripción del libro de texto. La comparación reproduce dos fragmentos uno junto al otro. Solo se puntúan sus respuestas.</p></div><div class="step"><span class="num">6</span><h3>Práctica diaria</h3><p>Repetición espaciada: un sonido nombrado correctamente vuelve tras un número creciente de días; uno fallado, ya en la siguiente sesión. Su progreso se queda en el teléfono.</p></div><div class="step"><span class="num">7</span><h3>Guía</h3><p>Dónde y cómo escuchar con el estetoscopio clásico: campana y membrana, los focos de auscultación del corazón y los pulmones y los cuatro cuadrantes del abdomen.</p></div><div class="step"><span class="num">8</span><h3>Cuatro idiomas y privacidad</h3><p>La app está disponible en eslovaco, inglés, checo y alemán. No tiene cuenta ni servidor, no usa el micrófono y no recoge ningún dato.</p></div></div>
 </section>
 
 <section id="pro">
   <h2>Sin coste y Ausculta Pro</h2>
-  <p>El cuestionario, la comparación, la guía, parte del atlas y todos los fragmentos de ECG con sonido no tienen coste. La compra única <strong>Ausculta Pro</strong> desbloquea el resto de fragmentos del atlas, que aparecen también en el cuestionario y en la comparación. Una contribución voluntaria al desarrollo no desbloquea nada.</p>
+  <p>Sin coste: 12 de los 42 fragmentos del atlas, los 4 fragmentos de ECG con sonido, el mapa de focos, los casos, el cuestionario, la práctica diaria, la comparación, las herramientas de reproducción y toda la guía. La compra única <strong>Ausculta Pro</strong> desbloquea los otros 30 fragmentos, que aparecen también en el mapa, en el cuestionario, en los casos y en la práctica. Una contribución voluntaria al desarrollo no desbloquea nada.</p>
   <!-- App Store: po schválení pridať tlačidlo s odkazom https://apps.apple.com/app/id6819630118 -->
   <div class="tiles">
-    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/support.html"><h3>Soporte y privacidad</h3><p>Preguntas frecuentes, contacto y política de privacidad. La app no recoge ningún dato.</p><span class="arrow">Ir al soporte →</span></a>
+    <a class="tile" href="https://dzanino.github.io/ausculta-web/en/support.html"><h3>Soporte y privacidad</h3><p>Preguntas frecuentes, contacto y política de privacidad. La app no usa el micrófono y no recoge ningún dato.</p><span class="arrow">Ir al soporte →</span></a>
     <a class="tile" href="https://dzanino.github.io/ausculta-web/en/methodology.html"><h3>Información técnica y fuentes</h3><p>Cómo funciona Ausculta, de dónde proceden los fragmentos y con qué licencias.</p><span class="arrow">Leer más →</span></a>
   </div>
 </section>
 
 <section id="faq">
   <h2>Preguntas frecuentes</h2>
-  <details><summary>¿Es Ausculta un producto sanitario?</summary><p>No. Es una herramienta educativa para aprender a escuchar. No mide nada, no diagnostica y no sustituye la exploración médica. Si tiene problemas de salud, consulte a un médico.</p></details><details><summary>¿De dónde proceden los fragmentos sonoros?</summary><p>De bases de datos de investigación abiertas (por ejemplo PhysioNet) y de una biblioteca de sonidos. De cada fragmento se indica la fuente y la licencia, y hay un resumen en la app, en Acerca de.</p></details><details><summary>¿Usa Ausculta el micrófono?</summary><p>No. La app solo reproduce los fragmentos grabados del atlas, no usa el micrófono y no recoge ningún dato.</p></details>
+  <details><summary>¿Es Ausculta un producto sanitario?</summary><p>No. Es una herramienta educativa para aprender a escuchar. No mide nada, no diagnostica y no sustituye la exploración médica. Si tiene problemas de salud, consulte a un médico.</p></details><details><summary>¿De dónde proceden los fragmentos sonoros?</summary><p>De bases de datos de investigación abiertas (por ejemplo PhysioNet) y de una biblioteca de sonidos. De cada fragmento se indica la fuente y la licencia, y hay un resumen en la app, en Acerca de.</p></details><details><summary>¿Usa Ausculta el micrófono?</summary><p>No. La app solo reproduce los fragmentos grabados del atlas, no usa el micrófono y no recoge ningún dato.</p></details><details><summary>¿En qué idiomas está Ausculta?</summary><p>En eslovaco, inglés, checo y alemán; sigue el idioma del iPhone. Las descripciones, el cuestionario, los casos y la guía están en los cuatro idiomas.</p></details><details><summary>¿Dónde se guarda mi progreso?</summary><p>Solo en el teléfono. La app no tiene cuenta ni servidor; el progreso de la práctica diaria y la lista de fragmentos escuchados no se envían a ningún sitio.</p></details>
 </section>
 
 </main>
