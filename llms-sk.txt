@@ -41,7 +41,7 @@ Bez účtu, bez cloudu, bez reklám. Wellness aplikácia, nie zdravotnícka pom�
 
 ## Autor
 
-MUDr. Ján Šikuta, slovenský lekár, autor Šikutovej metódy. Vyvíja aj aplikácie pre súdne lekárstvo na https://forensika.eu/.
+MUDr. Ján Šikuta, slovenský lekár, autor Šikutovej metódy.
 
 ## Ďalej
 
