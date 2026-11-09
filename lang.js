@@ -1,5 +1,6 @@
 /* Jazyk webu.
-   - Slovenčina a angličtina sú na hlavných stránkach spolu a prepínajú sa tlačidlami (sk/en).
+   - Úvod je v slovenčine (/) a v angličtine (/en/) na samostatných adresách; podpora a zásady súkromia majú slovenčinu
+     a angličtinu spolu a prepínajú sa tlačidlami (sk/en).
    - Čeština, nemčina, francúzština, taliančina, poľština, španielčina a portugalčina (Brazília) majú vlastné stránky v /cs/, /de/, /fr/, /it/, /pl/, /es/, /pt/.
    Voľba sa pamätá; bez voľby rozhoduje jazyk prehliadača (neznámy jazyk → angličtina, slovenčina → slovenčina). */
 (function () {
@@ -21,6 +22,17 @@
   // Stránka v jednom jazyku (/cs/, /de/ … alebo článok) - nič neprepíname.
   var fixed = root.getAttribute('data-fixed-lang');
   if (fixed) { save(fixed); return; }
+
+  // Slovenský úvod (od 9. 11. 2026 len slovensky). Na inú jazykovú verziu presmerujeme len podľa výslovnej voľby
+  // (?lang= alebo jazyk, ktorý si človek predtým vybral), nie podľa jazyka prehliadača, aby vyhľadávače videli slovenský úvod.
+  if (root.hasAttribute('data-home-sk')) {
+    var q = (location.search.match(/[?&]lang=([a-z]{2})\b/) || [])[1];
+    if (q === 'sk') { save('sk'); return; }
+    var w = q || saved();
+    var ciel = w === 'en' ? 'en/' : (OWN.indexOf(w) >= 0 ? w + '/' : null);
+    if (ciel && location.href.indexOf(base) === 0) location.replace(base + ciel + location.hash);
+    return;
+  }
   var buttons = document.querySelectorAll('.langbar button[data-set]');
   if (!buttons.length) return;
 
