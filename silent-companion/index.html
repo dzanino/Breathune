@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="sk" data-lang="sk" data-sk-en>
+<head>
+<meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; media-src 'self'; connect-src 'self' https://abacus.jasoncameron.dev; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silent Companion: titulky k reči okolo teba / Subtitles for the speech around you</title>
+<meta name="description" content="Silent Companion pre iPhone počúva ľudí okolo teba a ukazuje ich reč ako titulky, predvolene po slovensky. Návod, kľúč DeepL a podpora. Silent Companion for iPhone: live subtitles for the conversations around you, guide and support.">
+<link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/newsreader.css">
+<link rel="stylesheet" href="/style.css?v=20261003b">
+<link rel="stylesheet" href="/glam.css?v=20261017">
+<link rel="canonical" href="https://breathune.eu/silent-companion/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Silent Companion: titulky k reči okolo teba / Subtitles for the speech around you">
+<meta property="og:description" content="Silent Companion pre iPhone počúva ľudí okolo teba a ukazuje ich reč ako titulky, predvolene po slovensky. Silent Companion for iPhone: live subtitles for the conversations around you.">
+<meta property="og:image" content="https://breathune.eu/img/og/silent-companion.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Silent Companion, live subtitles app by Ján Šikuta">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://breathune.eu/img/og/silent-companion.png">
+<meta property="og:url" content="https://breathune.eu/silent-companion/">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:locale:alternate" content="en_GB">
+<link rel="alternate" hreflang="sk" href="https://breathune.eu/silent-companion/">
+<link rel="alternate" hreflang="x-default" href="https://breathune.eu/silent-companion/">
+<link rel="icon" type="image/png" href="/assets/favicon.png?v=20261002">
+<link rel="apple-touch-icon" href="/assets/silent-companion-icon.png">
+<style>
+  .brand picture{display:flex;flex:none}
+  main ol{padding-left:22px}
+  main ol li{margin:6px 0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Silent Companion","operatingSystem":"iOS 26 or later","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":["sk","cs","en","de","pl","hu","fr","uk","zh-Hans"],"description":"Silent Companion pre iPhone počúva ľudí okolo teba a ukazuje ich reč ako titulky, predvolene po slovensky (aj česky, anglicky, nemecky, poľsky, maďarsky, francúzsky, ukrajinsky alebo čínsky) a vie ich aj prečítať nahlas. Reč rozpoznáva priamo iPhone, na preklad sa posiela len text dokončenej vety službe DeepL pod vlastným kľúčom používateľa. Nič sa neukladá.","image":"https://breathune.eu/assets/silent-companion-icon.png","author":{"@type":"Person","name":"Ján Šikuta","sameAs":"https://orcid.org/0000-0002-4690-0317"},"url":"https://breathune.eu/silent-companion/"}
+</script>
+<link rel="me" href="https://orcid.org/0000-0002-4690-0317">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="back" href="/">← Breathune</a>
+    <div class="brand">
+      <picture>
+        <source srcset="/assets/silent-companion-icon.webp" type="image/webp">
+        <img class="mark" src="/assets/silent-companion-icon.png" width="46" height="46" alt="">
+      </picture>
+      <div>
+        <h1>Silent Companion</h1>
+        <p class="sk">Titulky k reči ľudí okolo teba, na iPhone</p>
+        <p class="en">Subtitles for the people talking around you, on iPhone</p>
+      </div>
+    </div>
+    <div class="langbar" role="group" aria-label="Language">
+      <button type="button" data-set="sk" aria-pressed="true" title="Slovenčina">SK</button>
+      <button type="button" data-set="en" aria-pressed="false" title="English">EN</button>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#how"><span class="sk">Ako to funguje</span><span class="en">How it works</span></a>
+    <a href="#start"><span class="sk">Pred cestou</span><span class="en">Before you travel</span></a>
+    <a href="#deepl"><span class="sk">Kľúč DeepL</span><span class="en">DeepL key</span></a>
+    <a href="#help"><span class="sk">Keď niečo nejde</span><span class="en">Troubleshooting</span></a>
+    <a href="#contact"><span class="sk">Napíš mi</span><span class="en">Write to me</span></a>
+    <a href="privacy/"><span class="sk">Ochrana súkromia</span><span class="en">Privacy</span></a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="about">
+  <p class="lede sk">Sedíš v bare v Španielsku a ľudia okolo sa rozprávajú. Polož iPhone na stôl a ťukni na <em>Počúvať</em>. Silent Companion zachytí, čo hovoria, a ukazuje to na displeji ako titulky. Ak chceš, titulky ti aj prečíta do slúchadiel alebo nahlas.</p>
+  <p class="lede en">You’re sitting in a bar in Spain and people around you are talking. Put your iPhone on the table and tap <em>Listen</em>. Silent Companion picks up what they say and shows it on the screen as subtitles. If you like, it can also read them into your headphones or aloud.</p>
+
+  <p class="sk">Appka je stavaná hlavne pre Slovákov, preto sú titulky predvolene po slovensky. Hore na hlavnej obrazovke si ich prepneš aj do češtiny, angličtiny, nemčiny, poľštiny, maďarčiny, francúzštiny, ukrajinčiny alebo čínštiny. V týchto deviatich jazykoch je aj samotná appka, jazyk si vyberieš v Nastaveniach.</p>
+  <p class="en">The app is made mainly for Slovak speakers, so the subtitles are in Slovak by default. At the top of the main screen you can switch them to Czech, English, German, Polish, Hungarian, French, Ukrainian or Chinese. The app itself speaks the same nine languages; pick yours in Settings.</p>
+
+  <p class="sk">Titulky ti môže aj prečítať, potichu do AirPods alebo nahlas z reproduktora iPhonu. Čítanie nahlas pomôže aj človeku, ktorý zle vidí alebo nevidí, a appka sa dá ovládať aj s VoiceOver.</p>
+  <p class="en">It can also read the subtitles to you, quietly into your AirPods or aloud through the iPhone speaker. Reading aloud also helps people with low vision or blindness, and the app works with VoiceOver.</p>
+
+  <p class="sk">Rozumie španielčine, taliančine, francúzštine, nemčine, portugalčine, angličtine, japončine, kórejčine a čínštine. Presný zoznam závisí od iPhonu.</p>
+  <p class="en">It understands Spanish, Italian, French, German, Portuguese, English, Japanese, Korean and Chinese. The exact list depends on your iPhone.</p>
+
+  <p class="sk">Pre iPhone so systémom iOS 26 alebo novším, zadarmo. <strong>Čoskoro v App Store.</strong></p>
+  <p class="en">For iPhone with iOS 26 or later, free of charge. <strong>Coming soon to the App Store.</strong></p>
+</section>
+
+<section id="story">
+  <h2><span class="sk">Prečo vznikla</span><span class="en">Why it exists</span></h2>
+  <p class="sk">Silent Companion som pôvodne urobil pre svoju mamu, ktorá sa nevedela dorozumieť s ľuďmi okolo seba. Chcel som pre ňu ľahkú appku, ktorá sa ovláda jedným ťuknutím: iPhone leží na stole a preklad ide rovno do slúchadiel alebo na displej. Pre ňu to bolo jednoduché a využiteľné v praxi, a tak appku ponúkam aj ďalším.</p>
+  <p class="en">I originally made Silent Companion for my mother, who couldn’t communicate with the people around her. I wanted a light app she could use with a single tap: the iPhone lies on the table and the translation goes straight into her earphones or onto the screen. For her it was simple and useful in everyday life, so now I’m offering it to others too.</p>
+  <p class="sk"><em>Aby sa ľudia nielen dorozumeli, ale aj porozumeli.</em></p>
+  <p class="en"><em>So that people don’t just get by, but truly understand each other.</em></p>
+</section>
+
+<section id="how">
+  <h2><span class="sk">Ako to funguje</span><span class="en">How it works</span></h2>
+  <p class="sk">Reč rozpoznáva priamo iPhone, používa na to rozpoznávanie reči od Apple. Zvuk z mikrofónu neopúšťa telefón a nikam sa neukladá.</p>
+  <p class="en">Speech is recognised right on the iPhone, using Apple’s speech recognition. Audio from the microphone never leaves the phone and is never saved.</p>
+  <p class="sk">Keď niekto dopovie vetu, appka pošle jej text cez zabezpečené spojenie na preklad službe DeepL. Na to potrebuje internet a tvoj vlastný kľúč DeepL (návod je nižšie). Preklad sa potom ukáže ako titulok.</p>
+  <p class="en">When someone finishes a sentence, the app sends its text over a secure connection to DeepL for translation. For that it needs an internet connection and your own DeepL key (see below). The translation then appears as a subtitle.</p>
+  <p class="sk">Keď ťukneš na <em>Zastaviť</em>, titulky zmiznú. Appka si z rozhovoru nič nepamätá.</p>
+  <p class="en">When you tap <em>Stop</em>, the subtitles disappear. The app keeps nothing of the conversation.</p>
+
+  <h3><span class="sk">Ovládanie</span><span class="en">Controls</span></h3>
+  <ul class="sk">
+    <li><strong>Počujem</strong> je jazyk, ktorým hovoria ľudia okolo teba, <strong>Titulky</strong> jazyk, do ktorého sa prekladá. Oba vyberieš hore na hlavnej obrazovke.</li>
+    <li><strong>Mikrofón</strong> vyberáš medzi iPhonom a slúchadlami. Keď iPhone leží na stole, nechaj mikrofón iPhone: počuje ľudí okolo lepšie.</li>
+    <li><strong>Filter hluku</strong> tlmí ruch v pozadí. V hlučnom bare vyskúšaj, či ti lepšie poslúži zapnutý alebo vypnutý.</li>
+    <li><strong>Hlas v ušiach</strong> ti titulky prečíta do slúchadiel (AirPods, EarPods aj iné), v jazyku, ktorý si zvolil pre titulky.</li>
+    <li><strong>Čítať nahlas</strong> ich prečíta z reproduktora iPhonu, aj bez slúchadiel. Kým appka číta, nepočúva, aby neprekladala sama seba.</li>
+    <li><strong>Počúvať</strong> a <strong>Zastaviť</strong> spustia a ukončia počúvanie. Pri telefonáte sa počúvanie pozastaví, po hovore ťukni na <strong>Pokračovať</strong>.</li>
+  </ul>
+  <ul class="en">
+    <li><strong>I hear</strong> is the language the people near you are speaking, <strong>Subtitles</strong> the language they are translated into. You pick both at the top of the main screen.</li>
+    <li><strong>Microphone</strong> lets you choose between the iPhone and your headphones. With the iPhone on the table, keep the iPhone microphone: it hears the people around you better.</li>
+    <li><strong>Noise filter</strong> damps background noise. In a loud bar, try it both on and off and keep whichever works better.</li>
+    <li><strong>Voice in ears</strong> reads the subtitles into your headphones (AirPods, EarPods or others), in the language you chose for subtitles.</li>
+    <li><strong>Read aloud</strong> reads them through the iPhone speaker, no headphones needed. While it reads, the app doesn’t listen, so it never translates itself.</li>
+    <li><strong>Listen</strong> and <strong>Stop</strong> start and end listening. A phone call pauses listening; when it ends, tap <strong>Continue</strong>.</li>
+  </ul>
+</section>
+
+<section id="start">
+  <h2><span class="sk">Pred cestou</span><span class="en">Before you travel</span></h2>
+  <p class="sk">Najlepšie doma, na Wi-Fi:</p>
+  <p class="en">Best done at home, on Wi-Fi:</p>
+  <ol class="sk">
+    <li>Keď sa appka opýta, povoľ jej mikrofón a rozpoznávanie reči.</li>
+    <li>Vlož svoj kľúč DeepL (postup je hneď nižšie).</li>
+    <li>Vyber jazyk okolia (Počujem) a potom v Nastaveniach appky (ozubené koliesko) ťukni na <em>Stiahnuť jazyk vopred</em>. Kým jazyk nie je stiahnutý, appka nezačne počúvať.</li>
+    <li>Ak nechceš titulky po slovensky, ťukni na hlavnej obrazovke vpravo hore na <em>Titulky</em> a vyber iný jazyk.</li>
+  </ol>
+  <ol class="en">
+    <li>When the app asks, allow the microphone and speech recognition.</li>
+    <li>Add your DeepL key (see the next section).</li>
+    <li>Pick the language around you (I hear), then in the app’s settings (the gear icon) tap <em>Download language in advance</em>. The app won’t start listening until the language is downloaded.</li>
+    <li>If you don’t want Slovak subtitles, tap <em>Subtitles</em> at the top right of the main screen and pick another language.</li>
+  </ol>
+</section>
+
+<section id="deepl">
+  <h2><span class="sk">Kľúč DeepL</span><span class="en">Your DeepL key</span></h2>
+  <p class="sk">Preklad robí služba DeepL a appka na to používa tvoj vlastný kľúč. Bezplatný program <strong>DeepL API Free</strong> dáva 500 000 znakov mesačne.</p>
+  <p class="en">Translation is done by DeepL, and the app uses your own key for it. The free <strong>DeepL API Free</strong> plan gives you 500,000 characters a month.</p>
+  <ol class="sk">
+    <li>Otvor <a href="https://www.deepl.com/pro-api">deepl.com/pro-api</a> a vyber <em>DeepL API Free</em>.</li>
+    <li>Zaregistruj sa. DeepL pri registrácii pýta platobnú kartu, slúži na overenie.</li>
+    <li>V účte DeepL skopíruj svoj kľúč. Kľúč bezplatného programu končí na „:fx“.</li>
+    <li>V appke ťukni na ozubené koliesko a v časti <em>Kľúč DeepL</em> na <em>Vložiť</em>. Appka kľúč overí a ukáže, koľko z mesačného limitu si už minul.</li>
+  </ol>
+  <ol class="en">
+    <li>Open <a href="https://www.deepl.com/pro-api">deepl.com/pro-api</a> and choose <em>DeepL API Free</em>.</li>
+    <li>Sign up. DeepL asks for a payment card during sign-up, to verify you.</li>
+    <li>Copy your key from your DeepL account. Keys for the free plan end in “:fx”.</li>
+    <li>In the app, tap the gear icon, then <em>Paste</em> under <em>DeepL key</em>. The app checks the key and shows how much of this month’s allowance you have used.</li>
+  </ol>
+  <p class="sk">Kľúč je uložený v Kľúčenke iPhonu. Čo DeepL robí s prekladanými vetami, nájdeš v <a href="privacy/#deepl">zásadách ochrany súkromia</a>.</p>
+  <p class="en">The key is stored in your iPhone’s Keychain. What DeepL does with the sentences it translates is explained in the <a href="privacy/#deepl">privacy policy</a>.</p>
+</section>
+
+<section id="help">
+  <h2><span class="sk">Keď niečo nejde</span><span class="en">Troubleshooting</span></h2>
+
+  <details>
+    <summary><span class="sk">„Jazyk nie je stiahnutý. Stiahni ho vopred na Wi-Fi v Nastaveniach.“</span><span class="en">The app says the language isn’t downloaded</span></summary>
+    <p class="sk">iPhone ešte nemá stiahnutý jazyk okolia, ktorý si vybral. Pripoj sa na Wi-Fi, ťukni na ozubené koliesko a potom na <em>Stiahnuť jazyk vopred</em>. Rozpoznávanie reči potom beží aj bez internetu, preklad však internet potrebuje.</p>
+    <p class="en">Your iPhone hasn’t downloaded the language you picked yet. Connect to Wi-Fi, tap the gear icon, then <em>Download language in advance</em>. After that, speech recognition works even without internet, but translation still needs a connection.</p>
+  </details>
+
+  <details>
+    <summary><span class="sk">Pod vetami je „chýba kľúč DeepL“</span><span class="en">Sentences are marked “DeepL key missing”</span></summary>
+    <p class="sk">Appka ešte nemá tvoj kľúč DeepL, preto vety ukazuje len v pôvodnom jazyku. Vlož kľúč podľa <a href="#deepl">návodu vyššie</a>.</p>
+    <p class="en">The app doesn’t have your DeepL key yet, so it shows sentences only in the original language. Add the key as described <a href="#deepl">above</a>.</p>
+  </details>
+
+  <details>
+    <summary><span class="sk">Pod vetami je „neplatný kľúč DeepL“</span><span class="en">Sentences are marked “invalid DeepL key”</span></summary>
+    <p class="sk">DeepL kľúč neprijal. Skontroluj, či si skopíroval celý kľúč, pri bezplatnom programe aj s koncovkou „:fx“, a v Nastaveniach appky ho vlož znova.</p>
+    <p class="en">DeepL did not accept the key. Check that you copied all of it, including the “:fx” ending on a free-plan key, and paste it again in the app’s settings.</p>
+  </details>
+
+  <details>
+    <summary><span class="sk">Pod vetami je „minutý limit DeepL“</span><span class="en">Sentences are marked “DeepL limit used up”</span></summary>
+    <p class="sk">Tento mesiac si minul všetky znaky, ktoré tvoj program DeepL dovoľuje (pri DeepL API Free je to 500 000). Prekladať sa bude znova, keď sa limit v ďalšom mesiaci obnoví. Dovtedy appka ukazuje vety v pôvodnom jazyku.</p>
+    <p class="en">You have used all the characters your DeepL plan allows this month (500,000 on DeepL API Free). Translation resumes when the allowance renews next month. Until then the app shows sentences in the original language.</p>
+  </details>
+
+  <details>
+    <summary><span class="sk">Pod vetami je „bez prekladu“</span><span class="en">Sentences are marked “no translation”</span></summary>
+    <p class="sk">iPhone práve nemá internet. Titulky v pôvodnom jazyku bežia ďalej, a keď sa sieť vráti, appka tieto vety dopreloží.</p>
+    <p class="en">Your iPhone has no internet connection right now. Subtitles in the original language keep coming, and once you are back online the app translates those sentences.</p>
+  </details>
+
+  <details>
+    <summary><span class="sk">Počúvanie sa zastavilo pri telefonáte</span><span class="en">Listening stopped during a phone call</span></summary>
+    <p class="sk">Pri hovore appka počúvanie pozastaví. Keď hovor skončí, ťukni na <em>Pokračovať</em>.</p>
+    <p class="en">A phone call pauses listening. When the call ends, tap <em>Continue</em>.</p>
+  </details>
+
+  <details>
+    <summary><span class="sk">„Aplikácia nemá prístup k mikrofónu.“</span><span class="en">The app has no access to the microphone</span></summary>
+    <p class="sk">Povoľ ho v Nastaveniach iPhonu: Nastavenia → Silent Companion → Mikrofón a Rozpoznávanie reči.</p>
+    <p class="en">Allow it in your iPhone’s Settings: Settings → Silent Companion → Microphone and Speech Recognition.</p>
+  </details>
+
+  <details>
+    <summary><span class="sk">Nahráva sa zvuk?</span><span class="en">Is the audio recorded?</span></summary>
+    <p class="sk">Nie. Reč sa rozpoznáva v telefóne a zvuk sa nikam neposiela ani neukladá. Na preklad odchádza len text dokončenej vety. Podrobne je to v <a href="privacy/">zásadách ochrany súkromia</a>.</p>
+    <p class="en">No. Speech is recognised on the phone and the audio is never sent or saved. Only the text of a finished sentence goes out for translation. The details are in the <a href="privacy/">privacy policy</a>.</p>
+  </details>
+</section>
+
+<section id="contact">
+  <h2><span class="sk">Napíš mi</span><span class="en">Write to me</span></h2>
+  <p class="lede sk">Píš na <a class="mail" href="mailto:admin@breathune.eu">admin@breathune.eu</a>. Odpovedám osobne, zvyčajne do pár dní.</p>
+  <p class="lede en">Write to <a class="mail" href="mailto:admin@breathune.eu">admin@breathune.eu</a>. I answer personally, usually within a few days.</p>
+  <p class="sk">Pomôže, keď napíšeš, aký máš iPhone a verziu iOS, verziu appky (je úplne dole v Nastaveniach appky) a čo sa dialo, keď sa problém objavil.</p>
+  <p class="en">It helps if you include your iPhone model and iOS version, the app version (at the very bottom of the app’s settings) and what was happening when the problem appeared.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="sk"><span data-fz>Silent Companion</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/">breathune.eu</a> · <a href="privacy/">Ochrana súkromia</a></p>
+    <p class="en"><span data-fz>Silent Companion</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/">breathune.eu</a> · <a href="privacy/">Privacy</a></p>
+  </div>
+</footer>
+
+<script src="/lang.js?v=20261110"></script>
+<script src="/site.js" defer></script>
+</body>
+</html>

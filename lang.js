@@ -5,7 +5,8 @@
    Voľba sa pamätá; bez voľby rozhoduje jazyk prehliadača (neznámy jazyk → angličtina, slovenčina → slovenčina). */
 (function () {
   var root = document.documentElement;
-  var OWN = ['cs', 'de', 'fr', 'it', 'pl', 'es', 'pt'];
+  // Stránky len v slovenčine a angličtine (atribút data-sk-en, napr. Silent Companion) iné jazykové verzie nemajú, nepresmerúvame.
+  var OWN = root.hasAttribute('data-sk-en') ? [] : ['cs', 'de', 'fr', 'it', 'pl', 'es', 'pt'];
   var KEY = 'breathune-lang';
   var script = document.currentScript;
   // Základ webu (breathune.eu/ aj dzanino.github.io/Breathune/) - odvodený od adresy tohto skriptu.
