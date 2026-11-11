@@ -1,0 +1,199 @@
+/* Silent Companion - vlastný vzhľad stránky appky.
+   Nočný základ breathune.eu (glam.css), farby appky: tyrkys a nebeská modrá, korál pre Zastaviť. */
+
+body.sc{
+  --sc-teal:#3ddbc4; --sc-sky:#5cc8f2; --sc-coral:#ff7d70; --sc-peach:#ffa27a;
+  --sc-accent:linear-gradient(120deg,#3ddbc4 0%,#5cc8f2 100%);
+  --sc-glass:rgba(255,255,255,.055); --sc-glass-2:rgba(255,255,255,.09);
+  --sc-wide:1080px;
+}
+.sc .wide{max-width:var(--sc-wide);margin:0 auto;padding:0 20px;}
+.sc main.wrap{max-width:760px;}
+.sc .eyebrow{display:inline-block;font:600 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sc-teal);margin:0 0 12px;}
+.sc .grad{background:var(--sc-accent);-webkit-background-clip:text;background-clip:text;color:transparent;}
+
+/* ---------- Hero ---------- */
+.sc header.sc-hero{padding:22px 0 70px!important;}
+.sc .sc-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.sc .sc-top .back{margin:0;}
+.sc .sc-top .langbar{margin:0;}
+.sc .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;margin-top:34px;}
+.sc .hero-brand{display:flex;align-items:center;gap:14px;margin-bottom:18px;}
+.sc .hero-brand img{width:58px;height:58px;border-radius:14px;box-shadow:0 0 0 1px rgba(255,255,255,.18),0 12px 30px rgba(0,0,0,.45),0 0 60px rgba(61,219,196,.25);}
+.sc .hero-brand span{font:600 15px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#dfe6f7;letter-spacing:.02em;}
+.sc .hero-title{font-family:var(--serif)!important;font-weight:600;font-size:clamp(36px,4.6vw,54px);line-height:1.02;letter-spacing:-.015em;margin:0;color:#fff;}
+.sc .hero-lede{font-size:clamp(17px,2vw,20px);line-height:1.6;color:#d3d9ef;margin:20px 0 0;max-width:34em;font-weight:300;}
+.sc .hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px;}
+.sc .sc-store{display:inline-flex;align-items:center;gap:12px;padding:12px 22px 12px 18px;border-radius:16px;text-decoration:none;
+  background:var(--sc-accent);color:#05221f;box-shadow:0 16px 40px rgba(61,219,196,.28),inset 0 1px 0 rgba(255,255,255,.55);transition:transform .2s ease,box-shadow .2s ease;}
+.sc .sc-store:hover{transform:translateY(-2px);box-shadow:0 20px 48px rgba(61,219,196,.38),inset 0 1px 0 rgba(255,255,255,.55);}
+.sc .sc-store small{display:block;font-size:12px;font-weight:600;opacity:.8;line-height:1.1;}
+.sc .sc-store strong{display:block;font-size:19px;line-height:1.15;letter-spacing:-.01em;}
+.sc .ghost{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:14px;color:#e8ecfa;text-decoration:none;font-weight:600;
+  border:1px solid var(--line-2);background:rgba(255,255,255,.05);backdrop-filter:blur(8px);transition:background .2s ease;}
+.sc .ghost:hover{background:rgba(255,255,255,.12);}
+.sc .hero-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none;}
+.sc .hero-facts li{margin:0;font-size:13.5px;color:#c9d1ec;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line);}
+
+/* ---------- Telefón s ukážkou ---------- */
+.sc .demo{display:flex;flex-direction:column;align-items:center;gap:16px;}
+.sc .scenarios{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;}
+.sc .scenarios button{font:600 13.5px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;cursor:pointer;color:#e3e8f8;padding:9px 14px;border-radius:999px;
+  background:rgba(255,255,255,.06);border:1px solid var(--line-2);transition:background .2s ease,color .2s ease;}
+.sc .scenarios button:hover{background:rgba(255,255,255,.12);}
+.sc .scenarios button[aria-pressed="true"]{background:var(--sc-accent);color:#05221f;border-color:transparent;}
+.sc .phone{position:relative;width:min(330px,86vw);aspect-ratio:9/18.6;border-radius:48px;padding:12px;
+  background:linear-gradient(145deg,#2a3150,#0d1128);box-shadow:0 0 0 1.5px rgba(255,255,255,.14),0 40px 90px rgba(0,0,0,.6),0 0 120px rgba(92,200,242,.16);}
+.sc .screen{position:relative;height:100%;border-radius:37px;overflow:hidden;display:flex;flex-direction:column;
+  background:radial-gradient(120% 60% at 20% 0%,#d9f6f1 0%,transparent 60%),radial-gradient(120% 70% at 100% 100%,#ffe6da 0%,transparent 60%),#f3f6fb;color:#13212b;}
+.sc .island{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:92px;height:27px;border-radius:20px;background:#05070f;z-index:3;}
+.sc .app-head{display:flex;align-items:center;gap:8px;padding:46px 16px 8px;}
+.sc .app-head .dot{width:26px;height:26px;border-radius:8px;background:var(--sc-accent);flex:none;display:grid;place-items:center;}
+.sc .screen p,.sc .screen b,.sc .screen small,.sc .screen span{text-shadow:none;}
+.sc .app-head b{font:700 15px/1.1 -apple-system,BlinkMacSystemFont,sans-serif;color:#13212b!important;}
+.sc .app-head small{display:block;font:500 10.5px/1.2 -apple-system,BlinkMacSystemFont,sans-serif;color:#56687a!important;}
+.sc .bridge{margin:6px 12px 8px;padding:9px 12px;border-radius:16px;background:rgba(255,255,255,.88);display:flex;align-items:center;justify-content:space-between;gap:6px;
+  font:600 12.5px/1.2 -apple-system,BlinkMacSystemFont,sans-serif;box-shadow:0 6px 16px rgba(22,50,74,.08);}
+.sc .bridge .arrow{width:22px;height:22px;border-radius:50%;background:var(--sc-accent);display:grid;place-items:center;flex:none;}
+.sc .bridge .lab{display:block;font-size:8.5px;letter-spacing:.12em;color:#93a3b1;text-transform:uppercase;margin-bottom:2px;}
+.sc .feed{flex:1;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:6px 12px 10px;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 18%);mask-image:linear-gradient(180deg,transparent 0,#000 18%);}
+.sc .line{background:rgba(255,255,255,.9);border-radius:16px;padding:9px 12px;box-shadow:0 4px 12px rgba(22,50,74,.07);border:1px solid rgba(19,33,43,.06);
+  animation:lineIn .45s ease both;}
+.sc .line.latest{border:1.5px solid #3ddbc4;box-shadow:0 8px 20px rgba(22,50,74,.12);}
+.sc .line .tr{font:650 14px/1.32 -apple-system,BlinkMacSystemFont,sans-serif;color:#13212b;}
+.sc .line .or{font:400 11.5px/1.35 -apple-system,BlinkMacSystemFont,sans-serif;color:#56687a;margin-top:3px;}
+.sc .line .typing{display:inline-flex;gap:4px;padding:4px 0;}
+.sc .line .typing i{width:6px;height:6px;border-radius:50%;background:#93a3b1;animation:blink 1s infinite;}
+.sc .line .typing i:nth-child(2){animation-delay:.15s}.sc .line .typing i:nth-child(3){animation-delay:.3s}
+.sc .partial{min-height:34px;margin:0 12px 6px;padding:8px 12px;border-radius:14px;background:rgba(14,159,142,.12);font:italic 400 12px/1.35 -apple-system,BlinkMacSystemFont,sans-serif;color:#56687a;
+  display:flex;align-items:center;gap:7px;}
+.sc .partial .wave{display:inline-flex;gap:2px;align-items:center;height:14px;flex:none;}
+.sc .partial .wave i{width:2.5px;border-radius:2px;background:#0e9f8e;height:5px;}
+.sc .playing .partial .wave i{animation:wave .9s ease-in-out infinite;}
+.sc .partial .wave i:nth-child(2){animation-delay:.12s}.sc .partial .wave i:nth-child(3){animation-delay:.24s}.sc .partial .wave i:nth-child(4){animation-delay:.36s}
+.sc .controls{display:flex;align-items:center;justify-content:space-between;padding:6px 18px 22px;}
+.sc .listen{width:64px;height:64px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;background:var(--sc-accent);
+  box-shadow:0 10px 24px rgba(14,159,142,.35);transition:transform .2s ease;}
+.sc .listen:hover{transform:scale(1.05);}
+.sc .playing .listen{background:linear-gradient(120deg,var(--sc-coral),var(--sc-peach));box-shadow:0 0 0 8px rgba(255,125,112,.18),0 10px 24px rgba(255,125,112,.35);}
+.sc .listen .stop{display:none}.sc .playing .listen .stop{display:block}.sc .playing .listen .go{display:none}
+.sc .side{font:600 11px/1.2 -apple-system,BlinkMacSystemFont,sans-serif;color:#56687a;background:rgba(255,255,255,.85);border:0;border-radius:999px;padding:8px 11px;cursor:pointer;
+  display:inline-flex;align-items:center;gap:5px;}
+.sc .side[aria-pressed="true"]{background:#0e9f8e;color:#fff;}
+.sc .demo-note{font-size:13px;color:var(--soft);text-align:center;max-width:30em;margin:0;}
+@keyframes lineIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes blink{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes wave{0%,100%{height:4px}50%{height:14px}}
+
+/* ---------- Sekcie na šírku ---------- */
+.sc .band{padding:84px 0 0;}
+.sc .band-head{max-width:720px;margin:0 0 34px;}
+.sc .band-head h2{margin:0;}
+.sc .band-head p{color:var(--muted);font-size:18px;margin:12px 0 0;}
+.sc .uses{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.sc .use{padding:22px 20px;border-radius:22px;background:var(--sc-glass);border:1px solid var(--line);transition:transform .25s ease,border-color .25s ease;}
+.sc .use:hover{transform:translateY(-4px);border-color:rgba(61,219,196,.45);}
+.sc .use .ic{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:rgba(61,219,196,.13);color:var(--sc-teal);margin-bottom:14px;}
+.sc .use h3{font-size:20px!important;margin:0 0 6px!important;}
+.sc .use p{margin:0;color:var(--muted);font-size:15px;line-height:1.55;}
+
+.sc .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:st;}
+.sc .stepx{position:relative;padding:24px 22px;border-radius:22px;background:var(--sc-glass);border:1px solid var(--line);}
+.sc .stepx::before{counter-increment:st;content:counter(st);position:absolute;top:18px;right:20px;font:600 44px/1 var(--serif);color:rgba(255,255,255,.08);}
+.sc .stepx h3{font-size:20px!important;margin:6px 0 8px!important;}
+.sc .stepx p{margin:0;color:var(--muted);font-size:15px;line-height:1.6;}
+
+.sc .shots{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;}
+.sc .shots figure{margin:0;width:min(240px,42vw);}
+.sc .shots img{width:100%;height:auto;border-radius:30px;display:block;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 24px 60px rgba(0,0,0,.5);}
+.sc .shots figcaption{text-align:center;font-size:13.5px;color:var(--soft);margin-top:12px;}
+
+/* ---------- Rozhovor dvoch ---------- */
+.sc .talk{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.sc .chat{padding:22px;border-radius:28px;background:var(--sc-glass);border:1px solid var(--line);min-height:360px;display:flex;flex-direction:column;}
+.sc .chat-feed{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;}
+.sc .bub{max-width:82%;padding:10px 14px;border-radius:18px;animation:lineIn .4s ease both;}
+.sc .bub .tr{font-weight:600;font-size:15px;line-height:1.4;}
+.sc .bub .or{font-size:12.5px;opacity:.72;margin-top:3px;}
+.sc .bub.me{align-self:flex-end;background:var(--sc-accent);color:#05221f;border-bottom-right-radius:6px;}
+.sc .bub.other{align-self:flex-start;background:rgba(255,255,255,.1);color:#eef0fa;border-bottom-left-radius:6px;}
+.sc .bub .who{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.7;margin-bottom:3px;}
+.sc .chat-ctrl{display:flex;justify-content:space-between;gap:10px;margin-top:16px;}
+.sc .chat-ctrl button{flex:1;font:600 14px/1 -apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer;padding:13px 10px;border-radius:14px;border:1px solid var(--line-2);
+  background:rgba(255,255,255,.06);color:#e8ecfa;}
+.sc .chat-ctrl button.primary{background:var(--sc-accent);color:#05221f;border-color:transparent;}
+
+/* ---------- Plus ---------- */
+.sc .pricing{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;align-items:stretch;}
+.sc .plan{padding:30px 28px;border-radius:28px;background:var(--sc-glass);border:1px solid var(--line);display:flex;flex-direction:column;}
+.sc .plan.plus{position:relative;background:linear-gradient(160deg,rgba(61,219,196,.16),rgba(92,200,242,.08) 45%,rgba(255,255,255,.04));border:1px solid rgba(61,219,196,.45);
+  box-shadow:0 30px 80px rgba(61,219,196,.12);}
+.sc .plan .tag{position:absolute;top:-13px;right:24px;background:var(--sc-accent);color:#05221f;font:700 11px/1 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.1em;
+  text-transform:uppercase;padding:7px 12px;border-radius:999px;}
+.sc .plan h3{font-size:24px!important;margin:0!important;}
+.sc .price{display:flex;align-items:baseline;gap:8px;margin:12px 0 4px;}
+.sc .price b{font:600 46px/1 var(--serif);color:#fff;}
+.sc .price span{color:var(--muted);font-size:15px;}
+.sc .plan .sub{color:var(--muted);margin:0 0 18px;font-size:15px;}
+.sc .plan ul{list-style:none;padding:0;margin:0 0 22px;flex:1;}
+.sc .plan li{position:relative;padding-left:28px;margin:10px 0;color:#dfe4f5;font-size:15.5px;line-height:1.5;}
+.sc .plan li::before{content:"";position:absolute;left:0;top:4px;width:18px;height:18px;border-radius:50%;background:rgba(61,219,196,.18);
+  -webkit-mask:none;}
+.sc .plan li::after{content:"";position:absolute;left:6px;top:8px;width:6px;height:9px;border:solid var(--sc-teal);border-width:0 2px 2px 0;transform:rotate(45deg);}
+.sc .plan.plus li strong{color:#fff;}
+.sc .plan .sc-store,.sc .plan .ghost{align-self:flex-start;}
+
+.sc .tryarch{margin-top:26px;padding:24px;border-radius:24px;background:rgba(255,255,255,.04);border:1px solid var(--line);}
+.sc .tryarch h3{font-size:20px!important;margin:0 0 4px!important;}
+.sc .tryarch > p{margin:0 0 14px;color:var(--muted);font-size:15px;}
+.sc .search{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid var(--line-2);}
+.sc .search input{flex:1;background:transparent;border:0;outline:0;color:#fff;font:16px -apple-system,BlinkMacSystemFont,sans-serif;}
+.sc .search input::placeholder{color:#8a90b2;}
+.sc .chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;}
+.sc .chips button{font:500 12.5px/1 -apple-system,BlinkMacSystemFont,sans-serif;color:#cfd6ee;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;padding:7px 11px;cursor:pointer;}
+.sc .records{margin-top:14px;display:grid;gap:10px;}
+.sc .rec{padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid var(--line);}
+.sc .rec .t{font-weight:600;color:#fff;}
+.sc .rec .m{font-size:12.5px;color:var(--soft);margin-top:2px;}
+.sc .rec .hit{font-size:14px;color:#d3d9ef;margin-top:8px;}
+.sc .rec mark{background:rgba(61,219,196,.28);color:#fff;border-radius:4px;padding:0 2px;}
+.sc .rec-none{color:var(--soft);font-size:14px;}
+.sc .count{font-size:13px;color:var(--soft);margin-top:10px;}
+
+.sc .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.sc .trust div{padding:20px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--line);}
+.sc .trust b{display:block;color:#fff;margin-bottom:4px;}
+.sc .trust span{color:var(--muted);font-size:14.5px;line-height:1.55;}
+
+.sc .final{margin:90px auto 0;max-width:820px;text-align:center;padding:48px 28px;border-radius:32px;
+  background:radial-gradient(80% 120% at 50% 0%,rgba(61,219,196,.18),transparent 70%),rgba(255,255,255,.04);border:1px solid var(--line);}
+.sc .final h2{margin:0 0 10px;}
+.sc .final p{color:var(--muted);margin:0 auto 24px;max-width:32em;}
+.sc .final .hero-cta{justify-content:center;margin:0;}
+
+.sc .support-title{margin-top:90px;padding-top:30px;border-top:1px solid var(--line);}
+.sc main section{scroll-margin-top:70px;}
+
+/* ---------- Mobil ---------- */
+@media (max-width:900px){
+  .sc .hero-grid{grid-template-columns:1fr;gap:40px;}
+  .sc .uses{grid-template-columns:1fr 1fr;}
+  .sc .steps,.sc .trust{grid-template-columns:1fr;}
+  .sc .talk,.sc .pricing{grid-template-columns:1fr;}
+}
+@media (max-width:520px){
+  .sc .uses{grid-template-columns:1fr;}
+  .sc .band{padding-top:64px;}
+  .sc .plan{padding:26px 22px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .sc .line,.sc .bub{animation:none;}
+  .sc .playing .partial .wave i,.sc .line .typing i{animation:none;}
+}
+
+/* Hlavička webu na mobile centruje text; stránka appky a obrazovka telefónu sú zarovnané doľava. */
+.sc header.sc-hero,.sc header.sc-hero .hero-title,.sc header.sc-hero p{text-align:left!important;}
+.sc .screen,.sc .screen *{text-align:left;}
+.sc .bridge > div:last-child,.sc .bridge > div:last-child *{text-align:right;}
+.sc .demo,.sc .demo-note,.sc .scenarios{text-align:center!important;}

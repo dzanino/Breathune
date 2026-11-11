@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="/assets/fonts/newsreader.css">
 <link rel="stylesheet" href="/style.css?v=20261003b">
 <link rel="stylesheet" href="/glam.css?v=20261017">
+<link rel="stylesheet" href="sc.css?v=20261111">
 <link rel="canonical" href="https://breathune.eu/silent-companion/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Silent Companion: titulky k reči okolo teba / Subtitles for the speech around you">
@@ -32,69 +33,237 @@
   main ol li{margin:6px 0}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"Silent Companion","operatingSystem":"iOS 26 or later","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":["sk","cs","en","de","pl","hu","fr","uk","zh-Hans","th","vi"],"description":"Silent Companion pre iPhone počúva ľudí okolo teba a ukazuje ich reč ako titulky, predvolene po slovensky (aj česky, anglicky, nemecky, poľsky, maďarsky, francúzsky, ukrajinsky, čínsky, thajsky alebo vietnamsky) a vie ich aj prečítať nahlas. Reč rozpoznáva priamo iPhone, na preklad sa posiela len text dokončenej vety službe DeepL pod vlastným kľúčom používateľa. Záznam sa uloží len na želanie používateľa, do iPhonu. Archív a počúvanie pri zhasnutom displeji pridá jednorazový nákup Silent Companion Plus.","downloadUrl":"https://apps.apple.com/app/id6832844850","image":"https://breathune.eu/assets/silent-companion-icon.png","author":{"@type":"Person","name":"Ján Šikuta","sameAs":"https://orcid.org/0000-0002-4690-0317"},"url":"https://breathune.eu/silent-companion/"}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Silent Companion","operatingSystem":"iOS 26 or later","offers":[{"@type":"Offer","price":"0","priceCurrency":"EUR"},{"@type":"Offer","name":"Silent Companion Plus","price":"5.99","priceCurrency":"EUR"}],"inLanguage":["sk","cs","en","de","pl","hu","fr","uk","zh-Hans","th","vi"],"description":"Silent Companion pre iPhone počúva ľudí okolo teba a ukazuje ich reč ako titulky, predvolene po slovensky (aj česky, anglicky, nemecky, poľsky, maďarsky, francúzsky, ukrajinsky, čínsky, thajsky alebo vietnamsky) a vie ich aj prečítať nahlas. Reč rozpoznáva priamo iPhone, na preklad sa posiela len text dokončenej vety službe DeepL pod vlastným kľúčom používateľa. Záznam sa uloží len na želanie používateľa, do iPhonu. Archív a počúvanie pri zhasnutom displeji pridá jednorazový nákup Silent Companion Plus.","downloadUrl":"https://apps.apple.com/app/id6832844850","image":"https://breathune.eu/assets/silent-companion-icon.png","author":{"@type":"Person","name":"Ján Šikuta","sameAs":"https://orcid.org/0000-0002-4690-0317"},"url":"https://breathune.eu/silent-companion/"}
 </script>
 <link rel="me" href="https://orcid.org/0000-0002-4690-0317">
 </head>
-<body>
+<body class="sc">
 
-<header>
-  <div class="wrap">
-    <a class="back" href="/">← Breathune</a>
-    <div class="brand">
-      <picture>
-        <source srcset="/assets/silent-companion-icon.webp" type="image/webp">
-        <img class="mark" src="/assets/silent-companion-icon.png" width="46" height="46" alt="">
-      </picture>
-      <div>
-        <h1>Silent Companion</h1>
-        <p class="sk">Titulky k reči ľudí okolo teba, na iPhone</p>
-        <p class="en">Subtitles for the people talking around you, on iPhone</p>
+<header class="hero sc-hero">
+  <div class="wide">
+    <div class="sc-top">
+      <a class="back" href="/">← Breathune</a>
+      <div class="langbar" role="group" aria-label="Language">
+        <button type="button" data-set="sk" aria-pressed="true" title="Slovenčina">SK</button>
+        <button type="button" data-set="en" aria-pressed="false" title="English">EN</button>
       </div>
     </div>
-    <div class="langbar" role="group" aria-label="Language">
-      <button type="button" data-set="sk" aria-pressed="true" title="Slovenčina">SK</button>
-      <button type="button" data-set="en" aria-pressed="false" title="English">EN</button>
+
+    <div class="hero-grid">
+      <div>
+        <div class="hero-brand">
+          <picture>
+            <source srcset="/assets/silent-companion-icon.webp" type="image/webp">
+            <img src="/assets/silent-companion-icon.png" width="58" height="58" alt="">
+          </picture>
+          <span>Silent Companion · iPhone</span>
+        </div>
+        <h1 class="hero-title"><span class="sk">Rozumej ľuďom okolo seba, <span class="grad">v ktoromkoľvek jazyku.</span></span><span class="en">Understand the people around you, <span class="grad">in any language.</span></span></h1>
+        <p class="hero-lede sk">Polož iPhone na stôl a ťukni na <em>Počúvať</em>. Čašník, lekár, prednášajúci aj príbuzní pri stole: ich slová uvidíš ako titulky po slovensky a ak chceš, budeš ich počuť v slúchadlách.</p>
+        <p class="hero-lede en">Put your iPhone on the table and tap <em>Listen</em>. The waiter, the doctor, the lecturer, your relatives at the table: you see their words as subtitles in your language and, if you like, hear them in your earphones.</p>
+        <div class="hero-cta">
+          <a class="sc-store" href="https://apps.apple.com/app/id6832844850" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1.9-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg><span><small class="sk">Stiahnuť zadarmo v App Store</small><small class="en">Free on the App Store</small><strong>Silent Companion</strong></span></a>
+          <a class="ghost" href="#plus"><span class="sk">Čo pridá Plus</span><span class="en">What Plus adds</span> →</a>
+        </div>
+        <ul class="hero-facts">
+          <li class="sk">25+ jazykov reči</li><li class="en">25+ spoken languages</li>
+          <li class="sk">titulky v 11 jazykoch</li><li class="en">subtitles in 11 languages</li>
+          <li class="sk">zvuk neopúšťa iPhone</li><li class="en">audio never leaves the iPhone</li>
+          <li class="sk">bez účtu a reklám</li><li class="en">no account, no ads</li>
+        </ul>
+      </div>
+
+      <div class="demo">
+        <div class="scenarios" role="group" aria-label="Ukážka / Demo">
+          <button type="button" data-scene="bar" aria-pressed="true"><span class="sk">Bar v Madride</span><span class="en">Bar in Madrid</span></button>
+          <button type="button" data-scene="doctor" aria-pressed="false"><span class="sk">U lekára v Ríme</span><span class="en">Doctor in Rome</span></button>
+          <button type="button" data-scene="lecture" aria-pressed="false"><span class="sk">Prednáška</span><span class="en">Lecture</span></button>
+        </div>
+        <div class="phone" data-demo>
+          <div class="screen">
+            <div class="island"></div>
+            <div class="app-head">
+              <span class="dot"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/></svg></span>
+              <div><b>Silent Companion</b><small class="sk">Titulky z reči okolo teba</small><small class="en">Subtitles for speech around you</small></div>
+            </div>
+            <div class="bridge">
+              <div><span class="lab sk">Počujem</span><span class="lab en">I hear</span><span data-from></span></div>
+              <span class="arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <div style="text-align:right"><span class="lab sk">Titulky</span><span class="lab en">Subtitles</span><span data-to></span></div>
+            </div>
+            <div class="feed" aria-live="polite"></div>
+            <div class="partial"><span class="wave"><i></i><i></i><i></i><i></i></span><span class="partial-text"></span></div>
+            <div class="controls">
+              <button type="button" class="side" data-voice aria-pressed="false"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg><span class="sk">Nahlas</span><span class="en">Aloud</span></button>
+              <button type="button" class="listen" aria-pressed="false" aria-label="Počúvať">
+                <svg class="go" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg>
+                <svg class="stop" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="3" fill="#fff"/></svg>
+              </button>
+              <span class="side" aria-hidden="true">🎧 AirPods</span>
+            </div>
+          </div>
+        </div>
+        <p class="demo-note sk">Ukážka s pripravenými vetami. Skutočná appka počúva mikrofónom iPhonu a prekladá cez DeepL.</p>
+        <p class="demo-note en">A demo with prepared sentences. The real app listens through the iPhone microphone and translates with DeepL.</p>
+      </div>
     </div>
   </div>
 </header>
 
 <nav>
   <div class="wrap">
+    <a href="#uses"><span class="sk">Na čo je</span><span class="en">What it’s for</span></a>
     <a href="#how"><span class="sk">Ako to funguje</span><span class="en">How it works</span></a>
     <a href="#conversation"><span class="sk">Rozhovor dvoch</span><span class="en">Two-person talk</span></a>
     <a href="#plus"><span class="sk">Plus</span><span class="en">Plus</span></a>
-    <a href="#start"><span class="sk">Pred cestou</span><span class="en">Before you travel</span></a>
-    <a href="#deepl"><span class="sk">Kľúč DeepL</span><span class="en">DeepL key</span></a>
-    <a href="#help"><span class="sk">Keď niečo nejde</span><span class="en">Troubleshooting</span></a>
-    <a href="#contact"><span class="sk">Napíš mi</span><span class="en">Write to me</span></a>
-    <a href="privacy/"><span class="sk">Ochrana súkromia</span><span class="en">Privacy</span></a>
+    <a href="#start"><span class="sk">Návod</span><span class="en">Guide</span></a>
+    <a href="#help"><span class="sk">Pomoc</span><span class="en">Help</span></a>
+    <a href="privacy/"><span class="sk">Súkromie</span><span class="en">Privacy</span></a>
   </div>
 </nav>
 
-<main class="wrap">
+<div class="wide">
 
-<section id="about">
-  <p class="lede sk">Si v cudzine a ľudia, s ktorými sa stretávaš, hovoria jazykom, ktorému nerozumieš: čašník, predavačka na trhu, lekár alebo príbuzní pri spoločnom stole. Polož iPhone na stôl a ťukni na <em>Počúvať</em>. Silent Companion ukáže ich slová ako titulky v tvojom jazyku a ak chceš, prečíta ti ich do slúchadiel alebo nahlas.</p>
-  <p class="lede en">You’re abroad and the people you meet speak a language you don’t understand: the waiter, the woman at the market stall, the doctor or relatives at the family table. Put your iPhone on the table and tap <em>Listen</em>. Silent Companion shows their words as subtitles in your language and, if you like, reads them into your headphones or aloud.</p>
-
-  <p class="sk">Je to pomôcka na dorozumenie v rozhovore, ktorého si súčasťou. Ak si chceš rozhovor uložiť, je slušné povedať to ostatným.</p>
-  <p class="en">It is a tool for understanding a conversation you are part of. If you want to save the conversation, it’s good manners to let the others know.</p>
-
-  <p class="sk">Appka je stavaná hlavne pre Slovákov, preto sú titulky predvolene po slovensky. Hore na hlavnej obrazovke si ich prepneš aj do češtiny, angličtiny, nemčiny, poľštiny, maďarčiny, francúzštiny, ukrajinčiny, čínštiny, thajčiny alebo vietnamčiny. V týchto jedenástich jazykoch je aj samotná appka, jazyk si vyberieš v Nastaveniach.</p>
-  <p class="en">The app is made mainly for Slovak speakers, so the subtitles are in Slovak by default. At the top of the main screen you can switch them to Czech, English, German, Polish, Hungarian, French, Ukrainian, Chinese, Thai or Vietnamese. The app itself speaks the same eleven languages; pick yours in Settings.</p>
-
-  <p class="sk">Titulky ti môže aj prečítať, potichu do AirPods alebo nahlas z reproduktora iPhonu. Čítanie nahlas pomôže aj človeku, ktorý zle vidí alebo nevidí, a appka sa dá ovládať aj s VoiceOver.</p>
-  <p class="en">It can also read the subtitles to you, quietly into your AirPods or aloud through the iPhone speaker. Reading aloud also helps people with low vision or blindness, and the app works with VoiceOver.</p>
-
-  <p class="sk">Rozumie viac ako 25 jazykom, napríklad španielčine, taliančine, francúzštine, nemčine, angličtine, gréčtine, turečtine, thajčine, vietnamčine, japončine či čínštine. Presný zoznam závisí od iPhonu.</p>
-  <p class="en">It understands more than 25 languages, for example Spanish, Italian, French, German, English, Greek, Turkish, Thai, Vietnamese, Japanese or Chinese. The exact list depends on your iPhone.</p>
-
-  <p class="sk">Pre iPhone so systémom iOS 26 alebo novším, zadarmo. <a href="https://apps.apple.com/app/id6832844850" target="_blank" rel="noopener"><strong>Stiahnuť v App Store</strong></a>. Archív a počúvanie pri zhasnutom displeji pridá jednorazový nákup <a href="#plus">Silent Companion Plus</a>.</p>
-  <p class="en">For iPhone with iOS 26 or later, free of charge. <a href="https://apps.apple.com/app/id6832844850" target="_blank" rel="noopener"><strong>Download on the App Store</strong></a>. The archive and listening with the screen off come with the one-time purchase <a href="#plus">Silent Companion Plus</a>.</p>
+<section class="band" id="uses">
+  <div class="band-head">
+    <p class="eyebrow"><span class="sk">Na čo je</span><span class="en">What it’s for</span></p>
+    <h2><span class="sk">Keď nerozumieš, nemusíš len prikyvovať.</span><span class="en">When you don’t understand, you don’t have to just nod.</span></h2>
+  </div>
+  <div class="uses">
+    <div class="use"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/><circle cx="12" cy="12" r="10"/></svg></div><h3><span class="sk">Na cestách</span><span class="en">Travelling</span></h3><p class="sk">Reštaurácia, trh, hotel, taxík. Vidíš, čo ti hovoria, a nemusíš nikoho prosiť, aby hovoril pomalšie.</p><p class="en">Restaurant, market, hotel, taxi. You see what they say and don’t have to ask anyone to slow down.</p></div>
+    <div class="use"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></svg></div><h3><span class="sk">U lekára a na úradoch</span><span class="en">Doctors and offices</span></h3><p class="sk">Dávkovanie liekov, termín kontroly, pokyny. Čo je dôležité, máš napísané a môžeš si to uložiť.</p><p class="en">Dosage, the next appointment, instructions. What matters is written down and you can keep it.</p></div>
+    <div class="use"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div><h3><span class="sk">Prednášky a porady</span><span class="en">Lectures and meetings</span></h3><p class="sk">Titulky celej prednášky, s Plus aj pri zhasnutom displeji a s archívom, v ktorom potom hľadáš.</p><p class="en">Subtitles for the whole lecture; with Plus even with the screen off, and an archive you can search later.</p></div>
+    <div class="use"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8.5a6 6 0 1 1 12 0c0 3-2.5 4.2-3.3 6-.8 1.9-1.4 5.5-4.7 5.5a3.5 3.5 0 0 1-3.5-3.5"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0"/></svg></div><h3><span class="sk">Keď zle vidíš</span><span class="en">If you see poorly</span></h3><p class="sk">Preklad ti appka prečíta potichu do slúchadiel alebo nahlas. Veľké písmo a VoiceOver fungujú v celej appke.</p><p class="en">The app reads the translation quietly into your earphones or aloud. Large text and VoiceOver work throughout the app.</p></div>
+  </div>
 </section>
 
-<section id="story">
+<section class="band" id="how">
+  <div class="band-head">
+    <p class="eyebrow"><span class="sk">Ako to funguje</span><span class="en">How it works</span></p>
+    <h2><span class="sk">Tri kroky, jedno ťuknutie.</span><span class="en">Three steps, one tap.</span></h2>
+  </div>
+  <div class="steps">
+    <div class="stepx"><h3><span class="sk">iPhone počúva</span><span class="en">The iPhone listens</span></h3><p class="sk">Reč rozpoznáva priamo iPhone (Apple). Zvuk neopúšťa telefón a nikde sa neukladá.</p><p class="en">Speech is recognised right on the iPhone (Apple). The audio never leaves the phone and is never saved.</p></div>
+    <div class="stepx"><h3><span class="sk">DeepL preloží</span><span class="en">DeepL translates</span></h3><p class="sk">Dokončenú vetu preloží DeepL pod tvojím vlastným kľúčom. Bezplatný kľúč stačí na bežné používanie.</p><p class="en">Each finished sentence is translated by DeepL with your own key. The free key is enough for everyday use.</p></div>
+    <div class="stepx"><h3><span class="sk">Čítaš alebo počúvaš</span><span class="en">You read or listen</span></h3><p class="sk">Titulky na displeji, potichu do AirPods alebo nahlas z reproduktora. Po skončení ich môžeš uložiť.</p><p class="en">Subtitles on screen, quietly into AirPods or aloud through the speaker. Afterwards you can save them.</p></div>
+  </div>
+  <div class="shots" style="margin-top:44px">
+    <figure><img class="sk" src="img/sk-01-titulky.jpg" width="460" height="1000" loading="lazy" alt="Titulky v appke Silent Companion"><img class="en" src="img/en-01-titulky.jpg" width="460" height="1000" loading="lazy" alt="Subtitles in Silent Companion"><figcaption class="sk">Titulky po vetách</figcaption><figcaption class="en">Subtitles sentence by sentence</figcaption></figure>
+    <figure><img class="sk" src="img/sk-04-konverzacia.jpg" width="460" height="1000" loading="lazy" alt="Rozhovor dvoch ľudí"><img class="en" src="img/en-04-konverzacia.jpg" width="460" height="1000" loading="lazy" alt="Two-person conversation"><figcaption class="sk">Rozhovor dvoch ľudí</figcaption><figcaption class="en">Two-person conversation</figcaption></figure>
+    <figure><img class="sk" src="img/sk-03-titulky-tma.jpg" width="460" height="1000" loading="lazy" alt="Tmavý vzhľad"><img class="en" src="img/en-03-titulky-tma.jpg" width="460" height="1000" loading="lazy" alt="Dark appearance"><figcaption class="sk">Aj v tme, šetrne k očiam</figcaption><figcaption class="en">Easy on the eyes in the dark</figcaption></figure>
+  </div>
+</section>
+
+<section class="band" id="conversation">
+  <div class="talk">
+    <div>
+      <p class="eyebrow"><span class="sk">Rozhovor dvoch ľudí</span><span class="en">Two-person conversation</span></p>
+      <h2><span class="sk">Tlmočník na stole medzi vami.</span><span class="en">An interpreter on the table between you.</span></h2>
+      <p class="sk">Polož telefón medzi vás a ťukni na <em>Konverzácia dvoch ľudí</em>. Kto hovorí, ťukne na svoje tlačidlo. Appka jeho vetu preloží tomu druhému, ukáže ju ako bublinu a prečíta nahlas v jeho jazyku. Celý rozhovor si potom môžeš uložiť.</p>
+      <p class="en">Put the phone between you and tap <em>Two-person conversation</em>. Whoever speaks taps their button. The app translates the sentence for the other person, shows it as a bubble and reads it aloud in their language. Afterwards you can save the whole conversation.</p>
+      <p class="sk" style="color:var(--muted)">Vyskúšaj si to vedľa: ťukni na <em>Ďalšia veta</em>.</p>
+      <p class="en" style="color:var(--muted)">Try it on the right: tap <em>Next sentence</em>.</p>
+    </div>
+    <div class="chat" data-chat>
+      <div class="chat-feed" aria-live="polite"></div>
+      <div class="chat-ctrl">
+        <button type="button" data-reset><span class="sk">Od začiatku</span><span class="en">Start over</span></button>
+        <button type="button" class="primary" data-next><span class="sk">Ďalšia veta</span><span class="en">Next sentence</span> →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="plus">
+  <div class="band-head">
+    <p class="eyebrow">Silent Companion Plus</p>
+    <h2><span class="sk">Zadarmo na každý deň. Plus na to, čo si chceš pamätať.</span><span class="en">Free for every day. Plus for what you want to keep.</span></h2>
+    <p class="sk">Titulky, preklad, čítanie nahlas aj rozhovor dvoch ľudí sú zadarmo a bez obmedzení. Kto appku používa často, dokúpi si jednorazovo Plus. Žiadne predplatné.</p>
+    <p class="en">Subtitles, translation, reading aloud and the two-person conversation are free, with no limits. If you use the app often, buy Plus once. No subscription.</p>
+  </div>
+  <div class="pricing">
+    <div class="plan">
+      <h3><span class="sk">Zadarmo</span><span class="en">Free</span></h3>
+      <div class="price"><b>0 €</b><span class="sk">navždy</span><span class="en">forever</span></div>
+      <p class="sub sk">Všetko, čo potrebuješ na rozhovor.</p><p class="sub en">Everything you need for a conversation.</p>
+      <ul class="sk">
+        <li>Živé titulky z 25+ jazykov reči</li>
+        <li>Preklad DeepL do 11 jazykov</li>
+        <li>Hlas do AirPods alebo čítanie nahlas</li>
+        <li>Rozhovor dvoch ľudí</li>
+        <li>Externý mikrofón na prednášky</li>
+        <li>Uloženie rozhovoru ako text</li>
+      </ul>
+      <ul class="en">
+        <li>Live subtitles from 25+ spoken languages</li>
+        <li>DeepL translation into 11 languages</li>
+        <li>Voice into AirPods or reading aloud</li>
+        <li>Two-person conversation</li>
+        <li>External microphone for lectures</li>
+        <li>Save a conversation as text</li>
+      </ul>
+      <a class="sc-store" href="https://apps.apple.com/app/id6832844850" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1.9-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg><span><small class="sk">Stiahnuť v App Store</small><small class="en">Get it on the App Store</small><strong>Silent Companion</strong></span></a>
+    </div>
+    <div class="plan plus">
+      <span class="tag"><span class="sk">Jednorazovo</span><span class="en">One-time</span></span>
+      <h3>Plus</h3>
+      <div class="price"><b>5,99 €</b><span class="sk">raz a navždy</span><span class="en">once, for good</span></div>
+      <p class="sub sk">Pre prednášky, lekára a porady. Kúpiš priamo v appke.</p><p class="sub en">For lectures, doctors and meetings. Buy it right in the app.</p>
+      <ul class="sk">
+        <li><strong>Archív</strong>: titulky aj rozhovory pod vlastným názvom, celá prednáška od prvej vety</li>
+        <li><strong>Hľadanie</strong> slova vo všetkých záznamoch naraz</li>
+        <li><strong>PDF</strong> s prekladom, originálom a časmi, pripravené na poslanie</li>
+        <li><strong>Počúvanie pri zhasnutom displeji</strong>: na konferencii nesvieti, titulky si prečítaš potom</li>
+        <li>Len v tvojom iPhone, šifrované, mimo zálohy; aj pre rodinné zdieľanie</li>
+      </ul>
+      <ul class="en">
+        <li><strong>Archive</strong>: subtitles and conversations under your own name, the whole lecture from the first sentence</li>
+        <li><strong>Search</strong> for a word across all records at once</li>
+        <li><strong>PDF</strong> with translation, original and times, ready to send</li>
+        <li><strong>Listening with the screen off</strong>: no glowing screen at a conference, read the subtitles afterwards</li>
+        <li>Only on your iPhone, encrypted, outside backups; works with Family Sharing</li>
+      </ul>
+      <a class="sc-store" href="https://apps.apple.com/app/id6832844850" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1.9-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg><span><small class="sk">Stiahnuť a odomknúť Plus</small><small class="en">Download and unlock Plus</small><strong>Silent Companion</strong></span></a>
+    </div>
+  </div>
+
+  <div class="tryarch" data-archive>
+    <h3><span class="sk">Vyskúšaj hľadanie v archíve</span><span class="en">Try searching the archive</span></h3>
+    <p class="sk">Takto nájdeš vetu z prednášky alebo od lekára aj po týždňoch. Diakritiku písať netreba.</p>
+    <p class="en">This is how you find a sentence from a lecture or the doctor weeks later.</p>
+    <label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a90b2" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" data-ph-sk="Hľadať v archíve, napríklad sirup" data-ph-en="Search the archive, e.g. syrup" aria-label="Hľadať v archíve / Search the archive"></label>
+    <div class="chips sk"><button type="button">sirup</button><button type="button">piatok</button><button type="button">enzym</button><button type="button">cena</button></div>
+    <div class="chips en"><button type="button">syrup</button><button type="button">Friday</button><button type="button">enzyme</button><button type="button">price</button></div>
+    <div class="records"></div>
+    <div class="count" aria-live="polite"></div>
+  </div>
+
+  <div class="band-head" id="background" style="margin-top:44px">
+    <h3 style="font-size:22px"><span class="sk">Pri zhasnutom displeji, ale nikdy potajomky</span><span class="en">With the screen off, but never in secret</span></h3>
+    <p class="sk">Na konferencii alebo rokovaní, kde svetlo displeja ruší, zapni v Nastaveniach <em>Počúvať pri zhasnutom displeji</em> (súčasť Plus). Appka počúva ďalej a prepis si pozrieš potom. iPhone pritom celý čas ukazuje oranžovú bodku mikrofónu a na uzamknutej obrazovke upozornenie, že appka počúva. Ak si rozhovor ukladáš, povedz to ostatným.</p>
+    <p class="en">At a conference or meeting where a lit screen disturbs, turn on <em>Listen with the screen off</em> in Settings (part of Plus). The app keeps listening and you read the transcript afterwards. The iPhone shows the orange microphone indicator the whole time and a notice on the Lock Screen that the app is listening. If you save the conversation, tell the others.</p>
+  </div>
+</section>
+
+<section class="band" id="privacy">
+  <div class="band-head">
+    <p class="eyebrow"><span class="sk">Súkromie</span><span class="en">Privacy</span></p>
+    <h2><span class="sk">Tvoj rozhovor patrí tebe.</span><span class="en">Your conversation is yours.</span></h2>
+  </div>
+  <div class="trust">
+    <div><b class="sk">Zvuk ostáva v iPhone</b><b class="en">Audio stays on the iPhone</b><span class="sk">Reč sa rozpoznáva v telefóne. Na preklad odchádza len text dokončenej vety, priamo do DeepL.</span><span class="en">Speech is recognised on the phone. Only the text of a finished sentence goes out, straight to DeepL.</span></div>
+    <div><b class="sk">Bez účtu a analytiky</b><b class="en">No account, no analytics</b><span class="sk">Žiadna registrácia, reklama ani sledovanie. Kľúč DeepL je v Kľúčenke iPhonu.</span><span class="en">No sign-up, ads or tracking. Your DeepL key is kept in the iPhone Keychain.</span></div>
+    <div><b class="sk">Archív len u teba</b><b class="en">Archive only with you</b><span class="sk">Záznam vznikne, len keď ho uložíš. Je šifrovaný a nejde do zálohy ani na internet.</span><span class="en">A record exists only if you save it. It is encrypted and never goes to backups or online.</span></div>
+  </div>
+  <p style="margin-top:16px"><a href="privacy/"><span class="sk">Zásady ochrany súkromia</span><span class="en">Privacy policy</span> →</a></p>
+</section>
+
+</div>
+
+<main class="wrap">
+
+<section id="story" class="support-title">
   <h2><span class="sk">Prečo vznikla</span><span class="en">Why it exists</span></h2>
   <p class="sk">Silent Companion som pôvodne urobil pre svoju mamu, ktorá sa nevedela dorozumieť s ľuďmi okolo seba. Chcel som pre ňu ľahkú appku, ktorá sa ovláda jedným ťuknutím: iPhone leží na stole a preklad ide rovno do slúchadiel alebo na displej. Pre ňu to bolo jednoduché a využiteľné v praxi.</p>
   <p class="sk">Ak to pomáha mne, nech to pomôže aj blízkym a ďalším.</p>
@@ -104,8 +273,48 @@
   <p class="en"><em>So that people don’t just get by, but truly understand each other.</em></p>
 </section>
 
-<section id="how">
-  <h2><span class="sk">Ako to funguje</span><span class="en">How it works</span></h2>
+<h2 class="support-title" id="guide"><span class="sk">Návod a pomoc</span><span class="en">Guide and help</span></h2>
+
+<section id="start">
+  <h2><span class="sk">Pred cestou</span><span class="en">Before you travel</span></h2>
+  <p class="sk">Najlepšie doma, na Wi-Fi:</p>
+  <p class="en">Best done at home, on Wi-Fi:</p>
+  <ol class="sk">
+    <li>Keď sa appka opýta, povoľ jej mikrofón.</li>
+    <li>Vlož svoj kľúč DeepL (postup je hneď nižšie).</li>
+    <li>V Nastaveniach appky (ozubené koliesko) ťukni na <em>Stiahnuť ďalší jazyk</em>, vyhľadaj a stiahni jazyky, ktoré budeš počúvať. Môžeš ich mať stiahnutých aj viac naraz. Kým jazyk nie je stiahnutý, appka v ňom nezačne počúvať.</li>
+    <li>Ak nechceš titulky po slovensky, ťukni na hlavnej obrazovke vpravo hore na <em>Titulky</em> a vyber iný jazyk.</li>
+  </ol>
+  <ol class="en">
+    <li>When the app asks, allow the microphone.</li>
+    <li>Add your DeepL key (see the next section).</li>
+    <li>In the app’s settings (the gear icon), tap <em>Download another language</em>, search for and download the languages you’ll be listening to. You can keep several downloaded at once. The app won’t start listening in a language until it is downloaded.</li>
+    <li>If you don’t want Slovak subtitles, tap <em>Subtitles</em> at the top right of the main screen and pick another language.</li>
+  </ol>
+</section>
+
+<section id="deepl">
+  <h2><span class="sk">Kľúč DeepL</span><span class="en">Your DeepL key</span></h2>
+  <p class="sk">Preklad robí služba DeepL a appka na to používa tvoj vlastný kľúč. Bezplatný program <strong>DeepL API Free</strong> dáva 500 000 znakov mesačne.</p>
+  <p class="en">Translation is done by DeepL, and the app uses your own key for it. The free <strong>DeepL API Free</strong> plan gives you 500,000 characters a month.</p>
+  <ol class="sk">
+    <li>Otvor <a href="https://www.deepl.com/pro-api">deepl.com/pro-api</a> a vyber <em>DeepL API Free</em>.</li>
+    <li>Zaregistruj sa. DeepL pri registrácii pýta platobnú kartu, slúži na overenie.</li>
+    <li>V účte DeepL skopíruj svoj kľúč. Kľúč bezplatného programu končí na „:fx“.</li>
+    <li>V appke ťukni na ozubené koliesko a v časti <em>Kľúč DeepL</em> na <em>Vložiť</em>. Appka kľúč overí a ukáže, koľko z mesačného limitu si už minul.</li>
+  </ol>
+  <ol class="en">
+    <li>Open <a href="https://www.deepl.com/pro-api">deepl.com/pro-api</a> and choose <em>DeepL API Free</em>.</li>
+    <li>Sign up. DeepL asks for a payment card during sign-up, to verify you.</li>
+    <li>Copy your key from your DeepL account. Keys for the free plan end in “:fx”.</li>
+    <li>In the app, tap the gear icon, then <em>Paste</em> under <em>DeepL key</em>. The app checks the key and shows how much of this month’s allowance you have used.</li>
+  </ol>
+  <p class="sk">Kľúč je uložený v Kľúčenke iPhonu. Čo DeepL robí s prekladanými vetami, nájdeš v <a href="privacy/#deepl">zásadách ochrany súkromia</a>.</p>
+  <p class="en">The key is stored in your iPhone’s Keychain. What DeepL does with the sentences it translates is explained in the <a href="privacy/#deepl">privacy policy</a>.</p>
+</section>
+
+<section id="controls">
+  <h2><span class="sk">Ako to funguje podrobne</span><span class="en">How it works in detail</span></h2>
   <p class="sk">Reč rozpoznáva priamo iPhone, používa na to rozpoznávanie reči od Apple. Zvuk z mikrofónu neopúšťa telefón a nikam sa neukladá.</p>
   <p class="en">Speech is recognised right on the iPhone, using Apple’s speech recognition. Audio from the microphone never leaves the phone and is never saved.</p>
   <p class="sk">Keď niekto dopovie vetu, appka pošle jej text cez zabezpečené spojenie na preklad službe DeepL. Na to potrebuje internet a tvoj vlastný kľúč DeepL (návod je nižšie). Preklad sa potom ukáže ako titulok.</p>
@@ -130,72 +339,6 @@
     <li><strong>Read aloud</strong> reads them through the iPhone speaker, no headphones needed. While it reads, the app doesn’t listen, so it never translates itself.</li>
     <li><strong>Listen</strong> and <strong>Stop</strong> start and end listening. A phone call pauses listening; when it ends, tap <strong>Continue</strong>.</li>
   </ul>
-</section>
-
-<section id="conversation">
-  <h2><span class="sk">Rozhovor dvoch ľudí</span><span class="en">A talk between two people</span></h2>
-  <p class="sk">Silent Companion vie tlmočiť aj rozhovor dvoch ľudí. Polož telefón medzi vás a na hlavnej obrazovke ťukni na <em>Konverzácia dvoch ľudí</em>. Keď hovorí jeden, ťukni na jeho tlačidlo, nechaj ho dohovoriť a ťukni znova. Appka jeho vetu preloží tomu druhému, ukáže ju ako bublinu a prečíta nahlas v jeho jazyku. Potom odpovieš ty cez svoje tlačidlo. Striedate sa a celý rozhovor si môžeš uložiť ako text.</p>
-  <p class="en">Silent Companion can also interpret a talk between two people. Put the phone between you and tap <em>Two-person conversation</em> on the main screen. When one of you speaks, tap their button, let them finish and tap again. The app translates what they said for the other, shows it as a bubble and reads it aloud in their language. Then you reply with your own button. You take turns, and you can save the whole conversation as text.</p>
-</section>
-
-<section id="plus">
-  <h2><span class="sk">Silent Companion Plus</span><span class="en">Silent Companion Plus</span></h2>
-  <p class="sk">Titulky, preklad, čítanie nahlas aj rozhovor dvoch ľudí sú zadarmo a bez obmedzení. Kto appku používa často, napríklad na prednáškach, u lekára alebo na poradách, si môže jednorazovo kúpiť <strong>Plus za 5,99 €</strong>. Nie je to predplatné.</p>
-  <p class="en">Subtitles, translation, reading aloud and the two-person conversation are free, with no limits. If you use the app often, for example at lectures, at the doctor’s or in meetings, you can buy <strong>Plus for €5.99</strong> once. It is not a subscription.</p>
-  <ul class="sk">
-    <li><strong>Archív:</strong> po zastavení ulož titulky alebo rozhovor pod vlastným názvom, hľadaj slovo vo všetkých záznamoch naraz a pošli záznam ako PDF alebo text. Archív je len v tvojom iPhone, šifrovaný a mimo zálohy.</li>
-    <li><strong>Počúvanie pri zhasnutom displeji</strong> (pozri nižšie).</li>
-  </ul>
-  <ul class="en">
-    <li><strong>Archive:</strong> after stopping, save the subtitles or a conversation under your own name, search for a word across all records and send a record as PDF or text. The archive stays only on your iPhone, encrypted and outside backups.</li>
-    <li><strong>Listening with the screen off</strong> (see below).</li>
-  </ul>
-  <p class="sk">Plus nájdeš v Nastaveniach alebo pod ikonou archívu na hlavnej obrazovke. Na novom iPhone ho vrátiš tlačidlom <em>Obnoviť nákup</em>. Ak chceš appku len podporiť, sú tam aj dobrovoľné tipy, ktoré nič neodomykajú.</p>
-  <p class="en">You’ll find Plus in Settings or under the archive icon on the main screen. On a new iPhone, get it back with <em>Restore purchase</em>. If you just want to support the app, there are also voluntary tips that unlock nothing.</p>
-</section>
-
-<section id="background">
-  <h2><span class="sk">Pri zhasnutom displeji (Plus)</span><span class="en">With the screen off (Plus)</span></h2>
-  <p class="sk">Na konferencii alebo rokovaní, kde si účastník a svetlo displeja by rušilo, zapni v Nastaveniach <em>Počúvať pri zhasnutom displeji</em> (súčasť Plus). Appka počúva ďalej aj po zhasnutí displeja a prepis si pozrieš potom. Nie je to skryté: iPhone celý čas ukazuje oranžovú bodku mikrofónu a na uzamknutej obrazovke upozornenie, že appka počúva. Ak si rozhovor ukladáš, povedz to ostatným.</p>
-  <p class="en">At a conference or a meeting where you take part and the screen's light would disturb, turn on <em>Listen with the screen off</em> in Settings (part of Plus). The app keeps listening after the screen turns off and you read the transcript afterwards. It is not hidden: the iPhone shows the orange microphone indicator the whole time and a notice on the Lock Screen that the app is listening. If you save the conversation, tell the others.</p>
-</section>
-
-<section id="start">
-  <h2><span class="sk">Pred cestou</span><span class="en">Before you travel</span></h2>
-  <p class="sk">Najlepšie doma, na Wi-Fi:</p>
-  <p class="en">Best done at home, on Wi-Fi:</p>
-  <ol class="sk">
-    <li>Keď sa appka opýta, povoľ jej mikrofón a rozpoznávanie reči.</li>
-    <li>Vlož svoj kľúč DeepL (postup je hneď nižšie).</li>
-    <li>V Nastaveniach appky (ozubené koliesko) v časti <em>Jazyky na stiahnutie</em> stiahni jazyky, ktoré budeš počúvať. Môžeš ich mať stiahnutých aj viac naraz. Kým jazyk nie je stiahnutý, appka v ňom nezačne počúvať.</li>
-    <li>Ak nechceš titulky po slovensky, ťukni na hlavnej obrazovke vpravo hore na <em>Titulky</em> a vyber iný jazyk.</li>
-  </ol>
-  <ol class="en">
-    <li>When the app asks, allow the microphone and speech recognition.</li>
-    <li>Add your DeepL key (see the next section).</li>
-    <li>In the app’s settings (the gear icon), under <em>Languages to download</em>, download the languages you’ll be listening to. You can keep several downloaded at once. The app won’t start listening in a language until it is downloaded.</li>
-    <li>If you don’t want Slovak subtitles, tap <em>Subtitles</em> at the top right of the main screen and pick another language.</li>
-  </ol>
-</section>
-
-<section id="deepl">
-  <h2><span class="sk">Kľúč DeepL</span><span class="en">Your DeepL key</span></h2>
-  <p class="sk">Preklad robí služba DeepL a appka na to používa tvoj vlastný kľúč. Bezplatný program <strong>DeepL API Free</strong> dáva 500 000 znakov mesačne.</p>
-  <p class="en">Translation is done by DeepL, and the app uses your own key for it. The free <strong>DeepL API Free</strong> plan gives you 500,000 characters a month.</p>
-  <ol class="sk">
-    <li>Otvor <a href="https://www.deepl.com/pro-api">deepl.com/pro-api</a> a vyber <em>DeepL API Free</em>.</li>
-    <li>Zaregistruj sa. DeepL pri registrácii pýta platobnú kartu, slúži na overenie.</li>
-    <li>V účte DeepL skopíruj svoj kľúč. Kľúč bezplatného programu končí na „:fx“.</li>
-    <li>V appke ťukni na ozubené koliesko a v časti <em>Kľúč DeepL</em> na <em>Vložiť</em>. Appka kľúč overí a ukáže, koľko z mesačného limitu si už minul.</li>
-  </ol>
-  <ol class="en">
-    <li>Open <a href="https://www.deepl.com/pro-api">deepl.com/pro-api</a> and choose <em>DeepL API Free</em>.</li>
-    <li>Sign up. DeepL asks for a payment card during sign-up, to verify you.</li>
-    <li>Copy your key from your DeepL account. Keys for the free plan end in “:fx”.</li>
-    <li>In the app, tap the gear icon, then <em>Paste</em> under <em>DeepL key</em>. The app checks the key and shows how much of this month’s allowance you have used.</li>
-  </ol>
-  <p class="sk">Kľúč je uložený v Kľúčenke iPhonu. Čo DeepL robí s prekladanými vetami, nájdeš v <a href="privacy/#deepl">zásadách ochrany súkromia</a>.</p>
-  <p class="en">The key is stored in your iPhone’s Keychain. What DeepL does with the sentences it translates is explained in the <a href="privacy/#deepl">privacy policy</a>.</p>
 </section>
 
 <section id="help">
@@ -264,6 +407,13 @@
   <p class="en">It helps if you include your iPhone model and iOS version, the app version (at the very bottom of the app’s settings) and what was happening when the problem appeared.</p>
 </section>
 
+<div class="final">
+  <h2><span class="sk">Vyskúšaj to pri ďalšom rozhovore.</span><span class="en">Try it at your next conversation.</span></h2>
+  <p class="sk">Stiahnutie je zadarmo. Plus si dokúpiš, až keď zistíš, že ti archív chýba.</p>
+  <p class="en">The download is free. Add Plus only once you find you miss the archive.</p>
+  <div class="hero-cta"><a class="sc-store" href="https://apps.apple.com/app/id6832844850" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1.9-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM14 5.4c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg><span><small class="sk">Stiahnuť zadarmo v App Store</small><small class="en">Free on the App Store</small><strong>Silent Companion</strong></span></a></div>
+</div>
+
 </main>
 
 <footer>
@@ -274,6 +424,7 @@
 </footer>
 
 <script src="/lang.js?v=20261110"></script>
+<script src="sc.js?v=20261111" defer></script>
 <script src="/site.js" defer></script>
 </body>
 </html>
