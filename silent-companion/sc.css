@@ -197,3 +197,5 @@ body.sc{
 .sc .screen,.sc .screen *{text-align:left;}
 .sc .bridge > div:last-child,.sc .bridge > div:last-child *{text-align:right;}
 .sc .demo,.sc .demo-note,.sc .scenarios{text-align:center!important;}
+.sc .hero-brand .zzz-price{font:800 13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;letter-spacing:.3px;padding:6px 10px;border-radius:8px;color:var(--gold)!important;}
+.sc .hero-brand > span:not(.zzz-price){font-size:17px;}
