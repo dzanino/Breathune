@@ -199,3 +199,14 @@ body.sc{
 .sc .demo,.sc .demo-note,.sc .scenarios{text-align:center!important;}
 .sc .hero-brand .zzz-price{font:800 13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;letter-spacing:.3px;padding:6px 10px;border-radius:8px;color:var(--gold)!important;}
 .sc .hero-brand > span:not(.zzz-price){font-size:17px;}
+
+/* Ukážka rozhovoru: moje bubliny vpravo, cudzincove vľavo, ako v konverzačnom režime appky */
+.sc .feed .line{max-width:86%;}
+.sc .feed .line.me{align-self:flex-end;background:linear-gradient(120deg,#d4f7f1,#d7effb);border-color:rgba(14,159,142,.25);border-bottom-right-radius:6px;}
+.sc .feed .line.other{align-self:flex-start;border-bottom-left-radius:6px;}
+.sc .feed .line.latest{border:1.5px solid #3ddbc4;}
+.sc .line .who{font:700 9px/1.2 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#0e9f8e;margin-bottom:3px;}
+.sc .feed .line.me .who,.sc .feed .line.me .tr,.sc .feed .line.me .or{text-align:right;}
+.sc .feed .line .tr{font-size:13.5px;}
+.sc .me-speaks .partial{flex-direction:row-reverse;text-align:right;background:rgba(92,200,242,.16);}
+.sc .me-speaks .partial .partial-text{text-align:right;}

@@ -6,43 +6,59 @@
   function lang() { return root.getAttribute('data-lang') === 'en' ? 'en' : 'sk'; }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
 
-  /* ---------- Ukážka tituliek v telefóne ---------- */
+  /* ---------- Ukážka v telefóne: skutočný rozhovor dvoch ľudí ---------- */
+  // Každá veta: kto hovorí ('me' = návštevník stránky, 'other' = cudzinec), jeho slová po slovensky (sk),
+  // po anglicky (en) a v jazyku cudzinca (x). Moju vetu appka preloží do x, cudzincovu do sk alebo en.
   var SCENES = {
-    bar: {
-      from: { sk: 'Španielčina', en: 'Spanish', flag: '🇪🇸' },
+    restaurant: {
+      x: { sk: 'Španielčina', en: 'Spanish', flag: '🇪🇸', voice: 'es-ES' },
+      who: { me: { sk: 'Hosť', en: 'Guest' }, other: { sk: 'Čašník', en: 'Waiter' } },
       lines: [
-        ['¿Qué os pongo para beber?', 'Čo vám dám na pitie?', 'What can I get you to drink?'],
-        ['Hoy tenemos paella de marisco.', 'Dnes máme paellu s morskými plodmi.', 'Today we have seafood paella.'],
-        ['Tarda unos veinte minutos.', 'Trvá asi dvadsať minút.', 'It takes about twenty minutes.'],
-        ['¿Queréis probar el vino de la casa?', 'Chcete ochutnať domáce víno?', 'Would you like to try the house wine?'],
-        ['La cocina cierra a las once.', 'Kuchyňa zatvára o jedenástej.', 'The kitchen closes at eleven.']
+        ['me', 'Dobrý deň, radi by sme si objednali.', 'Good afternoon, we’d like to order.', 'Buenas tardes, nos gustaría pedir.'],
+        ['other', '¡Buenas tardes! Claro, ahora mismo estoy con ustedes.', 'Dobrý deň! Jasné, hneď som u vás.', 'Good afternoon! Of course, I’ll be right with you.'],
+        ['other', 'Les escucho, ¿qué les pongo?', 'Počúvam, čo si dáte?', 'I’m listening, what can I get you?'],
+        ['me', 'Poprosíme si dve paelly s morskými plodmi.', 'Two seafood paellas, please.', 'Dos paellas de marisco, por favor.'],
+        ['other', 'Muy bien. La paella tarda unos veinte minutos, ¿les parece bien?', 'Výborne. Paella trvá asi dvadsať minút, vyhovuje vám to?', 'Very good. The paella takes about twenty minutes, is that all right?'],
+        ['me', 'Áno, nevadí. Medzitým si dáme chlieb s olivami.', 'Yes, that’s fine. Meanwhile we’ll have bread with olives.', 'Sí, no pasa nada. Mientras tanto, pan con aceitunas.'],
+        ['other', '¿Y para beber? El vino de la casa es muy bueno.', 'A na pitie? Domáce víno je veľmi dobré.', 'And to drink? The house wine is very good.'],
+        ['me', 'Tak dva poháre červeného a džbán vody.', 'Then two glasses of red and a jug of water.', 'Entonces dos copas de tinto y una jarra de agua.'],
+        ['other', '¡Perfecto! Enseguida se lo traigo.', 'Výborne! Hneď vám to prinesiem.', 'Perfect! I’ll bring it right away.']
       ]
     },
     doctor: {
-      from: { sk: 'Taliančina', en: 'Italian', flag: '🇮🇹' },
+      x: { sk: 'Taliančina', en: 'Italian', flag: '🇮🇹', voice: 'it-IT' },
+      who: { me: { sk: 'Pacient', en: 'Patient' }, other: { sk: 'Lekárka', en: 'Doctor' } },
       lines: [
-        ['Da quanti giorni ha la febbre?', 'Koľko dní máte horúčku?', 'How many days have you had a fever?'],
-        ['Prenda una compressa due volte al giorno.', 'Užívajte jednu tabletu dvakrát denne.', 'Take one tablet twice a day.'],
-        ['Sempre dopo i pasti.', 'Vždy po jedle.', 'Always after meals.'],
-        ['Se non migliora, torni giovedì.', 'Ak sa to nezlepší, príďte vo štvrtok.', 'If it doesn’t get better, come back on Thursday.'],
-        ['Beva molta acqua e riposi.', 'Pite veľa vody a oddychujte.', 'Drink plenty of water and rest.']
+        ['other', 'Buongiorno, si accomodi. Cosa la porta qui?', 'Dobrý deň, posaďte sa. Čo vás trápi?', 'Good morning, have a seat. What brings you here?'],
+        ['me', 'Od včera mám horúčku a bolí ma hrdlo.', 'I’ve had a fever and a sore throat since yesterday.', 'Da ieri ho la febbre e mal di gola.'],
+        ['other', 'Quanto è alta la febbre?', 'Akú vysokú horúčku máte?', 'How high is the fever?'],
+        ['me', 'Ráno som mal 38,5.', 'This morning it was 38.5.', 'Stamattina avevo trentotto e mezzo.'],
+        ['other', 'Apra la bocca, per favore. Sì, la gola è molto arrossata.', 'Otvorte, prosím, ústa. Áno, hrdlo je veľmi začervenané.', 'Open your mouth, please. Yes, your throat is very red.'],
+        ['me', 'Je to niečo vážne?', 'Is it something serious?', 'È qualcosa di grave?'],
+        ['other', 'No, è una faringite. Le prescrivo un antibiotico.', 'Nie, je to zápal hltana. Predpíšem vám antibiotikum.', 'No, it’s pharyngitis. I’ll prescribe an antibiotic.'],
+        ['other', 'Una compressa due volte al giorno, per sei giorni.', 'Jedna tableta dvakrát denne, šesť dní.', 'One tablet twice a day, for six days.'],
+        ['me', 'V sobotu letím domov. Môžem?', 'I’m flying home on Saturday. Is that all right?', 'Sabato torno a casa in aereo. Posso?'],
+        ['other', 'Sì, se la febbre passa. Beva molto e riposi.', 'Áno, ak horúčka prejde. Veľa pite a oddychujte.', 'Yes, if the fever goes away. Drink plenty and rest.']
       ]
     },
-    lecture: {
-      from: { sk: 'Angličtina', en: 'English', flag: '🇬🇧' },
+    bar: {
+      x: { sk: 'Nemčina', en: 'German', flag: '🇩🇪', voice: 'de-DE' },
+      who: { me: { sk: 'Ty', en: 'You' }, other: { sk: 'Turista z Mníchova', en: 'Tourist from Munich' } },
       lines: [
-        ['Today we will look at how enzymes work.', 'Dnes sa pozrieme, ako fungujú enzýmy.', 'Heute schauen wir uns an, wie Enzyme funktionieren.'],
-        ['An enzyme lowers the activation energy.', 'Enzým znižuje aktivačnú energiu.', 'Ein Enzym senkt die Aktivierungsenergie.'],
-        ['This makes the reaction much faster.', 'Vďaka tomu je reakcia oveľa rýchlejšia.', 'Dadurch läuft die Reaktion viel schneller ab.'],
-        ['Temperature and pH change its activity.', 'Teplota a pH menia jeho aktivitu.', 'Temperatur und pH-Wert verändern seine Aktivität.'],
-        ['We will test this in the lab on Friday.', 'V piatok si to overíme v laboratóriu.', 'Am Freitag testen wir das im Labor.']
+        ['me', 'Prepáčte, myslím, že pijete moje pivo.', 'Excuse me, I think you’re drinking my beer.', 'Entschuldigung, ich glaube, Sie trinken mein Bier.'],
+        ['other', 'Oh nein! Ich dachte schon, heute schmeckt es besonders gut.', 'Ach nie! Už som si myslel, že dnes chutí obzvlášť dobre.', 'Oh no! I was just thinking it tasted especially good today.'],
+        ['me', 'Nevadí, aspoň viem, že som si vybral dobre.', 'No worries, at least I know I chose well.', 'Kein Problem, so weiß ich wenigstens, dass ich gut gewählt habe.'],
+        ['other', 'Die nächste Runde geht auf mich. Zwei Bier, bitte!', 'Ďalšie kolo platím ja. Dve pivá, prosím!', 'The next round is on me. Two beers, please!'],
+        ['other', 'Und diesmal stelle ich meins auf die andere Seite.', 'A tentokrát si to svoje postavím na druhú stranu.', 'And this time I’ll put mine on the other side.'],
+        ['me', 'Odkiaľ ste?', 'Where are you from?', 'Woher kommen Sie?'],
+        ['other', 'Aus München. Und Sie?', 'Z Mníchova. A vy?', 'From Munich. And you?'],
+        ['me', 'Z Bratislavy. Je to od vás len kúsok.', 'From Bratislava. It’s not far from you.', 'Aus Bratislava. Das ist gar nicht weit von Ihnen.'],
+        ['other', 'Dann trinken wir auf die Nachbarn. Prost!', 'Tak pripime na susedov. Na zdravie!', 'Then let’s drink to the neighbours. Cheers!'],
+        ['me', 'Na zdravie! A toto pivo si už ustrážim.', 'Cheers! And this one I’m keeping an eye on.', 'Prost! Und auf dieses Bier passe ich jetzt auf.']
       ]
     }
   };
-  // Prednáška v angličtine: titulky po slovensky, v anglickej verzii stránky do nemčiny (aby bolo vidieť preklad).
-  var TARGET = { sk: { name: 'Slovenčina', flag: '🇸🇰' }, en: { name: 'English', flag: '🇬🇧' } };
-  var TARGET_LECTURE_EN = { name: 'Deutsch', flag: '🇩🇪' };
-  var SOURCE_LECTURE = { sk: 'Angličtina', en: 'English', flag: '🇬🇧' };
+  var MINE = { sk: { name: 'Slovenčina', flag: '🇸🇰', voice: 'sk-SK' }, en: { name: 'English', flag: '🇬🇧', voice: 'en-GB' } };
 
   var phone = document.querySelector('[data-demo]');
   if (phone) {
@@ -53,40 +69,43 @@
     var listenBtn = phone.querySelector('.listen');
     var voiceBtn = phone.querySelector('[data-voice]');
     var sceneBtns = document.querySelectorAll('.scenarios button[data-scene]');
-    var scene = 'bar', idx = 0, playing = false, timers = [], shown = [], voice = false, started = false;
+    var scene = 'restaurant', idx = 0, playing = false, timers = [], shown = [], voice = false, started = false;
 
     function clearTimers() { timers.forEach(clearTimeout); timers = []; }
     function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
-    function translation(line) { return lang() === 'en' ? line[2] : line[1]; }
+    // What the speaker said (in their language) and what the other person reads (the translation).
+    function original(line) { return line[0] === 'me' ? (lang() === 'en' ? line[2] : line[1]) : line[1]; }
+    function translation(line) { return line[0] === 'me' ? line[3] : (lang() === 'en' ? line[3] : line[2]); }
+    function voiceOf(line) { return line[0] === 'me' ? SCENES[scene].x.voice : MINE[lang()].voice; }
     function setBridge() {
       var s = SCENES[scene], l = lang();
-      var src = scene === 'lecture' ? SOURCE_LECTURE : s.from;
-      var tgt = scene === 'lecture' && l === 'en' ? TARGET_LECTURE_EN : TARGET[l];
-      fromEl.textContent = src.flag + ' ' + src[l];
-      toEl.textContent = tgt.flag + ' ' + tgt.name;
+      fromEl.textContent = MINE[l].flag + ' ' + MINE[l].name;
+      toEl.textContent = s.x.flag + ' ' + s.x[l];
     }
     function render() {
       feed.textContent = '';
+      var who = SCENES[scene].who;
       shown.slice(-4).forEach(function (item, i, arr) {
-        var card = el('div', 'line' + (i === arr.length - 1 ? ' latest' : ''));
+        var side = item.line[0];
+        var card = el('div', 'line ' + side + (i === arr.length - 1 ? ' latest' : ''));
+        card.appendChild(el('div', 'who', who[side][lang()]));
         if (item.pending) {
           var t = el('span', 'typing'); t.appendChild(el('i')); t.appendChild(el('i')); t.appendChild(el('i'));
           card.appendChild(t);
         } else {
           card.appendChild(el('div', 'tr', translation(item.line)));
         }
-        card.appendChild(el('div', 'or', item.line[0]));
+        card.appendChild(el('div', 'or', original(item.line)));
         if (reduce || !item.fresh) card.style.animation = 'none';
         item.fresh = false;
         feed.appendChild(card);
       });
     }
-    function speak(text) {
+    function speak(line) {
       if (!voice || !('speechSynthesis' in window)) return;
       try {
-        var u = new SpeechSynthesisUtterance(text);
-        u.lang = lang() === 'en' ? (scene === 'lecture' ? 'de-DE' : 'en-GB') : 'sk-SK';
-        u.rate = 1;
+        var u = new SpeechSynthesisUtterance(translation(line));
+        u.lang = voiceOf(line);
         window.speechSynthesis.cancel();
         window.speechSynthesis.speak(u);
       } catch (e) {}
@@ -95,26 +114,27 @@
       if (!playing) return;
       var lines = SCENES[scene].lines;
       if (idx >= lines.length) {
-        later(function () { shown = []; idx = 0; render(); step(); }, 2600);
+        later(function () { shown = []; idx = 0; render(); step(); }, 3200);
         return;
       }
       var line = lines[idx];
-      var words = line[0].split(' ');
+      var words = original(line).split(' ');
       var w = 0;
+      phone.classList.toggle('me-speaks', line[0] === 'me');
       (function typeWord() {
         if (!playing) return;
         w++;
         partial.textContent = words.slice(0, w).join(' ');
-        if (w < words.length) { later(typeWord, reduce ? 60 : 230); return; }
+        if (w < words.length) { later(typeWord, reduce ? 60 : 210); return; }
         later(function () {
           partial.textContent = '';
           var item = { line: line, pending: true, fresh: true };
           shown.push(item); render();
           later(function () {
             item.pending = false; render();
-            speak(translation(line));
+            speak(line);
             idx++;
-            later(step, 1500);
+            later(step, voice ? 2600 : 1700);
           }, 650);
         }, 380);
       })();
@@ -145,8 +165,8 @@
     }
     setBridge();
     if (reduce) {
-      // Bez pohybu: ukáž hotový rozhovor, ťuknutím na Počúvať sa dá spustiť aj tak.
-      shown = SCENES.bar.lines.slice(0, 4).map(function (l) { return { line: l, pending: false, fresh: false }; });
+      // Bez pohybu: ukáž hotový začiatok rozhovoru, ťuknutím na Počúvať sa dá spustiť aj tak.
+      shown = SCENES.restaurant.lines.slice(0, 4).map(function (l) { return { line: l, pending: false, fresh: false }; });
       idx = 4; render();
     } else if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
