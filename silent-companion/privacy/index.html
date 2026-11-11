@@ -69,8 +69,8 @@
 <section id="summary">
   <div class="card key">
     <h3><span class="sk">Krátka verzia</span><span class="en">The short version</span></h3>
-    <p class="sk"><strong>Autor o tebe nedostane žiadne údaje.</strong> Silent Companion nemá účet, analytiku, reklamy ani sledovanie. Zvuk z mikrofónu sa spracúva len v telefóne a neukladá sa. Na preklad odchádza iba text dokončenej vety, a to priamo službe DeepL pod tvojím vlastným kľúčom.</p>
-    <p class="en"><strong>The author receives no data about you.</strong> Silent Companion has no account, no analytics, no ads and no tracking. Audio from the microphone is processed only on the phone and is never saved. The only thing that leaves the phone is the text of a finished sentence, sent straight to DeepL under your own key for translation.</p>
+    <p class="sk"><strong>Autor o tebe nedostane žiadne údaje.</strong> Silent Companion nemá účet, analytiku, reklamy ani sledovanie. Zvuk z mikrofónu sa spracúva len v telefóne a neukladá sa. Preklad robí buď prekladač iPhonu priamo v telefóne, alebo služba DeepL. Vtedy k nej odchádza iba text dokončenej vety, pod tvojím vlastným kľúčom.</p>
+    <p class="en"><strong>The author receives no data about you.</strong> Silent Companion has no account, no analytics, no ads and no tracking. Audio from the microphone is processed only on the phone and is never saved. Translation is done either by the iPhone translator, right on the phone, or by DeepL. In that case the only thing that leaves the phone is the text of a finished sentence, sent straight to DeepL under your own key.</p>
   </div>
 
   <h3><span class="sk">Prevádzkovateľ</span><span class="en">Who runs this</span></h3>
@@ -104,7 +104,7 @@
     <li>Zvuk <strong>neopúšťa telefón</strong>, neukladá sa a nikam sa neposiela. To isté platí pri externom mikrofóne (Bluetooth alebo káblovom): jeho zvuk spracúva len iPhone.</li>
     <li>Rozpoznaný text a preklady sú len v pamäti telefónu. Po ťuknutí na <em>Zastaviť</em> ostanú na obrazovke, kým nezačneš počúvať znova, neťukneš na <em>Vymazať</em> alebo appku nezavrieš.</li>
     <li><em>Hlas v ušiach</em> aj <em>Čítať nahlas</em> číta titulky hlasom iPhonu priamo v telefóne.</li>
-    <li>V <em>konverzačnom režime</em> platí to isté: zvuk ostáva v telefóne, na preklad odchádza len text vety.</li>
+    <li>V <em>konverzačnom režime</em> platí to isté: zvuk ostáva v telefóne a ak prekladá DeepL, odchádza k nemu len text vety.</li>
     <li>Ak zapneš <em>Počúvať pri zhasnutom displeji</em>, appka počúva aj po zhasnutí displeja. iPhone pritom celý čas ukazuje oranžovú bodku mikrofónu a na uzamknutej obrazovke upozornenie, že appka počúva. Nič navyše sa neukladá.</li>
   </ul>
   <ul class="en">
@@ -113,13 +113,17 @@
     <li>Audio <strong>never leaves the phone</strong>, is never saved and is never sent anywhere. The same holds for an external microphone (Bluetooth or wired): only the iPhone processes its sound.</li>
     <li>The recognised text and the translations are held only in the phone’s memory. After you tap <em>Stop</em>, they stay on the screen until you start listening again, tap <em>Clear</em> or close the app.</li>
     <li><em>Voice in your ears</em> and <em>Read aloud</em> read the subtitles with the iPhone’s own voice, on the phone.</li>
-    <li>In <em>conversation mode</em> the same applies: the audio stays on the phone and only the text of a sentence is sent for translation.</li>
+    <li>In <em>conversation mode</em> the same applies: the audio stays on the phone, and when DeepL translates, only the text of a sentence is sent to it.</li>
     <li>If you turn on <em>Listen with the screen off</em>, the app keeps listening after the screen turns off. The iPhone shows the orange microphone indicator the whole time and a notice on the Lock Screen that the app is listening. Nothing extra is stored.</li>
   </ul>
 </section>
 
 <section id="deepl">
-  <h2><span class="sk">Preklad cez DeepL</span><span class="en">Translation by DeepL</span></h2>
+  <h2><span class="sk">Preklad</span><span class="en">Translation</span></h2>
+  <p class="sk"><strong>Prekladač iPhonu.</strong> Keď je v Nastaveniach prekladač <em>Automaticky</em> a iPhone má stiahnutý preklad od Apple pre zvolené jazyky, veta sa preloží priamo v telefóne a nikam sa neposiela. Jazyky na preklad sťahuje iPhone sám, appka pri tom nič neposiela. Prekladač iPhonu zatiaľ nevie slovenčinu, češtinu ani maďarčinu.</p>
+  <p class="en"><strong>The iPhone translator.</strong> When the translator in Settings is set to <em>Automatic</em> and the iPhone has Apple’s translation downloaded for the chosen languages, the sentence is translated right on the phone and is not sent anywhere. The iPhone itself downloads the translation languages; the app sends nothing in the process. The iPhone translator does not know Slovak, Czech or Hungarian yet.</p>
+  <p class="sk"><strong>DeepL.</strong> Inak platí toto:</p>
+  <p class="en"><strong>DeepL.</strong> Otherwise the following applies:</p>
   <p class="sk">Keď niekto dopovie vetu, appka pošle jej <strong>text</strong> cez zabezpečené spojenie (HTTPS) službe DeepL, spolu s predchádzajúcou vetou ako kontextom pre presnejší preklad, so zvoleným jazykom titulkov a s tvojím kľúčom DeepL. Zvuk sa neposiela nikdy. Pri vložení kľúča sa appka DeepL opýta, či kľúč platí a koľko z mesačného limitu si už minul.</p>
   <p class="en">When someone finishes a sentence, the app sends its <strong>text</strong> over a secure connection (HTTPS) to DeepL, together with the previous sentence as context for a better translation, your chosen subtitle language and your DeepL key. Audio is never sent. When you add the key, the app asks DeepL whether the key is valid and how much of the monthly allowance you have used.</p>
   <p class="sk">Kľúč si zakladáš sám u DeepL, takže texty spracúva DeepL podľa svojich podmienok a zásad, nie autor appky. Autor k tvojim textom ani ku kľúču nemá prístup.</p>
