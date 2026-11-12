@@ -210,3 +210,18 @@ body.sc{
 .sc .feed .line .tr{font-size:13.5px;}
 .sc .me-speaks .partial{flex-direction:row-reverse;text-align:right;background:rgba(92,200,242,.16);}
 .sc .me-speaks .partial .partial-text{text-align:right;}
+
+/* ---------- Mikrofón a vzdialenosť ---------- */
+.sc .mic-map{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center;margin-top:30px;}
+.sc .mic-map img{width:100%;height:auto;display:block;}
+.sc .mic-map ol{margin:0;padding-left:1.3em;color:var(--muted);font-size:15.5px;line-height:1.6;}
+.sc .mic-map li{margin:0 0 10px;}
+.sc .mic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px;}
+.sc .mic-card{padding:22px 20px;border-radius:22px;background:var(--sc-glass);border:1px solid var(--line);}
+.sc .mic-card img{width:100%;height:auto;display:block;margin:0 0 14px;}
+.sc .mic-card h3{margin:0 0 8px;}
+.sc .mic-card p{margin:0;color:var(--muted);font-size:15px;line-height:1.6;}
+.sc .mic-wide{margin-top:18px;}
+.sc .mic-wide img{max-width:660px;margin-left:auto;margin-right:auto;}
+.sc .mic-plus{margin:22px 0 0;color:var(--muted);font-size:15.5px;line-height:1.6;}
+@media (max-width:720px){.sc .mic-map{grid-template-columns:1fr;}}
