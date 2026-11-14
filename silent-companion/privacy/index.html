@@ -104,6 +104,7 @@
     <li>Zvuk <strong>neopúšťa telefón</strong>, neukladá sa a nikam sa neposiela. To isté platí pri externom mikrofóne (Bluetooth alebo káblovom): jeho zvuk spracúva len iPhone.</li>
     <li>Rozpoznaný text a preklady sú len v pamäti telefónu. Po ťuknutí na <em>Zastaviť</em> ostanú na obrazovke, kým nezačneš počúvať znova, neťukneš na <em>Vymazať</em> alebo appku nezavrieš.</li>
     <li><em>Hlas v ušiach</em> aj <em>Čítať nahlas</em> číta titulky hlasom iPhonu priamo v telefóne.</li>
+    <li>Ak zapneš <em>Opisovať zvuky okolo</em>, iPhone z toho istého zvuku rozpoznáva aj zvuky, ktoré nie sú reč (zvonček, siréna, smiech), a ich názov napíše do titulkov. Aj to prebieha len v telefóne (rozpoznávanie zvukov od Apple), nič sa nenahráva ani neposiela.</li>
     <li>V <em>konverzačnom režime</em> platí to isté: zvuk ostáva v telefóne a ak prekladá DeepL alebo Microsoft, odchádza k službe len text vety.</li>
     <li>Ak zapneš <em>Počúvať pri zhasnutom displeji</em>, appka počúva aj po zhasnutí displeja. iPhone pritom celý čas ukazuje oranžovú bodku mikrofónu a na uzamknutej obrazovke upozornenie, že appka počúva (ak má appka povolené upozornenia). Nič navyše sa neukladá.</li>
   </ul>
@@ -113,6 +114,7 @@
     <li>Audio <strong>never leaves the phone</strong>, is never saved and is never sent anywhere. The same holds for an external microphone (Bluetooth or wired): only the iPhone processes its sound.</li>
     <li>The recognised text and the translations are held only in the phone’s memory. After you tap <em>Stop</em>, they stay on the screen until you start listening again, tap <em>Clear</em> or close the app.</li>
     <li><em>Voice in your ears</em> and <em>Read aloud</em> read the subtitles with the iPhone’s own voice, on the phone.</li>
+    <li>If you switch on <em>Describe sounds around</em>, the iPhone also recognises sounds that are not speech (a doorbell, a siren, laughter) in the same audio and writes their name into the subtitles. This too happens only on the phone (Apple’s sound recognition); nothing is recorded or sent.</li>
     <li>In <em>conversation mode</em> the same applies: the audio stays on the phone, and when DeepL or Microsoft translates, only the text of a sentence is sent to that service.</li>
     <li>If you turn on <em>Listen with the screen off</em>, the app keeps listening after the screen turns off. The iPhone shows the orange microphone indicator the whole time and a notice on the Lock Screen that the app is listening (if notifications are allowed for the app). Nothing extra is stored.</li>
   </ul>
@@ -124,8 +126,8 @@
   <p class="en"><strong>The iPhone translator.</strong> When the translator in Settings is set to <em>Automatic</em> and the iPhone has Apple’s translation downloaded for the chosen languages, the sentence is translated right on the phone and is not sent anywhere. The iPhone itself downloads the translation languages; the app sends nothing in the process. The iPhone translator does not know Slovak, Czech or Hungarian yet. For those there is the optional <a href="#google">Google translator on the phone</a> or the online service DeepL or <a href="#microsoft">Microsoft</a>. With the <em>Automatic</em> translator the app tries the iPhone translator first, then the Google translator (if it is on and the language is downloaded), and otherwise the online service you chose. If the phone fails to translate a sentence and you have a key saved, the app sends that sentence to the online service.</p>
   <p class="sk"><strong>DeepL.</strong> Ak prekladá online služba DeepL, platí toto:</p>
   <p class="en"><strong>DeepL.</strong> When the online service DeepL translates, the following applies:</p>
-  <p class="sk">Keď niekto dopovie vetu, appka pošle jej <strong>text</strong> cez zabezpečené spojenie (HTTPS) službe DeepL, spolu s predchádzajúcou vetou ako kontextom pre presnejší preklad, so zvoleným jazykom titulkov a s tvojím kľúčom DeepL. Zvuk sa neposiela nikdy. Pri vložení kľúča sa appka DeepL opýta, či kľúč platí a koľko z mesačného limitu si už minul.</p>
-  <p class="en">When someone finishes a sentence, the app sends its <strong>text</strong> over a secure connection (HTTPS) to DeepL, together with the previous sentence as context for a better translation, your chosen subtitle language and your DeepL key. Audio is never sent. When you add the key, the app asks DeepL whether the key is valid and how much of the monthly allowance you have used.</p>
+  <p class="sk">Keď niekto dopovie vetu, appka pošle jej <strong>text</strong> cez zabezpečené spojenie (HTTPS) službe DeepL, spolu s predchádzajúcou vetou ako kontextom pre presnejší preklad, so zvoleným jazykom titulkov a s tvojím kľúčom DeepL. Zvuk sa neposiela nikdy. Pri vložení kľúča sa appka DeepL opýta, či kľúč platí a koľko z limitu si už minul.</p>
+  <p class="en">When someone finishes a sentence, the app sends its <strong>text</strong> over a secure connection (HTTPS) to DeepL, together with the previous sentence as context for a better translation, your chosen subtitle language and your DeepL key. Audio is never sent. When you add the key, the app asks DeepL whether the key is valid and how much of the allowance you have used.</p>
   <p class="sk">Kľúč si zakladáš sám u DeepL, takže texty spracúva DeepL podľa svojich podmienok a zásad, nie autor appky. Autor k tvojim textom ani ku kľúču nemá prístup.</p>
   <p class="en">You set up the key yourself with DeepL, so DeepL processes the texts under its own terms and policies, not the app’s author. The author has no access to your texts or your key.</p>
 
@@ -133,12 +135,12 @@
     <h3><span class="sk">Bezplatný a platený kľúč</span><span class="en">Free and paid keys</span></h3>
     <p class="sk">Pri bezplatných plánoch (<strong>DeepL API Developer</strong> a staršom <strong>DeepL API Free</strong>) si DeepL podľa svojich podmienok môže texty dočasne uchovať a použiť ich na zlepšovanie služby. Platené plány (<strong>DeepL API Growth</strong> a starší <strong>DeepL API Pro</strong>) majú podľa DeepL záruku, že sa texty na učenie nepoužijú a po preklade sa mažú. Podrobnosti sú v <a href="https://www.deepl.com/privacy">zásadách ochrany súkromia DeepL</a>.</p>
     <p class="en">On the free plans (<strong>DeepL API Developer</strong> and the older <strong>DeepL API Free</strong>), DeepL may, under its terms, keep the texts for a while and use them to improve its service. On the paid plans (<strong>DeepL API Growth</strong> and the older <strong>DeepL API Pro</strong>), DeepL states that texts are not used for training and are deleted after translation. The details are in <a href="https://www.deepl.com/privacy">DeepL’s privacy policy</a>.</p>
-    <p class="note sk">Ak sa okolo teba hovorí o niečom citlivom, appku radšej nepoužívaj, alebo si do nej vlož kľúč plateného plánu DeepL. Pri jazykoch, ktoré vie prekladač iPhonu alebo zapnutý prekladač Google v telefóne, text telefón vôbec neopustí.</p>
-    <p class="note en">If the people around you are discussing something sensitive, it is better not to use the app, or to add a key from a paid DeepL plan. For languages the iPhone translator or the switched-on Google translator on the phone knows, the text never leaves the phone.</p>
+    <p class="note sk">Ak sa okolo teba hovorí o niečom citlivom, appku radšej nepoužívaj, alebo si do nej vlož kľúč plateného plánu DeepL. Pri jazykoch, ktoré vie prekladač iPhonu alebo zapnutý prekladač Google v telefóne, text telefón spravidla neopustí: online službe ide len veta, ktorú telefón nepreloží, a len ak máš uložený jej kľúč.</p>
+    <p class="note en">If the people around you are discussing something sensitive, it is better not to use the app, or to add a key from a paid DeepL plan. For languages the iPhone translator or the switched-on Google translator on the phone knows, the text normally stays on the phone: only a sentence the phone cannot translate goes to the online service, and only if you have saved its key.</p>
   </div>
 
-  <p class="sk">Bez internetu sa nič neposiela. Vety majú označenie „bez prekladu“ a appka ich dopreloží, keď sa sieť vráti.</p>
-  <p class="en">Without internet nothing is sent. Sentences are marked as not translated, and the app translates them once you are back online.</p>
+  <p class="sk">Bez internetu sa nič neposiela. Vety majú označenie „bez prekladu“ a tie nedávne sa appka pokúsi dopreložiť, keď sa sieť vráti.</p>
+  <p class="en">Without internet nothing is sent. Sentences are marked as not translated, and the app tries to translate the recent ones once you are back online.</p>
 </section>
 
 <section id="microsoft">
