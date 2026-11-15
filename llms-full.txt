@@ -102,6 +102,6 @@ Ján Šikuta, a Slovak physician (MUDr.), designed the Šikuta Method (a deepeni
 
 ## How to cite
 
-- APA: Šikuta, J. (2026). Breathune (Version 5.0) [Mobile app]. App Store. https://apps.apple.com/app/id6782549502
+- APA: Šikuta, J. (2026). Breathune (Version 5.1) [Mobile app]. App Store. https://apps.apple.com/app/id6782549502
 - Author: Ján Šikuta, MD, PhD, ORCID https://orcid.org/0000-0002-4690-0317
 - Ausculta (auscultation atlas by the same author): see https://dzanino.github.io/ausculta-web/methodology.html#cite
