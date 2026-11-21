@@ -80,7 +80,7 @@
   <h3><span class="sk">Čo Silent Companion nerobí</span><span class="en">What Silent Companion does not do</span></h3>
   <ul class="sk">
     <li>Nevytvára účet ani profil a nevyžaduje prihlásenie.</li>
-    <li>Nepoužíva analytiku, meranie návštevnosti ani sledovanie správania. O diagnostike prekladača Google, ak ho zapneš, je <a href="#google">časť nižšie</a>.</li>
+    <li>Nepoužíva analytiku, meranie návštevnosti ani sledovanie správania. O diagnostike prekladača Google, ak ho zapneš, je <a href="#google">časť nižšie</a>. (Táto webová stránka počíta návštevy anonymne, bez cookies.)</li>
     <li>Neobsahuje reklamy ani reklamné identifikátory.</li>
     <li>Neposiela autorovi nič. Autor nemá server, na ktorom by o tebe niečo ukladal.</li>
     <li>Nenahráva zvuk a sama neukladá rozpoznaný text ani preklady.</li>
@@ -88,7 +88,7 @@
   </ul>
   <ul class="en">
     <li>It creates no account or profile and requires no sign-in.</li>
-    <li>It uses no analytics, no usage measurement and no behavioural tracking. For the diagnostics of the Google translator, if you switch it on, see the <a href="#google">section below</a>.</li>
+    <li>It uses no analytics, no usage measurement and no behavioural tracking. For the diagnostics of the Google translator, if you switch it on, see the <a href="#google">section below</a>. (This web page counts visits anonymously, without cookies.)</li>
     <li>It contains no ads and no advertising identifiers.</li>
     <li>It sends nothing to the author. The author runs no server that stores anything about you.</li>
     <li>It does not record audio and does not itself save the recognised text or the translations.</li>
@@ -124,10 +124,12 @@
   <h2><span class="sk">Preklad</span><span class="en">Translation</span></h2>
   <p class="sk"><strong>Prekladač iPhonu.</strong> Keď je v Nastaveniach prekladač <em>Automaticky</em> a iPhone má stiahnutý preklad od Apple pre zvolené jazyky, veta sa preloží priamo v telefóne a nikam sa neposiela. Jazyky na preklad sťahuje iPhone sám, appka pri tom nič neposiela. Prekladač iPhonu zatiaľ nevie slovenčinu, češtinu ani maďarčinu. Na tie je voliteľný <a href="#google">prekladač Google v telefóne</a> alebo online služba DeepL či <a href="#microsoft">Microsoft</a>. Pri prekladači <em>Automaticky</em> skúša appka najprv prekladač iPhonu, potom prekladač Google (ak je zapnutý a jazyk stiahnutý), inak zvolenú online službu. Ak telefón niektorú vetu nepreloží a máš uložený kľúč, pošle ju appka online službe.</p>
   <p class="en"><strong>The iPhone translator.</strong> When the translator in Settings is set to <em>Automatic</em> and the iPhone has Apple’s translation downloaded for the chosen languages, the sentence is translated right on the phone and is not sent anywhere. The iPhone itself downloads the translation languages; the app sends nothing in the process. The iPhone translator does not know Slovak, Czech or Hungarian yet. For those there is the optional <a href="#google">Google translator on the phone</a> or the online service DeepL or <a href="#microsoft">Microsoft</a>. With the <em>Automatic</em> translator the app tries the iPhone translator first, then the Google translator (if it is on and the language is downloaded), and otherwise the online service you chose. If the phone fails to translate a sentence and you have a key saved, the app sends that sentence to the online service.</p>
+  <p class="sk"><strong>Živý preklad.</strong> Preklad vety, ktorú človek ešte hovorí (od verzie 2.6), robí len prekladač v telefóne (Apple alebo Google). Online službe sa rozpísaná veta neposiela nikdy, tá dostane len dokončenú vetu.</p>
+  <p class="en"><strong>Live translation.</strong> The translation of a sentence while it is still being spoken (from version 2.6) is done only by the translator on the phone (Apple or Google). An unfinished sentence is never sent to the online service; it only receives finished sentences.</p>
   <p class="sk"><strong>DeepL.</strong> Ak prekladá online služba DeepL, platí toto:</p>
   <p class="en"><strong>DeepL.</strong> When the online service DeepL translates, the following applies:</p>
-  <p class="sk">Keď niekto dopovie vetu, appka pošle jej <strong>text</strong> cez zabezpečené spojenie (HTTPS) službe DeepL, spolu s predchádzajúcou vetou ako kontextom pre presnejší preklad, so zvoleným jazykom titulkov a s tvojím kľúčom DeepL. Zvuk sa neposiela nikdy. Pri vložení kľúča sa appka DeepL opýta, či kľúč platí a koľko z limitu si už minul.</p>
-  <p class="en">When someone finishes a sentence, the app sends its <strong>text</strong> over a secure connection (HTTPS) to DeepL, together with the previous sentence as context for a better translation, your chosen subtitle language and your DeepL key. Audio is never sent. When you add the key, the app asks DeepL whether the key is valid and how much of the allowance you have used.</p>
+  <p class="sk">Keď niekto dopovie vetu, appka pošle jej <strong>text</strong> cez zabezpečené spojenie (HTTPS) službe DeepL, spolu s predchádzajúcou vetou ako kontextom pre presnejší preklad, s jazykom reči, jazykom titulkov a s tvojím kľúčom DeepL. Zvuk sa neposiela nikdy. Pri vložení kľúča a pri otvorení Nastavení sa appka DeepL opýta, či kľúč platí a koľko z limitu si už minul.</p>
+  <p class="en">When someone finishes a sentence, the app sends its <strong>text</strong> over a secure connection (HTTPS) to DeepL, together with the previous sentence as context for a better translation, the spoken language, the subtitle language and your DeepL key. Audio is never sent. When you add the key and when you open Settings, the app asks DeepL whether the key is valid and how much of the allowance you have used.</p>
   <p class="sk">Kľúč si zakladáš sám u DeepL, takže texty spracúva DeepL podľa svojich podmienok a zásad, nie autor appky. Autor k tvojim textom ani ku kľúču nemá prístup.</p>
   <p class="en">You set up the key yourself with DeepL, so DeepL processes the texts under its own terms and policies, not the app’s author. The author has no access to your texts or your key.</p>
 
@@ -145,8 +147,8 @@
 
 <section id="microsoft">
   <h2><span class="sk">Microsoft Translator</span><span class="en">Microsoft Translator</span></h2>
-  <p class="sk">Ak v Nastaveniach v časti <em>Online preklad</em> zvolíš <em>Online služba: Microsoft</em>, appka po dopovedaní vety pošle jej <strong>text</strong> cez zabezpečené spojenie (HTTPS) službe Microsoft Translator, so zvoleným jazykom titulkov, s tvojím kľúčom a oblasťou, ak si ju zadal. Zvuk sa neposiela nikdy. Pri vložení kľúča appka preloží jedno slovo, aby overila, že kľúč funguje.</p>
-  <p class="en">If you choose <em>Online service: Microsoft</em> under <em>Online translation</em> in Settings, the app sends the <strong>text</strong> of each finished sentence over a secure connection (HTTPS) to Microsoft Translator, with your chosen subtitle language, your key and the region, if you entered one. Audio is never sent. When you add the key, the app translates a single word to check that the key works.</p>
+  <p class="sk">Ak v Nastaveniach v časti <em>Online preklad</em> zvolíš <em>Online služba: Microsoft</em>, appka po dopovedaní vety pošle jej <strong>text</strong> cez zabezpečené spojenie (HTTPS) službe Microsoft Translator, s jazykom reči, jazykom titulkov, s tvojím kľúčom a oblasťou, ak si ju zadal. Zvuk sa neposiela nikdy. Pri vložení kľúča a pri otvorení Nastavení appka preloží jedno slovo („Hello“), aby overila, že kľúč funguje.</p>
+  <p class="en">If you choose <em>Online service: Microsoft</em> under <em>Online translation</em> in Settings, the app sends the <strong>text</strong> of each finished sentence over a secure connection (HTTPS) to Microsoft Translator, with the spoken language, the subtitle language, your key and the region, if you entered one. Audio is never sent. When you add the key and when you open Settings, the app translates a single word (“Hello”) to check that the key works.</p>
   <p class="sk">Kľúč si zakladáš sám v Azure, takže texty spracúva Microsoft podľa svojich podmienok a zásad, nie autor appky. Autor k tvojim textom ani ku kľúču nemá prístup. Podrobnosti sú vo <a href="https://privacy.microsoft.com/privacystatement">vyhlásení Microsoftu o ochrane osobných údajov</a>.</p>
   <p class="en">You set up the key yourself in Azure, so Microsoft processes the texts under its own terms and policies, not the app’s author. The author has no access to your texts or your key. The details are in the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</p>
 </section>
@@ -162,7 +164,8 @@
 <section id="phone">
   <h2><span class="sk">Čo ostáva v telefóne a ako to zmažeš</span><span class="en">What stays on your phone, and how to erase it</span></h2>
   <ul class="sk">
-    <li><strong>Kľúč DeepL</strong> a <strong>kľúč Microsoft</strong> sú uložené v Kľúčenke iPhonu (Keychain). Zmažeš ich v Nastaveniach appky tlačidlom <em>Vymazať kľúč</em>.</li>
+    <li><strong>Kľúč DeepL</strong> a <strong>kľúč Microsoft</strong> sú uložené v Kľúčenke iPhonu (Keychain). Zmažeš ich v Nastaveniach appky tlačidlom <em>Vymazať kľúč</em>. Kľúčenka ich zachová aj po odinštalovaní appky a v šifrovanej zálohe ich prenesie na nový iPhone; ak ich už nechceš, vymaž ich pred odinštalovaním.</li>
+    <li><strong>Diagnostika</strong> (skrytý panel v Nastaveniach) obsahuje len kroky a počty, nikdy rozpoznané slová ani názvy zariadení. Je len v pamäti appky a odíde z telefónu, len keď ju sám zdieľaš.</li>
     <li><strong>Jazyky prekladača Google</strong> (asi 30 MB každý), ak si ich stiahol, sú uložené v telefóne. Od verzie 2.4 ich odstrániš v Nastaveniach tlačidlom <em>Odstrániť stiahnuté jazyky</em>. Zmiznú aj vtedy, keď appku odinštaluješ.</li>
     <li><strong>Nastavenia appky</strong> (napríklad jazyky, mikrofón, prostredie a hlas) sú uložené v telefóne. Zmiznú, keď appku odinštaluješ.</li>
     <li><strong>Dobrovoľný tip</strong> v Nastaveniach je nákup v appke cez App Store. Platbu spracúva Apple, autor appky nedostáva ani neukladá žiadne platobné údaje a appka sa po tipe nijako nezmení.</li>
@@ -170,7 +173,8 @@
     <li>Nič iné appka neukladá. Záznam rozhovoru vznikne, len keď ťukneš na <em>Uložiť záznam</em> a sám vyberieš, kam ho uložíš alebo komu ho pošleš (napríklad Poznámky, Súbory, e-mail). Za uložený záznam potom zodpovedáš ty; ak obsahuje slová iných ľudí, je slušné im to povedať.</li>
   </ul>
   <ul class="en">
-    <li><strong>Your DeepL key</strong> and <strong>Microsoft key</strong> are stored in the iPhone’s Keychain. You can delete them in the app’s settings with <em>Delete key</em>.</li>
+    <li><strong>Your DeepL key</strong> and <strong>Microsoft key</strong> are stored in the iPhone’s Keychain. You can delete them in the app’s settings with <em>Delete key</em>. The Keychain keeps them even after the app is deleted and moves them to a new iPhone in an encrypted backup; if you no longer want them, delete them before removing the app.</li>
+    <li><strong>Diagnostics</strong> (a hidden panel in Settings) hold only steps and counts, never recognised words or device names. They stay in the app’s memory and leave the phone only if you share them yourself.</li>
     <li><strong>Google translator languages</strong> (about 30 MB each), if you downloaded them, are stored on the phone. From version 2.4 you can remove them in Settings with <em>Remove downloaded languages</em>. They are also removed when you delete the app.</li>
     <li><strong>The app’s settings</strong> (such as languages, microphone, surroundings and voice) are stored on the phone. They are removed when you delete the app.</li>
     <li>The <strong>voluntary tip</strong> in Settings is an in-app purchase through the App Store. Apple processes the payment; the app’s author receives and stores no payment details, and the app does not change after a tip.</li>
@@ -215,8 +219,8 @@
 
 <footer>
   <div class="wrap">
-    <p class="sk">Účinné od <strong>14. novembra 2026</strong>. <span data-fz>Silent Companion</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/">breathune.eu</a> · <a href="../">Podpora</a></p>
-    <p class="en">Effective <strong>14 November 2026</strong>. <span data-fz>Silent Companion</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/">breathune.eu</a> · <a href="../">Support</a></p>
+    <p class="sk">Účinné od <strong>21. novembra 2026</strong>. <span data-fz>Silent Companion</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/">breathune.eu</a> · <a href="../">Podpora</a></p>
+    <p class="en">Effective <strong>21 November 2026</strong>. <span data-fz>Silent Companion</span> · Ján Šikuta · <a href="https://orcid.org/0000-0002-4690-0317" rel="me noopener" target="_blank">ORCID</a> · <a href="/">breathune.eu</a> · <a href="../">Support</a></p>
   </div>
 </footer>
 
