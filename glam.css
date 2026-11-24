@@ -88,6 +88,8 @@ a.store:hover{background:rgba(255,255,255,.14)!important;border-color:rgba(255,2
   background:linear-gradient(135deg,#ffe2ad,#ffd38a 45%,#f3b965)!important;color:var(--gold-ink)!important;border-color:transparent!important;
   box-shadow:0 14px 34px rgba(255,211,138,.30),inset 0 1px 0 rgba(255,255,255,.6)!important;
 }
+/* názov appky na zlatom tlačidle tmavý, inak ho prebije strong{color:#fff} */
+.stores a.store:first-child strong{color:var(--gold-ink)!important;}
 .store-note{color:#c9cee8!important;opacity:1!important;}
 
 /* ---------- Navigácia ---------- */
