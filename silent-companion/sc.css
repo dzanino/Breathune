@@ -91,7 +91,9 @@ body.sc{
 .sc .band-head{max-width:720px;margin:0 0 34px;}
 .sc .band-head h2{margin:0;}
 .sc .band-head p{color:var(--muted);font-size:18px;margin:12px 0 0;}
-.sc .uses{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.sc .uses{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+.sc .uses .use{grid-column:span 2;}
+.sc .uses .use:nth-child(n+4){grid-column:span 3;}
 .sc .use{padding:22px 20px;border-radius:22px;background:var(--sc-glass);border:1px solid var(--line);transition:transform .25s ease,border-color .25s ease;}
 .sc .use:hover{transform:translateY(-4px);border-color:rgba(61,219,196,.45);}
 .sc .use .ic{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:rgba(61,219,196,.13);color:var(--sc-teal);margin-bottom:14px;}
@@ -179,8 +181,12 @@ body.sc{
 @media (max-width:900px){
   .sc .hero-grid{grid-template-columns:1fr;gap:40px;}
   .sc .uses{grid-template-columns:1fr 1fr;}
+  .sc .uses .use,.sc .uses .use:nth-child(n+4){grid-column:auto;}
   .sc .steps,.sc .trust{grid-template-columns:1fr;}
   .sc .talk,.sc .pricing{grid-template-columns:1fr;}
+}
+@media (max-width:900px) and (min-width:521px){
+  .sc .uses .use:last-child:nth-child(odd){grid-column:1/-1;}
 }
 @media (max-width:520px){
   .sc .uses{grid-template-columns:1fr;}
